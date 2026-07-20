@@ -1,0 +1,188 @@
+{
+    "womens-health": [
+        {
+            "slug": "fsd",
+            "icon": "fas fa-heart",
+            "order": 1,
+            "parameters": {
+                "transducer": "Li50F",
+                "sessions_count": "6",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 5,
+                "shots_per_application": 500,
+                "shots_per_session": 2500,
+                "energy_kv": 1.9,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Disfunción Sexual Femenina (FSD)",
+                    "description": "Tratamiento para disfunción sexual femenina"
+                },
+                "en": {
+                    "name": "Female Sexual Dysfunction (FSD)",
+                    "description": "Treatment for female sexual dysfunction"
+                }
+            }
+        },
+        {
+            "slug": "sui",
+            "icon": "fas fa-tint",
+            "order": 2,
+            "parameters": {
+                "transducer": "Li50F",
+                "sessions_count": "6 - 8",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 5,
+                "shots_per_application": 500,
+                "shots_per_session": 2500,
+                "energy_kv": 2,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Incontinencia Urinaria de Esfuerzo (SUI)",
+                    "description": "Tratamiento para incontinencia urinaria de esfuerzo"
+                },
+                "en": {
+                    "name": "Stress Urinary Incontinence (SUI)",
+                    "description": "Treatment for stress urinary incontinence"
+                }
+            }
+        },
+        {
+            "slug": "vulvodinia",
+            "icon": "fas fa-exclamation-circle",
+            "order": 3,
+            "parameters": {
+                "transducer": "Li50F",
+                "sessions_count": "6 - 8",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 17,
+                "applications_per_session": 2,
+                "shots_per_application": 1000,
+                "shots_per_session": 2000,
+                "energy_kv": 1.9,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Vulvodinia",
+                    "description": "Tratamiento para vulvodinia"
+                },
+                "en": {
+                    "name": "Vulvodynia",
+                    "description": "Treatment for vulvodynia"
+                }
+            }
+        },
+        {
+            "slug": "gsm",
+            "icon": "fas fa-female",
+            "order": 4,
+            "parameters": {
+                "transducer": "Li50F",
+                "sessions_count": "6",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 25,
+                "applications_per_session": 6,
+                "shots_per_application": 500,
+                "shots_per_session": 3000,
+                "energy_kv": 2,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Síndrome Genitourinario de la Menopausia (GSM)",
+                    "description": "Tratamiento para síndrome genitourinario de la menopausia"
+                },
+                "en": {
+                    "name": "Genitourinary Syndrome of Menopause (GSM)",
+                    "description": "Treatment for genitourinary syndrome of menopause"
+                }
+            }
+        }
+    ],
+    "mens-health": [
+        {
+            "slug": "ed",
+            "icon": "fas fa-mars",
+            "order": 1,
+            "parameters": {
+                "transducer": "Li50M",
+                "sessions_count": "6",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 2,
+                "shots_per_application": 1500,
+                "shots_per_session": 3000,
+                "energy_kv": 2,
+                "frequency_hz": 2.5
+            },
+            "translations": {
+                "es": {
+                    "name": "Disfunción Eréctil (ED)",
+                    "description": "Tratamiento para disfunción eréctil"
+                },
+                "en": {
+                    "name": "Erectile Dysfunction (ED)",
+                    "description": "Treatment for erectile dysfunction"
+                }
+            }
+        },
+        {
+            "slug": "cpp",
+            "icon": "fas fa-exclamation-triangle",
+            "order": 2,
+            "parameters": {
+                "transducer": "C30",
+                "sessions_count": "6 - 10",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 2,
+                "shots_per_application": 1500,
+                "shots_per_session": 3000,
+                "energy_kv": 2,
+                "frequency_hz": 2.5
+            },
+            "translations": {
+                "es": {
+                    "name": "Dolor Pélvico Crónico / Prostatitis Crónica (CPPS/CP)",
+                    "description": "Tratamiento para CPPS y prostatitis crónica"
+                },
+                "en": {
+                    "name": "Chronic Pelvic Pain Syndrome / Chronic Prostatitis (CPPS/CP)",
+                    "description": "Treatment for CPPS and chronic prostatitis"
+                }
+            }
+        },
+        {
+            "slug": "pd",
+            "icon": "fas fa-band-aid",
+            "order": 3,
+            "parameters": {
+                "transducer": "C15",
+                "sessions_count": "6 - 10",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 15,
+                "applications_per_session": 4,
+                "shots_per_application": 500,
+                "shots_per_session": 2000,
+                "energy_kv": 2,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Enfermedad de Peyronie (PD)",
+                    "description": "Tratamiento para enfermedad de Peyronie"
+                },
+                "en": {
+                    "name": "Peyronie's Disease (PD)",
+                    "description": "Treatment for Peyronie's disease"
+                }
+            }
+        }
+    ]
+}

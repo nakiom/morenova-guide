@@ -1,0 +1,808 @@
+{
+    "fsd": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Revisar antecedentes médicos y sexuales completos. Realizar examen ginecológico y examinar la región genital. Descartar infecciones y alteraciones anatómicas. Explicar beneficios, riesgos y resultados esperados. Confirmar consentimiento informado."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Review full medical and sexual history. Perform gynecological examination and examine the genital area. Rule out infections and anatomical alterations. Explain benefits, risks and expected results. Obtain informed consent."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "Revisar antecedentes médicos e sexuais completos. Realizar exame ginecológico e examinar a região genital. Descartar infecções e alterações anatômicas. Explicar benefícios, riscos e resultados esperados. Confirmar consentimento informado."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "回顾完整的医疗与性生活史。进行妇科检查及外生殖器检查。排除感染和解剖学异常。说明获益、风险及预期结果,取得知情同意。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación de la paciente",
+                "description": "Posicionar a la paciente en decúbito supino o posición de litotomía. Aplicar gel conductor sobre la zona a tratar. Mantener comunicación permanente para monitorear la tolerancia."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Place the patient in supine or lithotomy position. Apply conductive gel over the treatment area. Maintain continuous communication to monitor tolerance."
+            },
+            "pt": {
+                "title": "Preparação da paciente",
+                "description": "Posicionar a paciente em decúbito dorsal ou posição de litotomia. Aplicar gel condutor sobre a área a ser tratada. Manter comunicação permanente para monitorar a tolerância."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "让患者采取仰卧位或截石位。在治疗区域涂抹导声凝胶。全程保持沟通以监测耐受性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (Li50F)",
+                "description": "Verificar la configuración del dispositivo MoreNova con el transductor lineal Li50F. Confirmar los parámetros preprogramados: Energía (HV) 1,9 kV y Frecuencia (FRQ) 2,0 Hz. Comprobar la integridad del cable y del aplicador."
+            },
+            "en": {
+                "title": "MoreNova device setup (Li50F)",
+                "description": "Verify the MoreNova device configuration with the Li50F linear transducer. Confirm the preprogrammed parameters: Energy (HV) 1.9 kV and Frequency (FRQ) 2.0 Hz. Check the integrity of the cable and applicator."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (Li50F)",
+                "description": "Verificar a configuração do dispositivo MoreNova com o transdutor linear Li50F. Confirmar os parâmetros pré-programados: Energia (HV) 1,9 kV e Frequência (FRQ) 2,0 Hz. Verificar a integridade do cabo e do aplicador."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置 (Li50F)",
+                "description": "核实 MoreNova 设备与 Li50F 线性换能器的配置。确认预设参数:能量(HV)1.9 kV,频率(FRQ)2.0 Hz。检查线缆及应用器的完整性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación en 5 zonas anatómicas",
+                "description": "Aplicar 500 pulsos en cada una de las 5 zonas siguiendo la secuencia: \r\n1) clítoris, \r\n2) labio menor derecho, \r\n3) labio menor izquierdo,\r\n4) crura derecha,\r\n5) crura izquierda.\r\nTotal: 2500 pulsos por sesión. Apoyar suavemente el transductor y mantener contacto uniforme durante toda la aplicación."
+            },
+            "en": {
+                "title": "Application in 5 anatomical zones",
+                "description": "Apply 500 shocks in each of the 5 zones following the sequence: 1) clitoris, 2) right labia minora, 3) left labia minora, 4) right crus, 5) left crus. Total: 2500 shocks per session. Gently support the transducer and maintain uniform contact throughout the application."
+            },
+            "pt": {
+                "title": "Aplicação em 5 zonas anatômicas",
+                "description": "Aplicar 500 pulsos em cada uma das 5 zonas seguindo a sequência: 1) clitóris, 2) pequeno lábio direito, 3) pequeno lábio esquerdo, 4) crura direita, 5) crura esquerda. Total: 2500 pulsos por sessão. Apoiar suavemente o transdutor e manter contato uniforme durante toda a aplicação."
+            },
+            "zh": {
+                "title": "5 个解剖区域的应用",
+                "description": "按顺序在 5 个区域各施加 500 发冲击:1) 阴蒂;2) 右侧小阴唇;3) 左侧小阴唇;4) 右侧海绵体脚;5) 左侧海绵体脚。每次治疗共 2500 发。轻柔支撑换能器,并在整个过程中保持均匀接触。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar un total de 6 sesiones con una frecuencia de 2 sesiones por semana. Cada sesión tiene una duración aproximada de 20 minutos. Controlar permanentemente la tolerancia de la paciente y reducir parámetros o interrumpir el tratamiento ante dolor o molestias relevantes."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule a total of 6 sessions with a frequency of 2 sessions per week. Each session lasts approximately 20 minutes. Continuously monitor patient tolerance and reduce parameters or stop treatment in case of pain or significant discomfort."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar um total de 6 sessões com frequência de 2 sessões por semana. Cada sessão tem duração aproximada de 20 minutos. Monitorar continuamente a tolerância da paciente e reduzir os parâmetros ou interromper o tratamento em caso de dor ou desconforto relevante."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "共安排 6 次治疗,每周 2 次,每次约 20 分钟。持续监测患者耐受性,如出现疼痛或明显不适应降低参数或中止治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Recomendar a la paciente evitar la actividad sexual durante las 24 horas posteriores a cada sesión. Mantener una adecuada hidratación. Informar cualquier evento adverso y registrar síntomas, molestias y evolución clínica."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise the patient to avoid sexual activity during the 24 hours following each session. Maintain adequate hydration. Report any adverse event and record symptoms, discomfort and clinical evolution."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Recomendar à paciente evitar atividade sexual nas 24 horas seguintes a cada sessão. Manter hidratação adequada. Informar qualquer evento adverso e registrar sintomas, desconforto e evolução clínica."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议患者每次治疗后 24 小时内避免性生活。保持充足水分摄入。报告任何不良反应,记录症状、不适和临床进展。"
+            }
+        }
+    ],
+    "sui": [
+        {
+            "es": {
+                "title": "Evaluación previa al tratamiento",
+                "description": "Realizar historia clínica y examen físico con evaluación del piso pélvico. Solicitar estudios complementarios cuando estén indicados: análisis de orina para descartar infección urinaria y ecografía pélvica para evaluación anatómica."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Perform a clinical history and physical exam with pelvic floor assessment. Request complementary studies when indicated: urinalysis to rule out urinary infection and pelvic ultrasound for anatomical evaluation."
+            },
+            "pt": {
+                "title": "Avaliação pré-tratamento",
+                "description": "Realizar história clínica e exame físico com avaliação do assoalho pélvico. Solicitar exames complementares quando indicados: análise de urina para descartar infecção urinária e ultrassonografia pélvica para avaliação anatômica."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "进行临床病史采集及包含盆底评估的体格检查。必要时安排辅助检查:尿液分析以排除尿路感染,盆腔超声进行解剖学评估。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación de la paciente",
+                "description": "Explicar a la paciente el procedimiento, los beneficios esperados, los riesgos y los resultados esperables. Colocar a la paciente en posición supina o ginecológica (litotomía) para facilitar el acceso. Aplicar gel conductor para asegurar la transmisión de las ondas y minimizar molestias."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Explain the procedure, expected benefits, risks and expected results to the patient. Place the patient in supine or lithotomy position to facilitate access. Apply conductive gel to ensure shock wave transmission and minimize discomfort."
+            },
+            "pt": {
+                "title": "Preparação da paciente",
+                "description": "Explicar à paciente o procedimento, os benefícios esperados, os riscos e os resultados esperados. Posicionar a paciente em decúbito dorsal ou posição ginecológica (litotomia) para facilitar o acesso. Aplicar gel condutor para garantir a transmissão das ondas e minimizar o desconforto."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "向患者说明治疗过程、预期获益、风险及可能结果。让患者采取仰卧位或截石位以便操作。涂抹导声凝胶,确保冲击波传导并减少不适。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración de parámetros del equipo",
+                "description": "Verificar la configuración del dispositivo MoreNova con el transductor lineal Li50F. Confirmar los parámetros preprogramados: Energía (HV) 2,0 kV y Frecuencia (FRQ) 2,0 Hz."
+            },
+            "en": {
+                "title": "Device parameter configuration",
+                "description": "Verify the configuration of the MoreNova device with the Li50F linear transducer. Confirm the preprogrammed parameters: Energy (HV) 2.0 kV and Frequency (FRQ) 2.0 Hz."
+            },
+            "pt": {
+                "title": "Configuração dos parâmetros do equipamento",
+                "description": "Verificar a configuração do dispositivo MoreNova com o transdutor linear Li50F. Confirmar os parâmetros pré-programados: Energia (HV) 2,0 kV e Frequência (FRQ) 2,0 Hz."
+            },
+            "zh": {
+                "title": "设备参数配置",
+                "description": "核实 MoreNova 设备与 Li50F 线性换能器的配置。确认预设参数:能量(HV)2.0 kV,频率(FRQ)2.0 Hz。"
+            }
+        },
+        {
+            "es": {
+                "title": "Colocación del transductor Li50F",
+                "description": "Colocar el transductor lineal Li50F correctamente debajo de la uretra, aplicando una presión suave y uniforme para asegurar el contacto y la adecuada distribución de las ondas de choque sobre los músculos del piso pélvico y el esfínter uretral."
+            },
+            "en": {
+                "title": "Li50F transducer placement",
+                "description": "Position the Li50F linear transducer correctly below the urethra, applying gentle and uniform pressure to ensure proper contact and adequate shock wave distribution over the pelvic floor muscles and urethral sphincter."
+            },
+            "pt": {
+                "title": "Posicionamento do transdutor Li50F",
+                "description": "Posicionar o transdutor linear Li50F corretamente abaixo da uretra, aplicando pressão suave e uniforme para garantir o contato e a distribuição adequada das ondas de choque sobre a musculatura do assoalho pélvico e o esfíncter uretral."
+            },
+            "zh": {
+                "title": "Li50F 换能器放置",
+                "description": "将 Li50F 线性换能器正确放置于尿道下方,施加轻柔均匀的压力,以确保良好接触并使冲击波充分作用于盆底肌群及尿道括约肌。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación con patrón de rotación angular",
+                "description": "Realizar 5 aplicaciones por sesión con 500 disparos cada una (total 2500 ondas de choque), rotando el transductor en incrementos de 15°: -30°, -15°, 0° (debajo de la uretra), +15° y +30°. Duración total de la sesión: 20 minutos."
+            },
+            "en": {
+                "title": "Application with angular rotation pattern",
+                "description": "Perform 5 applications per session with 500 shots each (total 2500 shock waves), rotating the transducer in 15° increments: -30°, -15°, 0° (below the urethra), +15° and +30°. Total session duration: 20 minutes."
+            },
+            "pt": {
+                "title": "Aplicação com padrão de rotação angular",
+                "description": "Realizar 5 aplicações por sessão com 500 disparos cada (total de 2500 ondas de choque), rotacionando o transdutor em incrementos de 15°: -30°, -15°, 0° (abaixo da uretra), +15° e +30°. Duração total da sessão: 20 minutos."
+            },
+            "zh": {
+                "title": "角度旋转模式的应用",
+                "description": "每次治疗进行 5 次应用,每次 500 发冲击(共 2500 发),换能器以 15° 递增旋转:-30°、-15°、0°(尿道下方)、+15°、+30°。单次治疗总时长 20 分钟。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar entre 6 y 8 sesiones según la severidad del cuadro clínico, con una frecuencia de 2 sesiones por semana. Monitorear continuamente la respuesta de la paciente durante cada sesión y ajustar los parámetros cuando sea necesario."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule 6 to 8 sessions depending on the severity of the clinical picture, with a frequency of 2 sessions per week. Continuously monitor the patient's response during each session and adjust parameters when necessary."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar de 6 a 8 sessões conforme a gravidade do quadro clínico, com frequência de 2 sessões por semana. Monitorar continuamente a resposta da paciente durante cada sessão e ajustar os parâmetros quando necessário."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "根据病情严重程度安排 6 至 8 次治疗,每周 2 次。每次治疗过程中持续监测患者反应,必要时调整参数。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores al tratamiento",
+                "description": "Recomendar a la paciente evitar actividad física intensa durante las 24 horas posteriores, mantener una adecuada hidratación e informar inmediatamente cualquier efecto adverso."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise the patient to avoid intense physical activity for the next 24 hours, maintain adequate hydration and immediately report any adverse effects."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Recomendar à paciente evitar atividade física intensa nas 24 horas seguintes, manter hidratação adequada e informar imediatamente qualquer efeito adverso."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议患者在接下来的 24 小时内避免剧烈体力活动,保持充足水分摄入,并立即报告任何不良反应。"
+            }
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": {
+                "title": "Evaluación inicial",
+                "description": "Realizar historia médica, ginecológica y del dolor (duración, factores desencadenantes). Efectuar examen físico con evaluación vulvar y vestibular, y localización del dolor. Solicitar estudios complementarios cuando estén indicados (cultivos, hisopados, biopsia). Aplicar escalas para evaluar intensidad del dolor, impacto funcional y cuestionarios validados de síntomas vulvares."
+            },
+            "en": {
+                "title": "Initial evaluation",
+                "description": "Perform medical, gynecological and pain history (duration, triggering factors). Carry out physical exam with vulvar and vestibular assessment and pain mapping. Request complementary studies when indicated (cultures, swabs, biopsy). Apply scales to assess pain intensity, functional impact and validated vulvar-symptom questionnaires."
+            },
+            "pt": {
+                "title": "Avaliação inicial",
+                "description": "Realizar história médica, ginecológica e da dor (duração, fatores desencadeantes). Efetuar exame físico com avaliação vulvar e vestibular e localização da dor. Solicitar exames complementares quando indicados (culturas, swabs, biópsia). Aplicar escalas para avaliar intensidade da dor, impacto funcional e questionários validados de sintomas vulvares."
+            },
+            "zh": {
+                "title": "初步评估",
+                "description": "采集医疗、妇科及疼痛史(持续时间、诱发因素)。进行体格检查,包括外阴及前庭评估和疼痛定位。必要时安排辅助检查(培养、拭子、活检)。使用量表评估疼痛强度、功能影响及经过验证的外阴症状问卷。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación de la paciente",
+                "description": "Posicionar a la paciente en decúbito dorsal o posición ginecológica (litotomía). Aplicar abundante gel conductor para asegurar un buen acople y minimizar molestias. Mantener comunicación permanente durante toda la sesión para monitorear la tolerancia."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Place the patient in supine or lithotomy position. Apply plenty of conductive gel to ensure good coupling and minimize discomfort. Maintain constant communication throughout the session to monitor tolerance."
+            },
+            "pt": {
+                "title": "Preparação da paciente",
+                "description": "Posicionar a paciente em decúbito dorsal ou posição ginecológica (litotomia). Aplicar abundante gel condutor para garantir bom acoplamento e minimizar o desconforto. Manter comunicação permanente durante toda a sessão para monitorar a tolerância."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "让患者采取仰卧位或截石位。涂抹充足的导声凝胶以确保良好耦合并减少不适。整个治疗过程中保持沟通,监测耐受性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (Li50F)",
+                "description": "Verificar la configuración del dispositivo MoreNova Pro con el transductor lineal Li50F. Confirmar los parámetros preprogramados: Energía (HV) 1,9 kV y Frecuencia (FRQ) 2,0 Hz. Confirmar la calibración del equipo y la selección automática del protocolo."
+            },
+            "en": {
+                "title": "MoreNova device setup (Li50F)",
+                "description": "Verify the MoreNova Pro configuration with the Li50F linear transducer. Confirm the preprogrammed parameters: Energy (HV) 1.9 kV and Frequency (FRQ) 2.0 Hz. Confirm equipment calibration and automatic protocol selection."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (Li50F)",
+                "description": "Verificar a configuração do MoreNova Pro com o transdutor linear Li50F. Confirmar os parâmetros pré-programados: Energia (HV) 1,9 kV e Frequência (FRQ) 2,0 Hz. Confirmar a calibração do equipamento e a seleção automática do protocolo."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置 (Li50F)",
+                "description": "核实 MoreNova Pro 与 Li50F 线性换能器的配置。确认预设参数:能量(HV)1.9 kV,频率(FRQ)2.0 Hz。确认设备校准及协议自动选择。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación en vestíbulo vulvar (2 zonas)",
+                "description": "Realizar 2 aplicaciones por sesión, una en cada vestíbulo vulvar (derecho e izquierdo), con 1000 disparos por aplicación (2000 disparos totales por sesión). En cada zona, efectuar dos recorridos circunferenciales alrededor del vestíbulo manteniendo presión uniforme y abundante gel conductor. No aplicar sobre heridas, úlceras ni zonas con inflamación aguda."
+            },
+            "en": {
+                "title": "Vulvar vestibule application (2 zones)",
+                "description": "Perform 2 applications per session, one on each vulvar vestibule (right and left), with 1000 shots per application (2000 total shots per session). In each zone, perform two circumferential passes around the vestibule maintaining uniform pressure and plenty of conductive gel. Do not apply over wounds, ulcers or areas with acute inflammation."
+            },
+            "pt": {
+                "title": "Aplicação no vestíbulo vulvar (2 zonas)",
+                "description": "Realizar 2 aplicações por sessão, uma em cada vestíbulo vulvar (direito e esquerdo), com 1000 disparos por aplicação (2000 disparos totais por sessão). Em cada zona, efetuar duas passagens circunferenciais ao redor do vestíbulo mantendo pressão uniforme e abundante gel condutor. Não aplicar sobre feridas, úlceras ou áreas com inflamação aguda."
+            },
+            "zh": {
+                "title": "外阴前庭应用(2 个区域)",
+                "description": "每次治疗进行 2 次应用,分别在左右两侧外阴前庭,每次 1000 发(每次治疗共 2000 发)。在每个区域沿前庭进行两次环形移动,保持均匀压力并涂抹充足的导声凝胶。不要在伤口、溃疡或急性炎症区域施加治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar entre 6 y 8 sesiones con una frecuencia de 2 sesiones por semana. Cada sesión tiene una duración aproximada de 17 minutos. Interrumpir el tratamiento si aparece dolor intolerable o reacción cutánea significativa."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule 6 to 8 sessions with a frequency of 2 sessions per week. Each session lasts approximately 17 minutes. Stop the treatment if intolerable pain or significant skin reaction appears."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar de 6 a 8 sessões com frequência de 2 sessões por semana. Cada sessão tem duração aproximada de 17 minutos. Interromper o tratamento em caso de dor intolerável ou reação cutânea significativa."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "安排 6 至 8 次治疗,每周 2 次,每次约 17 分钟。若出现难以耐受的疼痛或明显皮肤反应,应中止治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Durante las primeras 24 horas, indicar a la paciente evitar relaciones sexuales, tampones y toda irritación mecánica local. Recomendar buena hidratación e higiene vulvar suave. Solicitar consulta inmediata ante incremento importante del dolor, irritación cutánea o molestias fuera de lo esperado."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "During the first 24 hours, advise the patient to avoid sexual intercourse, tampons and any local mechanical irritation. Recommend proper hydration and gentle vulvar hygiene. Request immediate consultation in case of significant pain increase, skin irritation or unexpected discomfort."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Nas primeiras 24 horas, orientar a paciente a evitar relações sexuais, absorventes internos e qualquer irritação mecânica local. Recomendar boa hidratação e higiene vulvar suave. Solicitar consulta imediata em caso de aumento importante da dor, irritação cutânea ou desconforto fora do esperado."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "治疗后 24 小时内,建议患者避免性生活、使用卫生棉条及任何局部机械刺激。建议保持充足水分并进行温和的外阴清洁。如疼痛明显加重、出现皮肤刺激或异常不适,应立即就诊。"
+            }
+        }
+    ],
+    "gsm": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Realizar historia clínica y ginecológica completas. Registrar estado menopáusico y tratamientos hormonales previos. Efectuar examen pélvico con evaluación de la mucosa vaginal. Descartar infecciones y alteraciones anatómicas. Explicar beneficios, riesgos y resultados esperados y confirmar consentimiento informado."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Perform a complete clinical and gynecological history. Record menopausal status and previous hormonal treatments. Carry out pelvic examination assessing the vaginal mucosa. Rule out infections and anatomical alterations. Explain benefits, risks and expected results and obtain informed consent."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "Realizar história clínica e ginecológica completas. Registrar o estado menopausal e tratamentos hormonais prévios. Efetuar exame pélvico com avaliação da mucosa vaginal. Descartar infecções e alterações anatômicas. Explicar benefícios, riscos e resultados esperados e obter consentimento informado."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "进行完整的临床与妇科病史采集。记录绝经状态及既往激素治疗。进行盆腔检查并评估阴道黏膜状况。排除感染和解剖异常。说明获益、风险及预期结果,取得知情同意。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación de la paciente",
+                "description": "Posicionar a la paciente en posición ginecológica (litotomía) o supina. Aplicar gel conductor de forma continua para asegurar un buen acople del transductor durante toda la sesión y mantener comunicación permanente para monitorear molestias."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Place the patient in lithotomy or supine position. Apply conductive gel continuously to ensure proper transducer coupling throughout the session and maintain constant communication to monitor discomfort."
+            },
+            "pt": {
+                "title": "Preparação da paciente",
+                "description": "Posicionar a paciente em posição de litotomia ou decúbito dorsal. Aplicar gel condutor de forma contínua para garantir bom acoplamento do transdutor durante toda a sessão e manter comunicação permanente para monitorar desconforto."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "让患者采取截石位或仰卧位。持续涂抹导声凝胶以确保整个治疗过程中换能器耦合良好,并保持沟通以监测不适。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (Li50F)",
+                "description": "Verificar la configuración del dispositivo MoreNova con el transductor lineal Li50F. Confirmar los parámetros preprogramados: Energía (HV) 2,0 kV y Frecuencia (FRQ) 2,0 Hz. Comprobar la integridad del cable y del aplicador."
+            },
+            "en": {
+                "title": "MoreNova device setup (Li50F)",
+                "description": "Verify the MoreNova device configuration with the Li50F linear transducer. Confirm the preprogrammed parameters: Energy (HV) 2.0 kV and Frequency (FRQ) 2.0 Hz. Check the integrity of the cable and applicator."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (Li50F)",
+                "description": "Verificar a configuração do dispositivo MoreNova com o transdutor linear Li50F. Confirmar os parâmetros pré-programados: Energia (HV) 2,0 kV e Frequência (FRQ) 2,0 Hz. Verificar a integridade do cabo e do aplicador."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置 (Li50F)",
+                "description": "核实 MoreNova 设备与 Li50F 线性换能器的配置。确认预设参数:能量(HV)2.0 kV,频率(FRQ)2.0 Hz。检查线缆及应用器的完整性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación intravaginal con rotación en 6 posiciones",
+                "description": "Aplicar el transductor de forma intravaginal sobre la pared vaginal, rotándolo para cubrir 6 posiciones angulares (-180°, -120°, -60°, 0°, 60° y 120°). Administrar 500 disparos en cada posición para totalizar 3000 disparos por sesión, manteniendo un acople uniforme y verificando la respuesta de la paciente en cada rotación."
+            },
+            "en": {
+                "title": "Intravaginal application with 6-position rotation",
+                "description": "Apply the transducer intravaginally on the vaginal wall, rotating it to cover 6 angular positions (-180°, -120°, -60°, 0°, 60° and 120°). Deliver 500 shots per position for a total of 3000 shots per session, maintaining uniform coupling and checking patient response at each rotation."
+            },
+            "pt": {
+                "title": "Aplicação intravaginal com rotação em 6 posições",
+                "description": "Aplicar o transdutor de forma intravaginal sobre a parede vaginal, rotacionando-o para cobrir 6 posições angulares (-180°, -120°, -60°, 0°, 60° e 120°). Administrar 500 disparos em cada posição, totalizando 3000 disparos por sessão, mantendo acoplamento uniforme e verificando a resposta da paciente em cada rotação."
+            },
+            "zh": {
+                "title": "阴道内 6 位角度旋转应用",
+                "description": "将换能器经阴道置于阴道壁,旋转覆盖 6 个角度位置(-180°、-120°、-60°、0°、60° 和 120°)。每个位置施加 500 发冲击,每次治疗共 3000 发,保持均匀耦合并在每次旋转时评估患者反应。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar un total de 6 sesiones con una frecuencia de 2 sesiones por semana. Cada sesión tiene una duración aproximada de 25 minutos. Ajustar los parámetros si aparece dolor y suspender temporalmente el tratamiento cuando resulte necesario."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule a total of 6 sessions with a frequency of 2 sessions per week. Each session lasts approximately 25 minutes. Adjust parameters if pain appears and temporarily suspend treatment when necessary."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar um total de 6 sessões com frequência de 2 sessões por semana. Cada sessão tem duração aproximada de 25 minutos. Ajustar os parâmetros em caso de dor e suspender temporariamente o tratamento quando necessário."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "共安排 6 次治疗,每周 2 次,每次约 25 分钟。如出现疼痛应调整参数,必要时暂停治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Indicar a la paciente evitar relaciones sexuales durante las 24 horas posteriores a la sesión y no utilizar productos intravaginales durante ese mismo período. Mantener una adecuada hidratación y reportar de inmediato cualquier dolor, sangrado o irritación."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise the patient to avoid sexual intercourse for 24 hours after the session and not to use intravaginal products during that period. Maintain adequate hydration and immediately report any pain, bleeding or irritation."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Orientar a paciente a evitar relações sexuais nas 24 horas seguintes à sessão e não utilizar produtos intravaginais durante esse período. Manter hidratação adequada e informar imediatamente qualquer dor, sangramento ou irritação."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议患者治疗后 24 小时内避免性生活,并在此期间不使用阴道内产品。保持充足水分摄入,如出现疼痛、出血或刺激应立即报告。"
+            }
+        }
+    ],
+    "ed": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Revisar historia médica y sexual; valorar factores de riesgo (HTA, diabetes, tabaquismo). Realizar examen físico del cuerpo cavernoso, base y crura. Solicitar ecografía Doppler duplex cuando corresponda. Aplicar cuestionario IIEF para establecer línea basal."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Review medical and sexual history; assess risk factors (hypertension, diabetes, smoking). Perform physical examination of the corpora cavernosa, base and crura. Order duplex Doppler ultrasound when indicated. Apply the IIEF questionnaire to establish baseline."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "Revisar história médica e sexual; avaliar fatores de risco (HAS, diabetes, tabagismo). Realizar exame físico dos corpos cavernosos, base e crura. Solicitar ecografia Doppler duplex quando indicado. Aplicar questionário IIEF para estabelecer linha de base."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "回顾医疗和性史，评估危险因素（高血压、糖尿病、吸烟）。检查海绵体、阴茎根部和脚。必要时安排双功多普勒超声。使用 IIEF 问卷建立基线。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación del paciente",
+                "description": "Posicionar al paciente en decúbito supino. Explicar el procedimiento, beneficios esperados y posibles molestias. Aplicar gel conductor sobre el cuerpo cavernoso y zona perineal."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Place the patient in supine position. Explain the procedure, expected benefits and possible discomfort. Apply conductive gel over the corpora cavernosa and perineal area."
+            },
+            "pt": {
+                "title": "Preparação do paciente",
+                "description": "Posicionar o paciente em decúbito dorsal. Explicar o procedimento, benefícios esperados e possíveis desconfortos. Aplicar gel condutor sobre os corpos cavernosos e região perineal."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "让患者取仰卧位。说明操作过程、预期获益及可能不适。在海绵体和会阴区涂抹导声凝胶。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (Li50M)",
+                "description": "Verificar la configuración del dispositivo MoreNova con transductores lineales duales Li50M. Confirmar parámetros preprogramados: Energía (HV) 2,0 kV y Frecuencia (FRQ) 2,5 Hz. Cargar agua fría y verificar temperatura durante la sesión."
+            },
+            "en": {
+                "title": "MoreNova device setup (Li50M)",
+                "description": "Verify the MoreNova configuration with Li50M dual linear transducers. Confirm preprogrammed parameters: Energy (HV) 2.0 kV and Frequency (FRQ) 2.5 Hz. Fill with cold water and monitor temperature during the session."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (Li50M)",
+                "description": "Verificar a configuração do MoreNova com transdutores lineares duais Li50M. Confirmar parâmetros pré-programados: Energia (HV) 2,0 kV e Frequência (FRQ) 2,5 Hz. Encher com água fria e verificar a temperatura durante a sessão."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置 (Li50M)",
+                "description": "核实 MoreNova 与 Li50M 双线性换能器的配置。确认预设参数：能量 (HV) 2.0 kV，频率 (FRQ) 2.5 Hz。加注冷水并在治疗期间监测水温。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación en cuerpo cavernoso y crura",
+                "description": "Realizar 2 aplicaciones por sesión: cuerpo cavernoso y crura (base peneana). Administrar 1500 disparos por lado (3000 disparos totales). Posicionar el transductor longitudinalmente sobre el cuerpo cavernoso y dirigir las crura desde la región perineal."
+            },
+            "en": {
+                "title": "Application on corpora cavernosa and crura",
+                "description": "Perform 2 applications per session: corpora cavernosa and crura (penile base). Deliver 1500 shots per side (3000 total shots). Position the transducer longitudinally along the shaft and target the crura from the perineal region."
+            },
+            "pt": {
+                "title": "Aplicação em corpos cavernosos e crura",
+                "description": "Realizar 2 aplicações por sessão: corpos cavernosos e crura (base peniana). Administrar 1500 disparos por lado (3000 disparos totais). Posicionar o transdutor longitudinalmente sobre o corpo cavernoso e direcionar as crura a partir da região perineal."
+            },
+            "zh": {
+                "title": "海绵体与脚部的治疗",
+                "description": "每次治疗进行 2 次应用：海绵体和脚（阴茎根部）。每侧 1500 发（共 3000 发）。将换能器纵向置于阴茎体上，并从会阴区对准脚。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar proxima sesión. Monitorear tolerancia y ajustar energía si es necesario."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule next session. Monitor tolerance and adjust energy if necessary."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Agende a próxima sessão. Monitore a tolerância e ajuste a intensidade, se necessário."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "安排 6 次治疗，每周 2 次，每次约 20 分钟。监测耐受性，必要时调整能量。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Indicar evitar actividad sexual durante 24 horas posteriores a cada sesión. Continuar inhibidores de PDE-5 si están indicados. Programar controles a las 4 y 12 semanas con IIEF y ecografía Doppler."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise avoiding sexual activity for 24 hours after each session. Continue PDE-5 inhibitors if prescribed. Schedule follow-ups at 4 and 12 weeks with IIEF and duplex ultrasound."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Orientar a evitar atividade sexual por 24 horas após cada sessão. Continuar inibidores de PDE-5 se prescritos. Programar controles às 4 e 12 semanas com IIEF e Doppler."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议每次治疗后 24 小时内避免性生活。如已处方，继续服用 PDE-5 抑制剂。在 4 周和 12 周安排 IIEF 和双功多普勒随访。"
+            }
+        }
+    ],
+    "cpp": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Realizar historia médica completa y antecedentes urológicos; registrar medicación actual. Efectuar examen físico general, tacto rectal (DRE) y palpación del piso pélvico. Solicitar ecografía, medición del residuo postmiccional y evaluación de estructuras pélvicas. Aplicar cuestionarios NIH-CPSI e IPSS para caracterizar los síntomas."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Perform a complete medical and urological history; record current medication. Carry out general physical exam, digital rectal exam (DRE) and pelvic floor palpation. Order ultrasound, post-void residual measurement and pelvic structure assessment. Apply NIH-CPSI and IPSS questionnaires to characterize symptoms."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "Realizar história médica completa e antecedentes urológicos; registrar a medicação atual. Efetuar exame físico geral, toque retal (DRE) e palpação do assoalho pélvico. Solicitar ecografia, medição do resíduo pós-miccional e avaliação das estruturas pélvicas. Aplicar questionários NIH-CPSI e IPSS para caracterizar os sintomas."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "完成完整的医疗和泌尿系统病史,记录当前用药情况。进行一般体格检查、直肠指检 (DRE) 和盆底触诊。安排超声、残余尿测量及盆腔结构评估。使用 NIH-CPSI 和 IPSS 问卷描述症状。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación del paciente",
+                "description": "Posicionar al paciente en decúbito supino o en litotomía. Aplicar gel conductor sobre las zonas a tratar y mantener comunicación permanente para monitorear el confort y la tolerancia durante toda la sesión."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Place the patient in supine or lithotomy position. Apply conductive gel over the treatment areas and maintain continuous communication to monitor comfort and tolerance throughout the session."
+            },
+            "pt": {
+                "title": "Preparação do paciente",
+                "description": "Posicionar o paciente em decúbito dorsal ou em litotomia. Aplicar gel condutor sobre as áreas a tratar e manter comunicação permanente para monitorar o conforto e a tolerância durante toda a sessão."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "让患者采取仰卧位或截石位。在治疗区域涂抹导声凝胶,并全程保持沟通以监测舒适度和耐受性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (aplicador C30)",
+                "description": "Verificar la configuración del dispositivo MoreNova con el aplicador de gran área C30. Confirmar los parámetros preprogramados: Energía (HV) 2,0 kV y Frecuencia (FRQ) 2,5 Hz. Comprobar la calibración y la integridad del cable y del aplicador."
+            },
+            "en": {
+                "title": "MoreNova device setup (C30 applicator)",
+                "description": "Verify the MoreNova configuration with the C30 large-area applicator. Confirm the preprogrammed parameters: Energy (HV) 2.0 kV and Frequency (FRQ) 2.5 Hz. Check calibration and the integrity of the cable and applicator."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (aplicador C30)",
+                "description": "Verificar a configuração do MoreNova com o aplicador de grande área C30. Confirmar os parâmetros pré-programados: Energia (HV) 2,0 kV e Frequência (FRQ) 2,5 Hz. Verificar a calibração e a integridade do cabo e do aplicador."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置 (C30 应用器)",
+                "description": "核实 MoreNova 与 C30 大面积应用器的配置。确认预设参数:能量(HV)2.0 kV,频率(FRQ)2.5 Hz。检查校准以及线缆和应用器的完整性。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación bilateral (2 zonas)",
+                "description": "Realizar 2 aplicaciones por sesión, una en el lado izquierdo y otra en el lado derecho, con 1500 disparos por lado (3000 disparos totales por sesión). Cubrir la región prostática, el piso pélvico y la región perineal manteniendo una presión suave y uniforme del aplicador sobre la piel con gel conductor."
+            },
+            "en": {
+                "title": "Bilateral application (2 zones)",
+                "description": "Perform 2 applications per session, one on the left side and one on the right, with 1500 shots per side (3000 total shots per session). Cover the prostatic region, pelvic floor and perineal area maintaining gentle, uniform pressure of the applicator on the skin with conductive gel."
+            },
+            "pt": {
+                "title": "Aplicação bilateral (2 zonas)",
+                "description": "Realizar 2 aplicações por sessão, uma no lado esquerdo e outra no lado direito, com 1500 disparos por lado (3000 disparos totais por sessão). Cobrir a região prostática, o assoalho pélvico e a região perineal mantendo pressão suave e uniforme do aplicador sobre a pele com gel condutor."
+            },
+            "zh": {
+                "title": "双侧应用(2 个区域)",
+                "description": "每次治疗进行 2 次应用,左右各一次,每侧 1500 发(每次共 3000 发)。覆盖前列腺区域、盆底及会阴区,使用导声凝胶并保持应用器在皮肤上的轻柔、均匀压力。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar entre 6 y 10 sesiones con una frecuencia de 2 sesiones por semana. Cada sesión tiene una duración aproximada de 20 minutos. Ajustar los parámetros si aparece molestia y mantener la correcta posición del aplicador durante toda la sesión."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule 6 to 10 sessions with a frequency of 2 sessions per week. Each session lasts approximately 20 minutes. Adjust parameters if discomfort appears and keep the applicator in the correct position throughout the session."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar de 6 a 10 sessões com frequência de 2 sessões por semana. Cada sessão tem duração aproximada de 20 minutos. Ajustar os parâmetros em caso de desconforto e manter a posição correta do aplicador durante toda a sessão."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "安排 6 至 10 次治疗,每周 2 次,每次约 20 分钟。若出现不适应调整参数,并在整个治疗过程中保持应用器位置正确。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Indicar al paciente evitar actividad física intensa durante las 24 horas siguientes a la sesión. Mantener la medicación indicada, como alfa bloqueantes, si corresponde. Solicitar consulta ante cualquier molestia inesperada."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise the patient to avoid intense physical activity during the 24 hours following the session. Continue prescribed medication, such as alpha-blockers, if applicable. Request consultation in case of any unexpected discomfort."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Orientar o paciente a evitar atividade física intensa nas 24 horas seguintes à sessão. Manter a medicação prescrita, como alfa bloqueadores, se aplicável. Solicitar consulta em caso de qualquer desconforto inesperado."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议患者治疗后 24 小时内避免剧烈体力活动。若在使用如 α 受体阻滞剂等药物,应继续按处方服用。如出现异常不适应就诊。"
+            }
+        }
+    ],
+    "pd": [
+        {
+            "es": {
+                "title": "Evaluación inicial",
+                "description": "Registrar en la historia clínica: tiempo de evolución, antecedente traumático, localización de la placa, dolor, problemas durante el coito y función sexual. Realizar palpación de la placa evaluando localización, tamaño y sensibilidad. Solicitar ecografía peneana para valorar tamaño, localización, calcificación y volumen. Aplicar cuestionarios PDQ e IIEF."
+            },
+            "en": {
+                "title": "Initial evaluation",
+                "description": "Record in the clinical history: time of evolution, traumatic history, plaque location, pain, difficulties during intercourse and sexual function. Perform plaque palpation assessing location, size and tenderness. Order penile ultrasound to assess size, location, calcification and volume. Apply PDQ and IIEF questionnaires."
+            },
+            "pt": {
+                "title": "Avaliação inicial",
+                "description": "Registrar na história clínica: tempo de evolução, antecedente traumático, localização da placa, dor, dificuldades durante o coito e função sexual. Realizar palpação da placa avaliando localização, tamanho e sensibilidade. Solicitar ecografia peniana para avaliar tamanho, localização, calcificação e volume. Aplicar questionários PDQ e IIEF."
+            },
+            "zh": {
+                "title": "初次评估",
+                "description": "在病历中记录:病程、外伤史、斑块位置、疼痛、性交困难与性功能情况。触诊斑块,评估位置、大小和压痛。安排阴茎超声,评估大小、位置、钙化和体积。使用 PDQ 和 IIEF 问卷。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación y posicionamiento del paciente",
+                "description": "Ubicar al paciente en decúbito supino, con la pelvis ligeramente elevada y exposición completa del pene. Explicar el procedimiento, los beneficios esperados y las posibles molestias. Aplicar gel conductor sobre la zona a tratar."
+            },
+            "en": {
+                "title": "Patient preparation and positioning",
+                "description": "Place the patient in supine position, with the pelvis slightly elevated and full exposure of the penis. Explain the procedure, the expected benefits and possible discomfort. Apply conductive gel over the treatment area."
+            },
+            "pt": {
+                "title": "Preparação e posicionamento do paciente",
+                "description": "Posicionar o paciente em decúbito dorsal, com a pelve ligeiramente elevada e exposição completa do pênis. Explicar o procedimento, os benefícios esperados e possíveis desconfortos. Aplicar gel condutor sobre a área a tratar."
+            },
+            "zh": {
+                "title": "患者准备与体位",
+                "description": "让患者取仰卧位,骨盆略抬高,充分暴露阴茎。向患者说明操作过程、预期获益及可能的不适。在治疗区域涂抹导声凝胶。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (transductor C15)",
+                "description": "Verificar la configuración del dispositivo MoreNova con el transductor circular C15 (cobertura aproximada de 15 mm). Confirmar los parámetros preprogramados: Energía (HV) 2,0 kV y Frecuencia (FRQ) 2,0 Hz. Comprobar la temperatura adecuada del agua del equipo."
+            },
+            "en": {
+                "title": "MoreNova device setup (C15 transducer)",
+                "description": "Verify the MoreNova configuration with the C15 circular transducer (approximately 15 mm coverage). Confirm the preprogrammed parameters: Energy (HV) 2.0 kV and Frequency (FRQ) 2.0 Hz. Check the appropriate water temperature of the device."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (transdutor C15)",
+                "description": "Verificar a configuração do MoreNova com o transdutor circular C15 (cobertura aproximada de 15 mm). Confirmar os parâmetros pré-programados: Energia (HV) 2,0 kV e Frequência (FRQ) 2,0 Hz. Verificar a temperatura adequada da água do equipamento."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置(C15 换能器)",
+                "description": "核实 MoreNova 与 C15 圆形换能器的配置(覆盖范围约 15 mm)。确认预设参数:能量(HV)2.0 kV,频率(FRQ)2.0 Hz。检查设备水温是否适宜。"
+            }
+        },
+        {
+            "es": {
+                "title": "Identificación y aplicación sobre la placa",
+                "description": "Identificar la placa mediante palpación. Posicionar el transductor perpendicular a la piel y ejercer una presión suave. Tratar la placa desde dos ángulos distintos, cubriendo cara dorsal y caras laterales para asegurar la cobertura completa del tejido fibrótico."
+            },
+            "en": {
+                "title": "Plaque identification and application",
+                "description": "Identify the plaque by palpation. Position the transducer perpendicular to the skin and apply gentle pressure. Treat the plaque from two different angles, covering the dorsal and lateral aspects to ensure complete coverage of the fibrotic tissue."
+            },
+            "pt": {
+                "title": "Identificação e aplicação sobre a placa",
+                "description": "Identificar a placa por meio da palpação. Posicionar o transdutor perpendicular à pele e exercer pressão suave. Tratar a placa a partir de dois ângulos diferentes, cobrindo a face dorsal e as laterais para garantir cobertura completa do tecido fibrótico."
+            },
+            "zh": {
+                "title": "识别斑块并进行治疗",
+                "description": "通过触诊识别斑块。将换能器垂直于皮肤放置,并施加轻柔压力。从两个不同角度对斑块进行治疗,覆盖背侧与两侧,确保纤维组织被完整覆盖。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicaciones y distribución de disparos",
+                "description": "Realizar 4 aplicaciones por sesión: 2 sobre la zona media de la placa y 2 sobre los laterales. Protocolo estándar: 500 disparos por aplicación (2000 disparos totales). En placas moderadas (1 a 3 cm³ o curvatura 45°–70°) o severas (> 3 cm³ o curvatura 70°–90°), aumentar a 750 disparos por aplicación (3000 disparos totales)."
+            },
+            "en": {
+                "title": "Applications and shot distribution",
+                "description": "Perform 4 applications per session: 2 on the mid-plaque area and 2 on the lateral aspects. Standard protocol: 500 shots per application (2000 total shots). For moderate plaques (1 to 3 cm³ or curvature 45°–70°) or severe plaques (> 3 cm³ or curvature 70°–90°), increase to 750 shots per application (3000 total shots)."
+            },
+            "pt": {
+                "title": "Aplicações e distribuição dos disparos",
+                "description": "Realizar 4 aplicações por sessão: 2 sobre a zona média da placa e 2 sobre as laterais. Protocolo padrão: 500 disparos por aplicação (2000 disparos totais). Em placas moderadas (1 a 3 cm³ ou curvatura 45°–70°) ou severas (> 3 cm³ ou curvatura 70°–90°), aumentar para 750 disparos por aplicação (3000 disparos totais)."
+            },
+            "zh": {
+                "title": "应用与发放分布",
+                "description": "每次治疗进行 4 次应用:2 次位于斑块中部,2 次位于两侧。标准方案:每次应用 500 发(合计 2000 发)。对中度斑块(1 至 3 cm³ 或弯曲 45°–70°)或重度斑块(> 3 cm³ 或弯曲 70°–90°),将每次应用提升至 750 发(合计 3000 发)。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cantidad y frecuencia de sesiones",
+                "description": "Programar entre 6 y 10 sesiones a razón de 2 sesiones por semana, con una duración aproximada de 15 minutos por sesión. Supervisar la tolerancia del paciente durante toda la aplicación y ajustar los parámetros o interrumpir la sesión ante dolor intenso o reacciones inesperadas."
+            },
+            "en": {
+                "title": "Number and frequency of sessions",
+                "description": "Schedule 6 to 10 sessions at a rate of 2 sessions per week, each lasting approximately 15 minutes. Monitor the patient's tolerance throughout the application and adjust parameters or interrupt the session if severe pain or unexpected reactions occur."
+            },
+            "pt": {
+                "title": "Quantidade e frequência das sessões",
+                "description": "Programar de 6 a 10 sessões, na frequência de 2 por semana, com duração aproximada de 15 minutos por sessão. Supervisionar a tolerância do paciente durante toda a aplicação e ajustar os parâmetros ou interromper a sessão em caso de dor intensa ou reações inesperadas."
+            },
+            "zh": {
+                "title": "疗程次数与频率",
+                "description": "安排 6 至 10 次治疗,每周 2 次,每次约 15 分钟。在整个治疗过程中监测患者的耐受性;若出现剧烈疼痛或异常反应,应调整参数或终止治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Indicar al paciente evitar relaciones sexuales durante las 24 horas siguientes a la sesión, mantener una adecuada hidratación e informar cualquier molestia importante, dolor persistente o hematoma."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise the patient to avoid sexual activity for 24 hours after the session, maintain proper hydration and report any significant discomfort, persistent pain or hematoma."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Orientar o paciente a evitar relações sexuais nas 24 horas seguintes à sessão, manter boa hidratação e informar qualquer desconforto importante, dor persistente ou hematoma."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "嘱患者治疗后 24 小时内避免性生活,保持充足的水分摄入,如出现明显不适、持续疼痛或血肿应及时报告。"
+            }
+        }
+    ]
+}

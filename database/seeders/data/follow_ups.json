@@ -1,0 +1,412 @@
+{
+    "fsd": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Algunas pacientes podrían percibir mejoras en la excitación y la respuesta sexual entre las 3 y 6 semanas posteriores al inicio del tratamiento. Registrar la evolución de los síntomas y la satisfacción de la paciente."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "Some patients may perceive improvements in arousal and sexual response between 3 and 6 weeks after starting treatment. Record symptom evolution and patient satisfaction."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Algumas pacientes podem perceber melhorias na excitação e na resposta sexual entre 3 e 6 semanas após o início do tratamento. Registrar a evolução dos sintomas e a satisfação da paciente."
+            },
+            "zh": {
+                "title": "预期结果(3 至 6 周)",
+                "description": "部分患者可能在治疗开始后 3 至 6 周内感受到性唤起和性反应改善。记录症状变化和患者满意度。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles cada 2 semanas",
+                "description": "Realizar seguimiento cada 2 semanas durante el ciclo terapéutico. Reevaluar los síntomas, registrar eventos adversos y evaluar la satisfacción y respuesta clínica."
+            },
+            "en": {
+                "title": "Follow-up visits every 2 weeks",
+                "description": "Perform follow-up every 2 weeks during the therapeutic cycle. Reassess symptoms, record adverse events and evaluate patient satisfaction and clinical response."
+            },
+            "pt": {
+                "title": "Controles a cada 2 semanas",
+                "description": "Realizar acompanhamento a cada 2 semanas durante o ciclo terapêutico. Reavaliar os sintomas, registrar eventos adversos e avaliar a satisfação e a resposta clínica."
+            },
+            "zh": {
+                "title": "每 2 周随访",
+                "description": "在治疗周期内每 2 周进行随访。重新评估症状,记录不良事件,评估患者满意度和临床反应。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 6 meses",
+                "description": "Considerar sesiones de mantenimiento cada 6 meses. La recomendación debe individualizarse según la respuesta clínica, el criterio médico y la evidencia disponible."
+            },
+            "en": {
+                "title": "Maintenance every 6 months",
+                "description": "Consider maintenance sessions every 6 months. The recommendation should be individualized based on clinical response, medical judgment and available evidence."
+            },
+            "pt": {
+                "title": "Manutenção a cada 6 meses",
+                "description": "Considerar sessões de manutenção a cada 6 meses. A recomendação deve ser individualizada de acordo com a resposta clínica, o critério médico e a evidência disponível."
+            },
+            "zh": {
+                "title": "每 6 个月维持治疗",
+                "description": "可考虑每 6 个月进行维持治疗。具体建议应根据临床反应、医生判断和现有证据个体化。"
+            }
+        }
+    ],
+    "sui": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "En la mayoría de las pacientes se observa una mejoría clínica entre las 3 y 6 semanas desde el inicio del tratamiento. Se recomienda realizar evaluaciones periódicas para documentar la evolución."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "Most patients show clinical improvement between 3 and 6 weeks from the start of treatment. Periodic evaluations are recommended to document progress."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Na maioria das pacientes observa-se melhoria clínica entre 3 e 6 semanas após o início do tratamento. Recomenda-se realizar avaliações periódicas para documentar a evolução."
+            },
+            "zh": {
+                "title": "预期结果(3至6周)",
+                "description": "大多数患者在开始治疗后 3 至 6 周内可出现临床改善。建议定期评估以记录病情进展。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles posteriores (cada 2 semanas)",
+                "description": "Programar controles cada dos semanas para evaluar la evolución clínica, monitorizar la respuesta al tratamiento y ajustar el protocolo cuando sea necesario."
+            },
+            "en": {
+                "title": "Follow-up visits (every 2 weeks)",
+                "description": "Schedule follow-up visits every two weeks to assess clinical evolution, monitor treatment response and adjust the protocol when needed."
+            },
+            "pt": {
+                "title": "Controles posteriores (a cada 2 semanas)",
+                "description": "Programar controles a cada duas semanas para avaliar a evolução clínica, monitorar a resposta ao tratamento e ajustar o protocolo quando necessário."
+            },
+            "zh": {
+                "title": "后续随访(每2周)",
+                "description": "每两周安排一次随访,以评估临床进展、监测治疗反应,并在需要时调整方案。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento a largo plazo (cada 3 a 6 meses)",
+                "description": "Para preservar los resultados pueden indicarse sesiones de mantenimiento cada 3 a 6 meses, de acuerdo con la evolución clínica y las necesidades individuales de cada paciente."
+            },
+            "en": {
+                "title": "Long-term maintenance (every 3 to 6 months)",
+                "description": "To preserve results, maintenance sessions may be scheduled every 3 to 6 months, according to clinical evolution and each patient's individual needs."
+            },
+            "pt": {
+                "title": "Manutenção a longo prazo (a cada 3 a 6 meses)",
+                "description": "Para preservar os resultados, podem ser indicadas sessões de manutenção a cada 3 a 6 meses, de acordo com a evolução clínica e as necessidades individuais de cada paciente."
+            },
+            "zh": {
+                "title": "长期维持(每3至6个月)",
+                "description": "为维持治疗效果,可根据临床进展和患者个体需求每 3 至 6 个月安排一次维持治疗。"
+            }
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Los primeros resultados suelen observarse entre las semanas 3 y 6 desde el inicio del tratamiento, con disminución del dolor vulvar y del ardor, mejor vascularización y regeneración tisular, mejoría funcional y de la calidad de vida, y mejor actividad sexual."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "First results are usually observed between weeks 3 and 6 from the start of treatment, with reduction of vulvar pain and burning, improved vascularization and tissue regeneration, better functional status and quality of life, and improved sexual activity."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Os primeiros resultados costumam ser observados entre a 3ª e a 6ª semana após o início do tratamento, com diminuição da dor vulvar e da ardência, melhor vascularização e regeneração tecidual, melhor funcionalidade e qualidade de vida, e melhora da atividade sexual."
+            },
+            "zh": {
+                "title": "预期结果(3 至 6 周)",
+                "description": "通常在治疗开始后 3 至 6 周内可见初步效果:外阴疼痛与灼热感减轻、血供和组织再生改善、功能与生活质量提高、性生活改善。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles cada 2 semanas",
+                "description": "Realizar controles cada dos semanas durante el ciclo terapéutico para reevaluar la intensidad del dolor, el impacto funcional, la aparición de eventos adversos y ajustar el protocolo cuando resulte necesario."
+            },
+            "en": {
+                "title": "Follow-up every 2 weeks",
+                "description": "Perform follow-up visits every two weeks during the therapeutic cycle to reassess pain intensity, functional impact, occurrence of adverse events and adjust the protocol when needed."
+            },
+            "pt": {
+                "title": "Controles a cada 2 semanas",
+                "description": "Realizar controles a cada duas semanas durante o ciclo terapêutico para reavaliar a intensidade da dor, o impacto funcional, a ocorrência de eventos adversos e ajustar o protocolo quando necessário."
+            },
+            "zh": {
+                "title": "每 2 周随访",
+                "description": "在治疗周期内每两周进行一次随访,重新评估疼痛强度、功能影响及不良事件发生情况,并在必要时调整方案。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 3 a 6 meses",
+                "description": "Considerar una sesión de mantenimiento cada 3 a 6 meses, individualizada según la evolución clínica y la respuesta de la paciente."
+            },
+            "en": {
+                "title": "Maintenance every 3 to 6 months",
+                "description": "Consider a maintenance session every 3 to 6 months, individualized according to clinical evolution and patient response."
+            },
+            "pt": {
+                "title": "Manutenção a cada 3 a 6 meses",
+                "description": "Considerar uma sessão de manutenção a cada 3 a 6 meses, individualizada conforme a evolução clínica e a resposta da paciente."
+            },
+            "zh": {
+                "title": "每 3 至 6 个月维持治疗",
+                "description": "可根据临床进展和患者反应,每 3 至 6 个月进行一次个体化维持治疗。"
+            }
+        }
+    ],
+    "gsm": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Se espera mejoría clínica entre las semanas 3 y 6 desde el inicio del tratamiento, con disminución de la sequedad vaginal, menor dispareunia, mejoría de los síntomas urinarios y mejor calidad de vida. Registrar la evolución en cada control."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "Clinical improvement is expected between weeks 3 and 6 from the start of treatment, with reduced vaginal dryness, less dyspareunia, improvement of urinary symptoms and better quality of life. Record the evolution at each follow-up."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Espera-se melhora clínica entre a 3ª e a 6ª semana após o início do tratamento, com diminuição da secura vaginal, menor dispareunia, melhora dos sintomas urinários e melhor qualidade de vida. Registrar a evolução em cada controle."
+            },
+            "zh": {
+                "title": "预期结果(3 至 6 周)",
+                "description": "预期在治疗开始后 3 至 6 周内出现临床改善,包括阴道干燥减轻、性交痛减少、泌尿症状改善以及生活质量提高。每次随访时记录变化。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles cada 2 semanas",
+                "description": "Realizar controles cada dos semanas durante el ciclo terapéutico para reevaluar los síntomas, registrar eventos adversos y ajustar el protocolo cuando resulte necesario."
+            },
+            "en": {
+                "title": "Follow-up every 2 weeks",
+                "description": "Perform follow-up visits every two weeks during the therapeutic cycle to reassess symptoms, record adverse events and adjust the protocol when needed."
+            },
+            "pt": {
+                "title": "Controles a cada 2 semanas",
+                "description": "Realizar controles a cada duas semanas durante o ciclo terapêutico para reavaliar os sintomas, registrar eventos adversos e ajustar o protocolo quando necessário."
+            },
+            "zh": {
+                "title": "每 2 周随访",
+                "description": "在治疗周期内每两周进行一次随访,重新评估症状、记录不良事件,必要时调整方案。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 6 meses",
+                "description": "Considerar una sesión de mantenimiento cada 6 meses, individualizándola según la respuesta clínica, el criterio médico y las necesidades de la paciente."
+            },
+            "en": {
+                "title": "Maintenance every 6 months",
+                "description": "Consider a maintenance session every 6 months, individualized according to clinical response, medical judgment and the patient's needs."
+            },
+            "pt": {
+                "title": "Manutenção a cada 6 meses",
+                "description": "Considerar uma sessão de manutenção a cada 6 meses, individualizada conforme a resposta clínica, o critério médico e as necessidades da paciente."
+            },
+            "zh": {
+                "title": "每 6 个月维持治疗",
+                "description": "可考虑每 6 个月进行一次维持治疗,根据临床反应、医生判断及患者需求个体化安排。"
+            }
+        }
+    ],
+    "ed": [
+        {
+            "es": {
+                "title": "Resultados esperados (4 a 6 semanas)",
+                "description": "Mejoría de la función eréctil y de la puntuación del IIEF (International Index of Erectile Function). Incremento del flujo sanguíneo en los cuerpos cavernosos, observable mediante ecografía Doppler."
+            },
+            "en": {
+                "title": "Expected results (4 to 6 weeks)",
+                "description": "Improvement of erectile function and IIEF (International Index of Erectile Function) score. Increased blood flow in the corpora cavernosa, observable through Doppler ultrasound."
+            },
+            "pt": {
+                "title": "Resultados esperados (4 a 6 semanas)",
+                "description": "Melhoria da função erétil e da pontuação do IIEF (International Index of Erectile Function). Aumento do fluxo sanguíneo nos corpos cavernosos, observável por ultrassonografia Doppler."
+            },
+            "zh": {
+                "title": "预期效果(4至6周)",
+                "description": "勃起功能及 IIEF(国际勃起功能指数)评分改善;通过多普勒超声可见海绵体血流量增加。"
+            }
+        },
+        {
+            "es": {
+                "title": "Primer control (4 semanas)",
+                "description": "Evaluar la evolución clínica del paciente. Reevaluar la función eréctil utilizando el cuestionario IIEF. Realizar ecografía Doppler peneana, si corresponde."
+            },
+            "en": {
+                "title": "First follow-up (4 weeks)",
+                "description": "Assess the clinical evolution of the patient. Reassess erectile function using the IIEF questionnaire. Perform penile Doppler ultrasound if applicable."
+            },
+            "pt": {
+                "title": "Primeiro controle (4 semanas)",
+                "description": "Avaliar a evolução clínica do paciente. Reavaliar a função erétil usando o questionário IIEF. Realizar ultrassonografia Doppler peniana, se aplicável."
+            },
+            "zh": {
+                "title": "首次随访(4周)",
+                "description": "评估患者临床进展;使用 IIEF 问卷重新评估勃起功能;必要时进行阴茎多普勒超声检查。"
+            }
+        },
+        {
+            "es": {
+                "title": "Segundo control (12 semanas)",
+                "description": "Repetir la evaluación clínica. Comparar la evolución de los puntajes del IIEF. Reevaluar el flujo sanguíneo mediante ecografía Doppler."
+            },
+            "en": {
+                "title": "Second follow-up (12 weeks)",
+                "description": "Repeat the clinical evaluation. Compare the evolution of IIEF scores. Reassess blood flow using Doppler ultrasound."
+            },
+            "pt": {
+                "title": "Segundo controle (12 semanas)",
+                "description": "Repetir a avaliação clínica. Comparar a evolução das pontuações do IIEF. Reavaliar o fluxo sanguíneo por ultrassonografia Doppler."
+            },
+            "zh": {
+                "title": "第二次随访(12周)",
+                "description": "再次进行临床评估;对比 IIEF 评分的变化;通过多普勒超声重新评估血流。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento a largo plazo",
+                "description": "Considerar sesiones de mantenimiento cada 6 a 12 meses, cuando sea necesario, para preservar los beneficios obtenidos con el tratamiento."
+            },
+            "en": {
+                "title": "Long-term maintenance",
+                "description": "Consider maintenance sessions every 6 to 12 months, when needed, to preserve the benefits obtained from the treatment."
+            },
+            "pt": {
+                "title": "Manutenção a longo prazo",
+                "description": "Considerar sessões de manutenção a cada 6 a 12 meses, quando necessário, para preservar os benefícios obtidos com o tratamento."
+            },
+            "zh": {
+                "title": "长期维持",
+                "description": "必要时每6至12个月进行一次维持治疗,以保持疗效。"
+            }
+        }
+    ],
+    "cpp": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Se espera la mejoría entre la tercera y la sexta semana desde el inicio del tratamiento, con disminución del dolor pélvico, mejoría de los síntomas urinarios y mejoría funcional general del paciente."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "Improvement is expected between the third and sixth week from the start of treatment, with reduction of pelvic pain, improvement of urinary symptoms and overall functional improvement of the patient."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "A melhora é esperada entre a terceira e a sexta semana após o início do tratamento, com diminuição da dor pélvica, melhora dos sintomas urinários e melhora funcional geral do paciente."
+            },
+            "zh": {
+                "title": "预期结果(3 至 6 周)",
+                "description": "通常在治疗开始后 3 至 6 周内可见改善,盆腔疼痛减轻、泌尿系统症状改善,患者整体功能状态得到提升。"
+            }
+        },
+        {
+            "es": {
+                "title": "Primer control (4 semanas)",
+                "description": "Realizar evaluación clínica del paciente y reevaluar los síntomas mediante los cuestionarios NIH-CPSI e IPSS, junto con la Escala Visual Analógica (VAS) para cuantificar la intensidad del dolor."
+            },
+            "en": {
+                "title": "First follow-up (4 weeks)",
+                "description": "Perform clinical evaluation of the patient and reassess symptoms using the NIH-CPSI and IPSS questionnaires, together with the Visual Analog Scale (VAS) to quantify pain intensity."
+            },
+            "pt": {
+                "title": "Primeiro controle (4 semanas)",
+                "description": "Realizar avaliação clínica do paciente e reavaliar os sintomas por meio dos questionários NIH-CPSI e IPSS, juntamente com a Escala Visual Analógica (VAS) para quantificar a intensidade da dor."
+            },
+            "zh": {
+                "title": "首次随访(4 周)",
+                "description": "对患者进行临床评估,并使用 NIH-CPSI 与 IPSS 问卷,以及视觉模拟量表 (VAS) 重新评估症状,量化疼痛强度。"
+            }
+        },
+        {
+            "es": {
+                "title": "Segundo control (12 semanas)",
+                "description": "Repetir la evaluación clínica y comparar la evolución con los cuestionarios NIH-CPSI, IPSS y la Escala Visual Analógica (VAS). Registrar los eventos adversos y decidir la conducta terapéutica según la respuesta clínica."
+            },
+            "en": {
+                "title": "Second follow-up (12 weeks)",
+                "description": "Repeat the clinical evaluation and compare progress using the NIH-CPSI, IPSS and Visual Analog Scale (VAS). Record adverse events and decide the therapeutic approach based on clinical response."
+            },
+            "pt": {
+                "title": "Segundo controle (12 semanas)",
+                "description": "Repetir a avaliação clínica e comparar a evolução com os questionários NIH-CPSI, IPSS e a Escala Visual Analógica (VAS). Registrar eventos adversos e definir a conduta terapêutica de acordo com a resposta clínica."
+            },
+            "zh": {
+                "title": "第二次随访(12 周)",
+                "description": "再次进行临床评估,通过 NIH-CPSI、IPSS 及视觉模拟量表 (VAS) 比较治疗进展。记录不良事件,并根据临床反应确定后续治疗方案。"
+            }
+        }
+    ],
+    "pd": [
+        {
+            "es": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Los primeros resultados suelen observarse entre las semanas 3 y 6 desde el inicio del tratamiento, con disminución del dolor, ablandamiento de las placas, posible reducción parcial de la curvatura peneana y mejoría de la función sexual."
+            },
+            "en": {
+                "title": "Expected results (3 to 6 weeks)",
+                "description": "First results are usually observed between weeks 3 and 6 from the start of treatment, with reduction of pain, softening of plaques, possible partial reduction of penile curvature and improvement of sexual function."
+            },
+            "pt": {
+                "title": "Resultados esperados (3 a 6 semanas)",
+                "description": "Os primeiros resultados costumam ser observados entre a 3ª e a 6ª semana após o início do tratamento, com diminuição da dor, amolecimento das placas, possível redução parcial da curvatura peniana e melhora da função sexual."
+            },
+            "zh": {
+                "title": "预期结果(3 至 6 周)",
+                "description": "通常在治疗开始后 3 至 6 周内可见初步效果:疼痛减轻、斑块软化、阴茎弯曲可能部分改善以及性功能提升。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles cada 2 semanas",
+                "description": "Realizar controles cada dos semanas durante el ciclo terapéutico para evaluar dolor, curvatura, cambios en la placa y función sexual. Aplicar los cuestionarios PDQ e IIEF cuando corresponda y registrar los eventos adversos."
+            },
+            "en": {
+                "title": "Follow-up every 2 weeks",
+                "description": "Perform follow-up visits every two weeks during the therapeutic cycle to assess pain, curvature, plaque changes and sexual function. Apply PDQ and IIEF questionnaires when appropriate and record any adverse events."
+            },
+            "pt": {
+                "title": "Controles a cada 2 semanas",
+                "description": "Realizar controles a cada duas semanas durante o ciclo terapêutico para avaliar dor, curvatura, alterações da placa e função sexual. Aplicar os questionários PDQ e IIEF quando pertinente e registrar eventos adversos."
+            },
+            "zh": {
+                "title": "每 2 周随访",
+                "description": "在治疗周期内每两周随访一次,评估疼痛、弯曲程度、斑块变化及性功能。必要时应用 PDQ 与 IIEF 问卷,并记录不良事件。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 6 meses",
+                "description": "Considerar una sesión de mantenimiento cada 6 meses, individualizada según la evolución clínica, la respuesta al tratamiento y el criterio médico."
+            },
+            "en": {
+                "title": "Maintenance every 6 months",
+                "description": "Consider a maintenance session every 6 months, individualized according to clinical progress, treatment response and medical judgment."
+            },
+            "pt": {
+                "title": "Manutenção a cada 6 meses",
+                "description": "Considerar uma sessão de manutenção a cada 6 meses, individualizada de acordo com a evolução clínica, a resposta ao tratamento e o critério médico."
+            },
+            "zh": {
+                "title": "每 6 个月维持",
+                "description": "可考虑每 6 个月安排一次维持治疗,并根据临床进展、治疗反应及医生判断进行个体化调整。"
+            }
+        }
+    ]
+}

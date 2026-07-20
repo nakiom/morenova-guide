@@ -1,0 +1,448 @@
+{
+    "fsd": [
+        {
+            "es": {
+                "title": "Clítoris",
+                "description": "500 pulsos por zona"
+            },
+            "en": {
+                "title": "Clitoris",
+                "description": "500 shocks per zone"
+            },
+            "pt": {
+                "title": "Clitóris",
+                "description": "500 pulsos por zona"
+            },
+            "zh": {
+                "title": "阴蒂",
+                "description": "每区 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Labio menor derecho",
+                "description": "500 pulsos por zona"
+            },
+            "en": {
+                "title": "Right labia minora",
+                "description": "500 shocks per zone"
+            },
+            "pt": {
+                "title": "Pequeno lábio direito",
+                "description": "500 pulsos por zona"
+            },
+            "zh": {
+                "title": "右侧小阴唇",
+                "description": "每区 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Labio menor izquierdo",
+                "description": "500 pulsos por zona"
+            },
+            "en": {
+                "title": "Left labia minora",
+                "description": "500 shocks per zone"
+            },
+            "pt": {
+                "title": "Pequeno lábio esquerdo",
+                "description": "500 pulsos por zona"
+            },
+            "zh": {
+                "title": "左侧小阴唇",
+                "description": "每区 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Crura derecha",
+                "description": "500 pulsos por zona"
+            },
+            "en": {
+                "title": "Right crus",
+                "description": "500 shocks per zone"
+            },
+            "pt": {
+                "title": "Crura direita",
+                "description": "500 pulsos por zona"
+            },
+            "zh": {
+                "title": "右侧脚",
+                "description": "每区 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Crura izquierda",
+                "description": "500 pulsos por zona · Total 2500"
+            },
+            "en": {
+                "title": "Left crus",
+                "description": "500 shocks per zone · Total 2500"
+            },
+            "pt": {
+                "title": "Crura esquerda",
+                "description": "500 pulsos por zona · Total 2500"
+            },
+            "zh": {
+                "title": "左侧脚",
+                "description": "每区 500 发 · 共 2500"
+            }
+        }
+    ],
+    "sui": [
+        {
+            "es": {
+                "title": "Rotación -30°",
+                "description": "Debajo de la uretra · 500 disparos"
+            },
+            "en": {
+                "title": "Rotation -30°",
+                "description": "Below the urethra · 500 shots"
+            },
+            "pt": {
+                "title": "Rotação -30°",
+                "description": "Abaixo da uretra · 500 disparos"
+            },
+            "zh": {
+                "title": "旋转 -30°",
+                "description": "尿道下方 · 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Rotación -15°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Rotation -15°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Rotação -15°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "旋转 -15°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Rotación 0°",
+                "description": "Debajo de la uretra · 500 disparos"
+            },
+            "en": {
+                "title": "Rotation 0°",
+                "description": "Below the urethra · 500 shots"
+            },
+            "pt": {
+                "title": "Rotação 0°",
+                "description": "Abaixo da uretra · 500 disparos"
+            },
+            "zh": {
+                "title": "旋转 0°",
+                "description": "尿道下方 · 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Rotación +15°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Rotation +15°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Rotação +15°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "旋转 +15°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Rotación +30°",
+                "description": "500 disparos · Total 2500"
+            },
+            "en": {
+                "title": "Rotation +30°",
+                "description": "500 shots · Total 2500"
+            },
+            "pt": {
+                "title": "Rotação +30°",
+                "description": "500 disparos · Total 2500"
+            },
+            "zh": {
+                "title": "旋转 +30°",
+                "description": "500 发 · 共 2500"
+            }
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": {
+                "title": "Vestíbulo vulvar derecho",
+                "description": "1000 disparos · 2 recorridos circunferenciales"
+            },
+            "en": {
+                "title": "Right vulvar vestibule",
+                "description": "1000 shots · 2 circumferential passes"
+            },
+            "pt": {
+                "title": "Vestíbulo vulvar direito",
+                "description": "1000 disparos · 2 percursos circunferenciais"
+            },
+            "zh": {
+                "title": "右侧外阴前庭",
+                "description": "1000 发 · 两圈环形扫过"
+            }
+        },
+        {
+            "es": {
+                "title": "Vestíbulo vulvar izquierdo",
+                "description": "1000 disparos · Total 2000"
+            },
+            "en": {
+                "title": "Left vulvar vestibule",
+                "description": "1000 shots · Total 2000"
+            },
+            "pt": {
+                "title": "Vestíbulo vulvar esquerdo",
+                "description": "1000 disparos · Total 2000"
+            },
+            "zh": {
+                "title": "左侧外阴前庭",
+                "description": "1000 发 · 共 2000"
+            }
+        }
+    ],
+    "gsm": [
+        {
+            "es": {
+                "title": "Posición -180°",
+                "description": "Pared vaginal · 500 disparos"
+            },
+            "en": {
+                "title": "Position -180°",
+                "description": "Vaginal wall · 500 shots"
+            },
+            "pt": {
+                "title": "Posição -180°",
+                "description": "Parede vaginal · 500 disparos"
+            },
+            "zh": {
+                "title": "位置 -180°",
+                "description": "阴道壁 · 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Posición -120°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Position -120°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Posição -120°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "位置 -120°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Posición -60°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Position -60°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Posição -60°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "位置 -60°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Posición 0°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Position 0°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Posição 0°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "位置 0°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Posición +60°",
+                "description": "500 disparos"
+            },
+            "en": {
+                "title": "Position +60°",
+                "description": "500 shots"
+            },
+            "pt": {
+                "title": "Posição +60°",
+                "description": "500 disparos"
+            },
+            "zh": {
+                "title": "位置 +60°",
+                "description": "500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Posición +120°",
+                "description": "500 disparos · Total 3000"
+            },
+            "en": {
+                "title": "Position +120°",
+                "description": "500 shots · Total 3000"
+            },
+            "pt": {
+                "title": "Posição +120°",
+                "description": "500 disparos · Total 3000"
+            },
+            "zh": {
+                "title": "位置 +120°",
+                "description": "500 发 · 共 3000"
+            }
+        }
+    ],
+    "ed": [
+        {
+            "es": {
+                "title": "Cuerpo cavernoso",
+                "description": "1500 disparos (bilateral)"
+            },
+            "en": {
+                "title": "Corpus cavernosum side",
+                "description": "1500 shots (bilateral)"
+            },
+            "pt": {
+                "title": "Corpo cavernoso",
+                "description": "1500 disparos (bilateral)"
+            },
+            "zh": {
+                "title": "海绵体",
+                "description": "1500"
+            }
+        },
+        {
+            "es": {
+                "title": "Crura",
+                "description": "1500 disparos (bilateral) · Total 3000"
+            },
+            "en": {
+                "title": "Crus",
+                "description": "1500 shocks (bilateral)· Total 3000"
+            },
+            "pt": {
+                "title": "Crura",
+                "description": "1500 disparos (bilateral) · Total 3000"
+            },
+            "zh": {
+                "title": "脚",
+                "description": "1500 发 · 共 3000"
+            }
+        }
+    ],
+    "cpp": [
+        {
+            "es": {
+                "title": "Lado derecho",
+                "description": "1500 disparos · región prostática, piso pélvico y perineal"
+            },
+            "en": {
+                "title": "Right side",
+                "description": "1500 shots · prostatic, pelvic floor and perineal region"
+            },
+            "pt": {
+                "title": "Lado direito",
+                "description": "1500 disparos · região prostática, assoalho pélvico e perineal"
+            },
+            "zh": {
+                "title": "右侧",
+                "description": "1500 发 · 前列腺、盆底及会阴区"
+            }
+        },
+        {
+            "es": {
+                "title": "Lado izquierdo",
+                "description": "1500 disparos · Total 3000"
+            },
+            "en": {
+                "title": "Left side",
+                "description": "1500 shots · Total 3000"
+            },
+            "pt": {
+                "title": "Lado esquerdo",
+                "description": "1500 disparos · Total 3000"
+            },
+            "zh": {
+                "title": "左侧",
+                "description": "1500 发 · 共 3000"
+            }
+        }
+    ],
+    "pd": [
+        {
+            "es": {
+                "title": "Zona media de la placa (dorsal)",
+                "description": "2 aplicaciones · 500–750 disparos c/u"
+            },
+            "en": {
+                "title": "Mid-plaque area (dorsal)",
+                "description": "2 applications · 500–750 shots each"
+            },
+            "pt": {
+                "title": "Zona média da placa (dorsal)",
+                "description": "2 aplicações · 500–750 disparos cada"
+            },
+            "zh": {
+                "title": "斑块中区（背侧）",
+                "description": "2 次应用 · 每次 500–750 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Laterales de la placa",
+                "description": "2 aplicaciones · Total 2000–3000"
+            },
+            "en": {
+                "title": "Lateral plaque aspects",
+                "description": "2 applications · Total 2000–3000"
+            },
+            "pt": {
+                "title": "Laterais da placa",
+                "description": "2 aplicações · Total 2000–3000"
+            },
+            "zh": {
+                "title": "斑块外侧",
+                "description": "2 次应用 · 共 2000–3000"
+            }
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "fsd": [
+        {
+            "es": "Mujeres de 20 a 75 años con síntomas de disfunción sexual femenina.",
+            "en": "Women aged 20–75 years with symptoms of female sexual dysfunction.",
+            "pt": "Mulheres de 20 a 75 anos com sintomas de disfunção sexual feminina.",
+            "zh": "20 至 75 岁、有女性性功能障碍症状的女性。"
+        },
+        {
+            "es": "Diagnóstico de FSD realizado por ginecólogo o especialista en salud sexual.",
+            "en": "FSD diagnosis made by a gynecologist or sexual health specialist.",
+            "pt": "Diagnóstico de DSF realizado por ginecologista ou especialista em saúde sexual.",
+            "zh": "由妇科医生或性健康专科医生诊断为 FSD。"
+        },
+        {
+            "es": "Síntomas persistentes durante al menos 3 meses.",
+            "en": "Symptoms persisting for at least 3 months.",
+            "pt": "Sintomas persistentes por pelo menos 3 meses.",
+            "zh": "症状持续至少 3 个月。"
+        }
+    ],
+    "sui": [
+        {
+            "es": "Mujeres de 20 a 75 años.",
+            "en": "Women aged 20–75 years.",
+            "pt": "Mulheres de 20 a 75 anos.",
+            "zh": "20 至 75 岁女性。"
+        },
+        {
+            "es": "Diagnóstico de incontinencia urinaria de esfuerzo por ginecólogo con evolución mínima de 3 meses.",
+            "en": "Stress urinary incontinence diagnosed by a gynecologist for at least 3 months.",
+            "pt": "Incontinência urinária de esforço diagnosticada por ginecologista há pelo menos 3 meses.",
+            "zh": "由妇科医生诊断为压力性尿失禁，病程至少 3 个月。"
+        },
+        {
+            "es": "Síntomas persistentes a pesar del manejo conservador.",
+            "en": "Persistent symptoms despite conservative management.",
+            "pt": "Sintomas persistentes apesar do manejo conservador.",
+            "zh": "尽管保守治疗，症状仍持续存在。"
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": "Mujeres de 18 a 70 años.",
+            "en": "Women aged 18–70 years.",
+            "pt": "Mulheres de 18 a 70 anos.",
+            "zh": "18 至 70 岁女性。"
+        },
+        {
+            "es": "Diagnóstico clínico de vulvodinia (provocada, no provocada o mixta).",
+            "en": "Clinical diagnosis of vulvodynia (provoked, unprovoked or mixed).",
+            "pt": "Diagnóstico clínico de vulvodinia (provocada, não provocada ou mista).",
+            "zh": "临床诊断为外阴痛（诱发性、非诱发性或混合型）。"
+        },
+        {
+            "es": "Dolor, ardor o molestia vulvar persistente ≥ 3 meses.",
+            "en": "Persistent vulvar pain, burning or discomfort for ≥ 3 months.",
+            "pt": "Dor, ardor ou desconforto vulvar persistente ≥ 3 meses.",
+            "zh": "外阴疼痛、灼热或不适持续 ≥ 3 个月。"
+        },
+        {
+            "es": "Sin causa infecciosa, dermatológica o neurológica identificable.",
+            "en": "No identifiable infectious, dermatological or neurological cause.",
+            "pt": "Sem causa infecciosa, dermatológica ou neurológica identificável.",
+            "zh": "无可识别的感染性、皮肤性或神经性病因。"
+        },
+        {
+            "es": "Síntomas refractarios o insuficientemente controlados con tratamiento conservador.",
+            "en": "Symptoms refractory to or insufficiently managed with conservative treatment.",
+            "pt": "Sintomas refratários ou insuficientemente controlados com tratamento conservador.",
+            "zh": "对保守治疗反应不佳或控制不足。"
+        }
+    ],
+    "gsm": [
+        {
+            "es": "Mujeres de 40 a 75 años en estado postmenopáusico.",
+            "en": "Postmenopausal women aged 40–75 years.",
+            "pt": "Mulheres pós-menopausa de 40 a 75 anos.",
+            "zh": "40 至 75 岁绝经后女性。"
+        },
+        {
+            "es": "Diagnóstico de atrofia vaginal o síndrome genitourinario de la menopausia (GSM).",
+            "en": "Diagnosis of vaginal atrophy or genitourinary syndrome of menopause (GSM).",
+            "pt": "Diagnóstico de atrofia vaginal ou síndrome geniturinária da menopausa (GSM).",
+            "zh": "诊断为阴道萎缩或绝经期泌尿生殖综合征 (GSM)。"
+        },
+        {
+            "es": "Síntomas como sequedad, irritación, ardor, picor o dispareunia.",
+            "en": "Symptoms such as dryness, irritation, burning, itching or dyspareunia.",
+            "pt": "Sintomas como secura, irritação, ardor, prurido ou dispareunia.",
+            "zh": "出现干燥、刺激、灼热、瘙痒或性交痛等症状。"
+        },
+        {
+            "es": "Síntomas persistentes ≥ 3 meses a pesar de humectantes o lubricantes.",
+            "en": "Symptoms persisting ≥ 3 months despite moisturizers or lubricants.",
+            "pt": "Sintomas persistentes ≥ 3 meses apesar de hidratantes ou lubrificantes.",
+            "zh": "尽管使用保湿剂或润滑剂，症状仍持续 ≥ 3 个月。"
+        }
+    ],
+    "ed": [
+        {
+            "es": "Diagnóstico de disfunción eréctil de origen vasculogénico.",
+            "en": "Diagnosis of vasculogenic erectile dysfunction.",
+            "pt": "Diagnóstico de disfunção erétil de origem vasculogênica.",
+            "zh": "诊断为血管源性勃起功能障碍。"
+        },
+        {
+            "es": "Hombres de 18 a 80 años.",
+            "en": "Men aged 18–80 years.",
+            "pt": "Homens de 18 a 80 anos.",
+            "zh": "18 至 80 岁男性。"
+        }
+    ],
+    "cpp": [
+        {
+            "es": "Diagnóstico de CPPS/CP con síntomas persistentes al menos 3 meses en los últimos 6 meses.",
+            "en": "Diagnosis of CPPS/CP with symptoms persisting at least 3 months within the past 6 months.",
+            "pt": "Diagnóstico de CPPS/CP com sintomas persistentes por pelo menos 3 meses nos últimos 6 meses.",
+            "zh": "诊断为 CPPS/CP，且过去 6 个月内症状持续至少 3 个月。"
+        },
+        {
+            "es": "Hombres de 18 a 80 años.",
+            "en": "Men aged 18–80 years.",
+            "pt": "Homens de 18 a 80 anos.",
+            "zh": "18 至 80 岁男性。"
+        }
+    ],
+    "pd": [
+        {
+            "es": "Diagnóstico de enfermedad de Peyronie entre 3 y 12 meses de evolución.",
+            "en": "Peyronie's disease diagnosed for more than 3 months but less than 12 months.",
+            "pt": "Doença de Peyronie diagnosticada entre 3 e 12 meses de evolução.",
+            "zh": "佩罗尼氏病病程超过 3 个月但不足 12 个月。"
+        },
+        {
+            "es": "Curvatura peneana entre 30° y 90°.",
+            "en": "Penile curvature between 30° and 90°.",
+            "pt": "Curvatura peniana entre 30° e 90°.",
+            "zh": "阴茎弯曲角度在 30° 至 90° 之间。"
+        },
+        {
+            "es": "Placa única identificable.",
+            "en": "Single identifiable plaque.",
+            "pt": "Placa única identificável.",
+            "zh": "可识别单一斑块。"
+        },
+        {
+            "es": "Hombres de 18 a 80 años.",
+            "en": "Men aged 18–80 years.",
+            "pt": "Homens de 18 a 80 anos.",
+            "zh": "18 至 80 岁男性。"
+        },
+        {
+            "es": "Sin antecedente de cirugía peneana.",
+            "en": "No history of penile surgery.",
+            "pt": "Sem antecedente de cirurgia peniana.",
+            "zh": "无阴茎手术史。"
+        }
+    ]
+}

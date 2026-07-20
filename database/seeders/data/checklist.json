@@ -1,0 +1,190 @@
+{
+    "fsd": [
+        {
+            "es": "Paciente identificada, criterios OK y consentimiento firmado.",
+            "en": "Patient identified, criteria OK and consent signed.",
+            "pt": "Paciente identificada, critérios OK e consentimento assinado.",
+            "zh": "患者已确认、符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; Li50F limpio y parámetros OK (1,9 kV / 2,0 Hz).",
+            "en": "Device ready; Li50F clean and parameters OK (1.9 kV / 2.0 Hz).",
+            "pt": "Equipamento pronto; Li50F limpo e parâmetros OK (1,9 kV / 2,0 Hz).",
+            "zh": "设备就绪;Li50F 已清洁且参数正确(1.9 kV / 2.0 Hz)。"
+        },
+        {
+            "es": "Gel aplicado; zonas confirmadas (clítoris, labios menores, cruras).",
+            "en": "Gel applied; zones confirmed (clitoris, labia minora, crura).",
+            "pt": "Gel aplicado; zonas confirmadas (clitóris, pequenos lábios, cruras).",
+            "zh": "已涂凝胶;确认区域(阴蒂、小阴唇、海绵体脚)。"
+        },
+        {
+            "es": "Plan de disparos: 500 × 5 zonas = 2500 totales.",
+            "en": "Shot plan: 500 × 5 zones = 2500 total.",
+            "pt": "Plano de disparos: 500 × 5 zonas = 2500 totais.",
+            "zh": "发放计划:500×5区=共2500发。"
+        }
+    ],
+    "sui": [
+        {
+            "es": "Paciente cumple criterios y sin contraindicaciones.",
+            "en": "Patient meets criteria with no contraindications.",
+            "pt": "Paciente atende critérios e sem contraindicações.",
+            "zh": "患者符合标准且无禁忌症。"
+        },
+        {
+            "es": "Equipo y Li50F limpios, desinfectados y operativos.",
+            "en": "Device and Li50F clean, disinfected and operational.",
+            "pt": "Equipamento e Li50F limpos, desinfetados e operacionais.",
+            "zh": "设备及 Li50F 已清洁消毒并正常运行。"
+        },
+        {
+            "es": "Li50F ubicado bajo la uretra según protocolo.",
+            "en": "Li50F positioned below urethra per protocol.",
+            "pt": "Li50F posicionado abaixo da uretra conforme protocolo.",
+            "zh": "Li50F 已按方案置于尿道下方。"
+        },
+        {
+            "es": "Parámetros reconocidos (HV 2,0 kV / FRQ 2,0 Hz).",
+            "en": "Parameters recognized (HV 2.0 kV / FRQ 2.0 Hz).",
+            "pt": "Parâmetros reconhecidos (HV 2,0 kV / FRQ 2,0 Hz).",
+            "zh": "参数已识别(HV 2.0 kV / FRQ 2.0 Hz)。"
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": "Paciente identificada, criterios OK y consentimiento firmado.",
+            "en": "Patient identified, criteria OK and consent signed.",
+            "pt": "Paciente identificada, critérios OK e consentimento assinado.",
+            "zh": "患者已确认、符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo Pro operativo; Li50F limpio y calibrado (HV 1,9 kV / FRQ 2,0 Hz).",
+            "en": "Pro device ready; Li50F clean and calibrated (HV 1.9 kV / FRQ 2.0 Hz).",
+            "pt": "Equipamento Pro pronto; Li50F limpo e calibrado (HV 1,9 kV / FRQ 2,0 Hz).",
+            "zh": "Pro 设备就绪;Li50F 已清洁并校准(HV 1.9 kV / FRQ 2.0 Hz)。"
+        },
+        {
+            "es": "Gel aplicado; vestíbulos vulvares confirmados; sin lesiones agudas.",
+            "en": "Gel applied; vulvar vestibules confirmed; no acute lesions.",
+            "pt": "Gel aplicado; vestíbulos vulvares confirmados; sem lesões agudas.",
+            "zh": "已涂凝胶;确认外阴前庭;无急性损伤。"
+        },
+        {
+            "es": "Plan de disparos: 1000 × 2 zonas = 2000 totales.",
+            "en": "Shot plan: 1000 × 2 zones = 2000 total.",
+            "pt": "Plano de disparos: 1000 × 2 zonas = 2000 totais.",
+            "zh": "发放计划:1000×2区=共2000发。"
+        }
+    ],
+    "gsm": [
+        {
+            "es": "Paciente identificada, criterios OK y consentimiento firmado.",
+            "en": "Patient identified, criteria OK and consent signed.",
+            "pt": "Paciente identificada, critérios OK e consentimento assinado.",
+            "zh": "患者已确认、符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; Li50F limpio y parámetros OK (2,0 kV / 2,0 Hz).",
+            "en": "Device ready; Li50F clean and parameters OK (2.0 kV / 2.0 Hz).",
+            "pt": "Equipamento pronto; Li50F limpo e parâmetros OK (2,0 kV / 2,0 Hz).",
+            "zh": "设备就绪;Li50F 已清洁且参数正确(2.0 kV / 2.0 Hz)。"
+        },
+        {
+            "es": "Gel aplicado; pared vaginal correctamente ubicada.",
+            "en": "Gel applied; vaginal wall correctly positioned.",
+            "pt": "Gel aplicado; parede vaginal corretamente posicionada.",
+            "zh": "已涂凝胶;阴道壁位置正确。"
+        },
+        {
+            "es": "Plan de disparos: 500 × 6 posiciones = 3000 totales.",
+            "en": "Shot plan: 500 × 6 positions = 3000 total.",
+            "pt": "Plano de disparos: 500 × 6 posições = 3000 totais.",
+            "zh": "发放计划:500×6位=共3000发。"
+        }
+    ],
+    "ed": [
+        {
+            "es": "Paciente cumple criterios y sin contraindicaciones.",
+            "en": "Patient meets criteria with no contraindications.",
+            "pt": "Paciente atende critérios e sem contraindicações.",
+            "zh": "患者符合标准且无禁忌症。"
+        },
+        {
+            "es": "Equipo y Li50M limpios, desinfectados y operativos.",
+            "en": "Device and Li50M clean, disinfected and operational.",
+            "pt": "Equipamento e Li50M limpos, desinfetados e operacionais.",
+            "zh": "设备及 Li50M 已清洁消毒并正常运行。"
+        },
+        {
+            "es": "Agua fría cargada; temperatura en rango durante la sesión.",
+            "en": "Cold water filled; temperature in range during session.",
+            "pt": "Água fria carregada; temperatura na faixa durante a sessão.",
+            "zh": "已加注冷水;会话期间水温在范围内。"
+        },
+        {
+            "es": "Transductor posicionado; distribución de ondas adecuada.",
+            "en": "Transducer positioned; adequate wave distribution.",
+            "pt": "Transdutor posicionado; distribuição de ondas adequada.",
+            "zh": "换能器已就位;冲击波分布充分。"
+        },
+        {
+            "es": "Parámetros preprogramados verificados en MoreNova. (2.0 kV - 2.5 Hz)",
+            "en": "Preprogrammed parameters verified on MoreNova. (2.0 kV - 2.5 Hz)",
+            "pt": "Parâmetros pré-programados verificados no MoreNova.(2.0 kV - 2.5 Hz)",
+            "zh": "已在 MoreNova 上核对预设参数。 (2.0 kV - 2.5 Hz)"
+        }
+    ],
+    "cpp": [
+        {
+            "es": "Paciente identificado, criterios OK y consentimiento firmado.",
+            "en": "Patient identified, criteria OK and consent signed.",
+            "pt": "Paciente identificado, critérios OK e consentimento assinado.",
+            "zh": "患者已确认、符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; C30 limpio, desinfectado y calibrado (HV 2,0 kV / FRQ 2,5 Hz).",
+            "en": "Device ready; C30 clean, disinfected and calibrated (HV 2.0 kV / FRQ 2.5 Hz).",
+            "pt": "Equipamento pronto; C30 limpo, desinfetado e calibrado (HV 2,0 kV / FRQ 2,5 Hz).",
+            "zh": "设备就绪;C30 已清洁消毒并校准(HV 2.0 kV / FRQ 2.5 Hz)。"
+        },
+        {
+            "es": "Gel aplicado; zonas confirmadas (próstata, piso pélvico, perineo).",
+            "en": "Gel applied; zones confirmed (prostate, pelvic floor, perineum).",
+            "pt": "Gel aplicado; zonas confirmadas (próstata, assoalho pélvico, períneo).",
+            "zh": "已涂凝胶;确认区域(前列腺、盆底、会阴)。"
+        },
+        {
+            "es": "Plan de disparos: 1500 por lado = 3000 totales.",
+            "en": "Shot plan: 1500 per side = 3000 total.",
+            "pt": "Plano de disparos: 1500 por lado = 3000 totais.",
+            "zh": "发放计划:每侧1500发=共3000发。"
+        }
+    ],
+    "pd": [
+        {
+            "es": "Paciente identificado, criterios OK y consentimiento firmado.",
+            "en": "Patient identified, criteria OK and consent signed.",
+            "pt": "Paciente identificado, critérios OK e consentimento assinado.",
+            "zh": "患者已确认、符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; C15 limpio, desinfectado y calibrado (HV 2,0 kV / FRQ 2,0 Hz).",
+            "en": "Device ready; C15 clean, disinfected and calibrated (HV 2.0 kV / FRQ 2.0 Hz).",
+            "pt": "Equipamento pronto; C15 limpo, desinfetado e calibrado (HV 2,0 kV / FRQ 2,0 Hz).",
+            "zh": "设备就绪;C15 已清洁消毒并校准(HV 2.0 kV / FRQ 2.0 Hz)。"
+        },
+        {
+            "es": "Placa localizada y gel aplicado (cara dorsal y laterales).",
+            "en": "Plaque located and gel applied (dorsal and lateral aspects).",
+            "pt": "Placa localizada e gel aplicado (face dorsal e laterais).",
+            "zh": "斑块已定位并涂抹凝胶(背侧及两侧)。"
+        },
+        {
+            "es": "Plan de disparos según severidad: 2000 (estándar) o 3000 (moderada/severa).",
+            "en": "Shot plan per severity: 2000 (standard) or 3000 (moderate/severe).",
+            "pt": "Plano de disparos conforme severidade: 2000 (padrão) ou 3000 (moderada/severa).",
+            "zh": "按严重程度核对发放:2000(标准)或3000(中/重度)。"
+        }
+    ]
+}

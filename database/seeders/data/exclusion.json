@@ -1,0 +1,286 @@
+{
+    "fsd": [
+        {
+            "es": "Infección vaginal activa o enfermedad inflamatoria pélvica.",
+            "en": "Active vaginal infection or pelvic inflammatory disease.",
+            "pt": "Infecção vaginal ativa ou doença inflamatória pélvica.",
+            "zh": "活动性阴道感染或盆腔炎症性疾病。"
+        },
+        {
+            "es": "Embarazo o lactancia.",
+            "en": "Pregnancy or breastfeeding.",
+            "pt": "Gravidez ou amamentação.",
+            "zh": "妊娠或哺乳期。"
+        },
+        {
+            "es": "Cirugía vulvar o en región púbica en el último año.",
+            "en": "Vulvar or pubic region surgery within the past year.",
+            "pt": "Cirurgia vulvar ou na região púbica no último ano.",
+            "zh": "过去一年内接受过外阴或耻骨区域手术。"
+        },
+        {
+            "es": "Implantes médicos sensibles a radiación o campos electromagnéticos.",
+            "en": "Medical implants sensitive to radiation or electromagnetic fields.",
+            "pt": "Implantes médicos sensíveis a radiação ou campos eletromagnéticos.",
+            "zh": "对辐射或电磁场敏感的医疗器械植入物。"
+        },
+        {
+            "es": "Enfermedades neurológicas crónicas que afecten la región pélvica.",
+            "en": "Chronic neurological diseases affecting the pelvic region.",
+            "pt": "Doenças neurológicas crônicas que afetem a região pélvica.",
+            "zh": "累及盆腔区域的慢性神经系统疾病。"
+        }
+    ],
+    "sui": [
+        {
+            "es": "Antecedentes de cirugía en región vulvar o vestibular.",
+            "en": "History of surgery in the vulvar or vestibular region.",
+            "pt": "Antecedentes de cirurgia na região vulvar ou vestibular.",
+            "zh": "外阴或前庭区域手术史。"
+        },
+        {
+            "es": "Trastornos de la coagulación.",
+            "en": "Coagulation disorders.",
+            "pt": "Distúrbios da coagulação.",
+            "zh": "凝血功能障碍。"
+        },
+        {
+            "es": "Enfermedad inflamatoria pélvica activa.",
+            "en": "Active pelvic inflammatory disease.",
+            "pt": "Doença inflamatória pélvica ativa.",
+            "zh": "活动性盆腔炎症性疾病。"
+        },
+        {
+            "es": "Infecciones vaginales (candidiasis, vaginosis bacteriana u otras).",
+            "en": "Vaginal infections (candidiasis, bacterial vaginosis or others).",
+            "pt": "Infecções vaginais (candidíase, vaginose bacteriana ou outras).",
+            "zh": "阴道感染（念珠菌病、细菌性阴道病或其他）。"
+        },
+        {
+            "es": "Embarazo o lactancia.",
+            "en": "Pregnancy or lactation.",
+            "pt": "Gravidez ou amamentação.",
+            "zh": "妊娠或哺乳期。"
+        },
+        {
+            "es": "Radioterapia pélvica o en genitales externos en el último año.",
+            "en": "Pelvic or external genital radiotherapy within the past year.",
+            "pt": "Radioterapia pélvica ou em genitais externos no último ano.",
+            "zh": "过去一年内接受过盆腔或外生殖器放射治疗。"
+        },
+        {
+            "es": "Enfermedades neurológicas crónicas con dolor localizado.",
+            "en": "Chronic neurological diseases causing localized pain.",
+            "pt": "Doenças neurológicas crônicas com dor localizada.",
+            "zh": "引起局部疼痛的慢性神经系统疾病。"
+        },
+        {
+            "es": "Dispositivos médicos sensibles a campos electromagnéticos.",
+            "en": "Medical devices sensitive to electromagnetic fields.",
+            "pt": "Dispositivos médicos sensíveis a campos eletromagnéticos.",
+            "zh": "对电磁场敏感的医疗器械。"
+        }
+    ],
+    "vulvodinia": [
+        {
+            "es": "Infección vulvovaginal activa.",
+            "en": "Active vulvovaginal infection.",
+            "pt": "Infecção vulvovaginal ativa.",
+            "zh": "活动性外阴阴道感染。"
+        },
+        {
+            "es": "Heridas abiertas, úlceras o lesiones dermatológicas activas en la zona.",
+            "en": "Open wounds, ulcers or active dermatological lesions in the area.",
+            "pt": "Feridas abertas, úlceras ou lesões dermatológicas ativas na área.",
+            "zh": "治疗部位存在开放性伤口、溃疡或活动性皮肤病变。"
+        },
+        {
+            "es": "Cirugía vulvar, vaginal o pélvica reciente (< 6 meses).",
+            "en": "Recent vulvar, vaginal or pelvic surgery (< 6 months).",
+            "pt": "Cirurgia vulvar, vaginal ou pélvica recente (< 6 meses).",
+            "zh": "近期（< 6 个月）外阴、阴道或盆腔手术。"
+        },
+        {
+            "es": "Trastornos de coagulación o anticoagulación activa.",
+            "en": "Coagulation disorders or active anticoagulant therapy.",
+            "pt": "Distúrbios de coagulação ou anticoagulação ativa.",
+            "zh": "凝血功能障碍或正在接受抗凝治疗。"
+        },
+        {
+            "es": "Embarazo o lactancia.",
+            "en": "Pregnancy or breastfeeding.",
+            "pt": "Gravidez ou amamentação.",
+            "zh": "妊娠或哺乳期。"
+        },
+        {
+            "es": "Radioterapia pélvica o genital en el último año.",
+            "en": "Pelvic or genital radiotherapy within the past year.",
+            "pt": "Radioterapia pélvica ou genital no último ano.",
+            "zh": "过去一年内接受过盆腔或生殖器放射治疗。"
+        },
+        {
+            "es": "Dolor crónico severo no controlado o hipertonía importante del piso pélvico.",
+            "en": "Severe uncontrolled chronic pain or significant pelvic floor hypertonicity.",
+            "pt": "Dor crônica grave não controlada ou hipertonia importante do assoalho pélvico.",
+            "zh": "未控制的严重慢性疼痛或明显盆底肌高张力。"
+        },
+        {
+            "es": "Implantes electrónicos o metálicos sensibles a radiación electromagnética.",
+            "en": "Electronic or metallic implants sensitive to electromagnetic radiation.",
+            "pt": "Implantes eletrônicos ou metálicos sensíveis a radiação eletromagnética.",
+            "zh": "对电磁辐射敏感的电子或金属植入物。"
+        }
+    ],
+    "gsm": [
+        {
+            "es": "Infección vaginal o urinaria activa.",
+            "en": "Active vaginal or urinary tract infection.",
+            "pt": "Infecção vaginal ou urinária ativa.",
+            "zh": "活动性阴道或尿路感染。"
+        },
+        {
+            "es": "Sangrado vaginal sin diagnóstico.",
+            "en": "Undiagnosed vaginal bleeding.",
+            "pt": "Sangramento vaginal sem diagnóstico.",
+            "zh": "未确诊的阴道出血。"
+        },
+        {
+            "es": "Cáncer dependiente de estrógenos.",
+            "en": "Estrogen-dependent cancer.",
+            "pt": "Câncer dependente de estrogênio.",
+            "zh": "雌激素依赖性癌症。"
+        },
+        {
+            "es": "Cirugía pélvica o radioterapia reciente (< 6 meses).",
+            "en": "Recent pelvic surgery or radiotherapy (< 6 months).",
+            "pt": "Cirurgia pélvica ou radioterapia recente (< 6 meses).",
+            "zh": "近期（< 6 个月）盆腔手术或放疗。"
+        },
+        {
+            "es": "Embarazo o lactancia.",
+            "en": "Pregnancy or breastfeeding.",
+            "pt": "Gravidez ou amamentação.",
+            "zh": "妊娠或哺乳期。"
+        },
+        {
+            "es": "Implantes electrónicos o metálicos sensibles a campos electromagnéticos.",
+            "en": "Electronic or metallic implants sensitive to electromagnetic fields.",
+            "pt": "Implantes eletrônicos ou metálicos sensíveis a campos eletromagnéticos.",
+            "zh": "对电磁场敏感的电子或金属植入物。"
+        },
+        {
+            "es": "Prolapso vaginal severo que impida la colocación del transductor.",
+            "en": "Severe vaginal prolapse preventing proper transducer placement.",
+            "pt": "Prolapso vaginal grave que impeça a colocação do transdutor.",
+            "zh": "严重阴道脱垂导致无法正确放置换能器。"
+        }
+    ],
+    "ed": [
+        {
+            "es": "Antecedente de prostatectomía radical o cirugía pélvica extensa.",
+            "en": "History of radical prostatectomy or extensive pelvic surgery.",
+            "pt": "Antecedente de prostatectomia radical ou cirurgia pélvica extensa.",
+            "zh": "根治性前列腺切除术或广泛盆腔手术史。"
+        },
+        {
+            "es": "Fuga venosa o disfunción veno-oclusiva severa.",
+            "en": "Venous leak or severe veno-occlusive dysfunction.",
+            "pt": "Vazamento venoso ou disfunção veno-oclusiva grave.",
+            "zh": "静脉漏或严重静脉闭塞功能障碍。"
+        },
+        {
+            "es": "Radioterapia pélvica en los últimos 12 meses.",
+            "en": "Pelvic radiotherapy within the last 12 months.",
+            "pt": "Radioterapia pélvica nos últimos 12 meses.",
+            "zh": "过去 12 个月内接受过盆腔放疗。"
+        },
+        {
+            "es": "Diagnóstico oncológico actual o reciente (< 12 meses).",
+            "en": "Current or recent cancer diagnosis (< 12 months).",
+            "pt": "Diagnóstico oncológico atual ou recente (< 12 meses).",
+            "zh": "当前或近期（< 12 个月）癌症诊断。"
+        },
+        {
+            "es": "Condiciones neurológicas o psiquiátricas que afecten la función eréctil.",
+            "en": "Neurological or psychiatric conditions affecting erectile function.",
+            "pt": "Condições neurológicas ou psiquiátricas que afetem a função erétil.",
+            "zh": "影响勃起功能的神经或精神疾病。"
+        },
+        {
+            "es": "Malformaciones anatómicas del pene.",
+            "en": "Anatomical malformations of the penis.",
+            "pt": "Malformações anatômicas do pênis.",
+            "zh": "阴茎解剖畸形。"
+        }
+    ],
+    "cpp": [
+        {
+            "es": "Antecedente de cáncer de próstata, vejiga o uretra.",
+            "en": "History of prostate, bladder or urethral cancer.",
+            "pt": "Antecedente de câncer de próstata, bexiga ou uretra.",
+            "zh": "前列腺癌、膀胱癌或尿道癌史。"
+        },
+        {
+            "es": "Radioterapia pélvica previa o quimioterapia sistémica.",
+            "en": "Previous pelvic radiotherapy or systemic chemotherapy.",
+            "pt": "Radioterapia pélvica prévia ou quimioterapia sistêmica.",
+            "zh": "既往盆腔放疗或全身化疗。"
+        },
+        {
+            "es": "Cirugía prostática o implantes peneanos/de esfínter urinario.",
+            "en": "Prostate surgery or penile/urinary sphincter implants.",
+            "pt": "Cirurgia prostática ou implantes penianos/de esfíncter urinário.",
+            "zh": "前列腺手术或阴茎/尿道括约肌植入物。"
+        },
+        {
+            "es": "Estenosis uretral activa, litiasis vesical o infección del tracto urinario inferior.",
+            "en": "Active urethral stricture, bladder stones or lower urinary tract infection.",
+            "pt": "Estenose uretral ativa, litíase vesical ou infecção do trato urinário inferior.",
+            "zh": "活动性尿道狭窄、膀胱结石或下尿路感染。"
+        },
+        {
+            "es": "Alteración neurológica o trastorno psiquiátrico significativo.",
+            "en": "Significant neurological impairment or psychiatric disorder.",
+            "pt": "Alteração neurológica ou transtorno psiquiátrico significativo.",
+            "zh": "明显神经功能障碍或精神障碍。"
+        },
+        {
+            "es": "Dispositivo sensible a radiación electromagnética (p. ej. marcapasos).",
+            "en": "Device sensitive to electromagnetic radiation (e.g. pacemaker).",
+            "pt": "Dispositivo sensível a radiação eletromagnética (ex.: marca-passo).",
+            "zh": "对电磁辐射敏感的装置（如心脏起搏器）。"
+        }
+    ],
+    "pd": [
+        {
+            "es": "Curvatura peneana mayor de 90°.",
+            "en": "Penile curvature greater than 90°.",
+            "pt": "Curvatura peniana maior que 90°.",
+            "zh": "阴茎弯曲角度大于 90°。"
+        },
+        {
+            "es": "Cirugía previa por enfermedad de Peyronie.",
+            "en": "Previous surgery for Peyronie's disease.",
+            "pt": "Cirurgia prévia por doença de Peyronie.",
+            "zh": "既往因佩罗尼氏病接受过手术。"
+        },
+        {
+            "es": "Trastornos de la coagulación.",
+            "en": "Coagulation disorders.",
+            "pt": "Distúrbios da coagulação.",
+            "zh": "凝血功能障碍。"
+        },
+        {
+            "es": "Infección del tracto urinario inferior activa.",
+            "en": "Active lower urinary tract infection.",
+            "pt": "Infecção do trato urinário inferior ativa.",
+            "zh": "活动性下尿路感染。"
+        },
+        {
+            "es": "Dispositivo médico sensible a radiación electromagnética.",
+            "en": "Medical device sensitive to electromagnetic radiation.",
+            "pt": "Dispositivo médico sensível a radiação eletromagnética.",
+            "zh": "对电磁辐射敏感的医疗器械。"
+        }
+    ]
+}

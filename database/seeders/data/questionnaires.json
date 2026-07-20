@@ -1,0 +1,366 @@
+[
+  {
+    "pathology": "ed",
+    "code": "iief_ef",
+    "name": "IIEF-EF (6)",
+    "description": "International Index of Erectile Function — dominio EF",
+    "max_score": 30,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "q1", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia de erección durante actividad sexual", "en": "Frequency of erection during sexual activity"}},
+        {"key": "q2", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Erecciones firmes suficientes para la penetración", "en": "Erections hard enough for penetration"}},
+        {"key": "q3", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Capacidad de mantener la erección tras la penetración", "en": "Ability to maintain erection after penetration"}},
+        {"key": "q4", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Dificultad para mantener la erección hasta el final", "en": "Difficulty maintaining erection to completion"}},
+        {"key": "q5", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Satisfacción con el intento de coito", "en": "Satisfaction with intercourse attempt"}},
+        {"key": "q15", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Confianza en lograr y mantener una erección", "en": "Confidence in getting and keeping an erection"}}
+      ]
+    }
+  },
+  {
+    "pathology": "ed",
+    "code": "ehs",
+    "name": "EHS – Erection Hardness Score",
+    "description": "Dureza de la erección (1–4)",
+    "max_score": 4,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {
+          "key": "hardness",
+          "type": "select",
+          "required": true,
+          "label": {"es": "Puntaje de dureza", "en": "Hardness score"},
+          "options": [
+            {"value": 1, "label": {"es": "1 – Pene agrandado sin dureza", "en": "1 – Larger but not hard"}},
+            {"value": 2, "label": {"es": "2 – Duro pero no suficiente para penetración", "en": "2 – Hard but not enough for penetration"}},
+            {"value": 3, "label": {"es": "3 – Duro suficiente para penetración pero no completamente", "en": "3 – Hard enough for penetration but not fully"}},
+            {"value": 4, "label": {"es": "4 – Completamente duro y rígido", "en": "4 – Completely hard and rigid"}}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "pathology": "cpp",
+    "code": "nih_cpsi",
+    "name": "NIH-CPSI",
+    "description": "NIH Chronic Prostatitis Symptom Index (total)",
+    "max_score": 43,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "pain", "type": "number", "min": 0, "max": 21, "required": true, "label": {"es": "Dominio dolor (0–21)", "en": "Pain domain (0–21)"}},
+        {"key": "urinary", "type": "number", "min": 0, "max": 10, "required": true, "label": {"es": "Dominio urinario (0–10)", "en": "Urinary domain (0–10)"}},
+        {"key": "qol", "type": "number", "min": 0, "max": 12, "required": true, "label": {"es": "Calidad de vida (0–12)", "en": "Quality of life (0–12)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "cpp",
+    "code": "ipss",
+    "name": "IPSS",
+    "description": "International Prostate Symptom Score",
+    "max_score": 35,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "incomplete", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Sensación de vaciado incompleto", "en": "Incomplete emptying"}},
+        {"key": "frequency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia", "en": "Frequency"}},
+        {"key": "intermittency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Intermitencia", "en": "Intermittency"}},
+        {"key": "urgency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Urgencia", "en": "Urgency"}},
+        {"key": "weak_stream", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Chorro débil", "en": "Weak stream"}},
+        {"key": "straining", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Esfuerzo para orinar", "en": "Straining"}},
+        {"key": "nocturia", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Nocturia", "en": "Nocturia"}}
+      ]
+    }
+  },
+  {
+    "pathology": "pd",
+    "code": "pd_vas_pain",
+    "name": "VAS dolor (Peyronie)",
+    "description": "Escala visual analógica de dolor 0–10",
+    "max_score": 10,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "vas_pain", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor (0 sin dolor – 10 máximo)", "en": "Pain (0 none – 10 worst)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "pd",
+    "code": "pd_curvature",
+    "name": "Curvatura peneana (°)",
+    "description": "Grados de curvatura medidos",
+    "max_score": 90,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "degrees", "type": "number", "min": 0, "max": 90, "required": true, "label": {"es": "Curvatura en grados", "en": "Curvature in degrees"}}
+      ]
+    }
+  },
+  {
+    "pathology": "pd",
+    "code": "pdq_bother",
+    "name": "PDQ – molestia",
+    "description": "Peyronie's Disease Questionnaire (molestia / impacto)",
+    "max_score": 24,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "bother", "type": "number", "min": 0, "max": 24, "required": true, "label": {"es": "Puntaje de molestia PDQ (0–24)", "en": "PDQ bother score (0–24)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "fsd",
+    "code": "fsfi_domains",
+    "name": "FSFI (arousal & orgasm)",
+    "description": "Female Sexual Function Index — dominios arousal y orgasm",
+    "max_score": 12,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "arousal", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Dominio arousal (0–6)", "en": "Arousal domain (0–6)"}},
+        {"key": "orgasm", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Dominio orgasm (0–6)", "en": "Orgasm domain (0–6)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "fsd",
+    "code": "vas_satisfaction",
+    "name": "VAS satisfacción sexual",
+    "description": "Satisfacción sexual 0–10",
+    "max_score": 10,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "vas", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Satisfacción (0–10)", "en": "Satisfaction (0–10)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "fsd",
+    "code": "pgic",
+    "name": "PGIC",
+    "description": "Patient Global Impression of Change",
+    "max_score": 7,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {
+          "key": "pgic",
+          "type": "select",
+          "required": true,
+          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
+          "options": [
+            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
+            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
+            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
+            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
+            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
+            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
+            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "pathology": "fsd",
+    "code": "sexual_diary",
+    "name": "Diario sexual",
+    "description": "Registro de actividad sexual del período",
+    "max_score": null,
+    "schema": {
+      "score_mode": "manual",
+      "fields": [
+        {"key": "encounters", "type": "number", "min": 0, "max": 60, "required": true, "label": {"es": "Encuentros sexuales en el período", "en": "Sexual encounters in the period"}},
+        {"key": "satisfying", "type": "number", "min": 0, "max": 60, "required": true, "label": {"es": "Encuentros satisfactorios", "en": "Satisfying encounters"}},
+        {"key": "notes", "type": "textarea", "required": false, "score": false, "label": {"es": "Notas del diario", "en": "Diary notes"}}
+      ]
+    }
+  },
+  {
+    "pathology": "sui",
+    "code": "iciq_ui_sf",
+    "name": "ICIQ-UI SF",
+    "description": "International Consultation on Incontinence Questionnaire – Short Form",
+    "max_score": 21,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "frequency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia de pérdidas", "en": "Leakage frequency"}},
+        {"key": "amount", "type": "scale", "min": 0, "max": 6, "required": true, "label": {"es": "Cantidad de orina perdida", "en": "Amount of leakage"}},
+        {"key": "impact", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Impacto en la vida diaria", "en": "Impact on everyday life"}}
+      ]
+    }
+  },
+  {
+    "pathology": "sui",
+    "code": "iiq7",
+    "name": "IIQ-7",
+    "description": "Incontinence Impact Questionnaire (short)",
+    "max_score": 21,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "total", "type": "number", "min": 0, "max": 21, "required": true, "label": {"es": "Puntaje total IIQ-7 (0–21)", "en": "IIQ-7 total score (0–21)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "sui",
+    "code": "udi6",
+    "name": "UDI-6",
+    "description": "Urogenital Distress Inventory (short)",
+    "max_score": 18,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "total", "type": "number", "min": 0, "max": 18, "required": true, "label": {"es": "Puntaje total UDI-6 (0–18)", "en": "UDI-6 total score (0–18)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "sui",
+    "code": "pad_test",
+    "name": "Pad test",
+    "description": "Prueba de absorbente (gramos)",
+    "max_score": null,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "grams", "type": "number", "min": 0, "max": 500, "step": 0.1, "required": true, "label": {"es": "Peso ganado del pad (g)", "en": "Pad weight gain (g)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "vulvodinia",
+    "code": "vas_pain",
+    "name": "VAS dolor vulvar",
+    "description": "Dolor 0–10",
+    "max_score": 10,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "vas", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor (0–10)", "en": "Pain (0–10)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "vulvodinia",
+    "code": "fsfi_vulvodinia",
+    "name": "FSFI (total)",
+    "description": "Female Sexual Function Index — puntaje total",
+    "max_score": 36,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "total", "type": "number", "min": 2, "max": 36, "step": 0.1, "required": true, "label": {"es": "Puntaje total FSFI", "en": "FSFI total score"}}
+      ]
+    }
+  },
+  {
+    "pathology": "vulvodinia",
+    "code": "pgic_vulvodinia",
+    "name": "PGIC",
+    "description": "Patient Global Impression of Change",
+    "max_score": 7,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {
+          "key": "pgic",
+          "type": "select",
+          "required": true,
+          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
+          "options": [
+            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
+            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
+            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
+            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
+            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
+            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
+            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "pathology": "vulvodinia",
+    "code": "cotton_swab",
+    "name": "Cotton swab test",
+    "description": "Puntos positivos al hisopo",
+    "max_score": 12,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {"key": "positive_sites", "type": "number", "min": 0, "max": 12, "required": true, "label": {"es": "Sitios positivos (0–12)", "en": "Positive sites (0–12)"}},
+        {"key": "notes", "type": "textarea", "required": false, "score": false, "label": {"es": "Observaciones", "en": "Notes"}}
+      ]
+    }
+  },
+  {
+    "pathology": "gsm",
+    "code": "fsfi_gsm",
+    "name": "FSFI (todos los dominios)",
+    "description": "Female Sexual Function Index — dominios",
+    "max_score": 36,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "desire", "type": "number", "min": 1.2, "max": 6, "step": 0.1, "required": true, "label": {"es": "Desire (1.2–6)", "en": "Desire (1.2–6)"}},
+        {"key": "arousal", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Arousal (0–6)", "en": "Arousal (0–6)"}},
+        {"key": "lubrication", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Lubrication (0–6)", "en": "Lubrication (0–6)"}},
+        {"key": "orgasm", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Orgasm (0–6)", "en": "Orgasm (0–6)"}},
+        {"key": "satisfaction", "type": "number", "min": 0.8, "max": 6, "step": 0.1, "required": true, "label": {"es": "Satisfaction (0.8–6)", "en": "Satisfaction (0.8–6)"}},
+        {"key": "pain", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Pain (0–6)", "en": "Pain (0–6)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "gsm",
+    "code": "vas_gsm",
+    "name": "VAS sequedad / dolor",
+    "description": "Síntomas GSM 0–10",
+    "max_score": 20,
+    "schema": {
+      "score_mode": "sum",
+      "fields": [
+        {"key": "dryness", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Sequedad vaginal (0–10)", "en": "Vaginal dryness (0–10)"}},
+        {"key": "pain", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor / dispareunia (0–10)", "en": "Pain / dyspareunia (0–10)"}}
+      ]
+    }
+  },
+  {
+    "pathology": "gsm",
+    "code": "pgic_gsm",
+    "name": "PGIC",
+    "description": "Patient Global Impression of Change",
+    "max_score": 7,
+    "schema": {
+      "score_mode": "single",
+      "fields": [
+        {
+          "key": "pgic",
+          "type": "select",
+          "required": true,
+          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
+          "options": [
+            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
+            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
+            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
+            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
+            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
+            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
+            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
+          ]
+        }
+      ]
+    }
+  }
+]
