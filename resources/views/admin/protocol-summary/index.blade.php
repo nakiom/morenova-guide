@@ -8,20 +8,21 @@
             };
         @endphp
         <div class="protocol-summary__hero mb-4">
-            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-end gap-3">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
                 <div>
                     <p class="protocol-summary__eyebrow mb-2">{{ __('messages.protocol_catalog') }}</p>
                     <h1 class="h2 fw-bold text-dark-blue mb-2">{{ __('messages.protocol_summary') }}</h1>
-                    <p class="text-muted mb-0">{{ __('messages.protocol_summary_hint') }}</p>
+                    <p class="text-muted mb-3">{{ __('messages.protocol_summary_hint') }}</p>
+                    <div class="d-flex flex-wrap gap-2 protocol-summary__actions">
+                        <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.print()">
+                            <i class="fas fa-print me-1"></i>{{ __('messages.print') }}
+                        </button>
+                        <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-sm">
+                            <i class="fas fa-arrow-left me-1"></i>{{ __('messages.back') }}
+                        </a>
+                    </div>
                 </div>
-                <div class="d-flex flex-wrap gap-2 protocol-summary__actions">
-                    <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.print()">
-                        <i class="fas fa-print me-1"></i>{{ __('messages.print') }}
-                    </button>
-                    <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-sm">
-                        <i class="fas fa-arrow-left me-1"></i>{{ __('messages.back') }}
-                    </a>
-                </div>
+                <x-device-kv-hint compact class="protocol-summary__lcd flex-shrink-0" />
             </div>
 
             <nav class="protocol-summary__jump mt-4" aria-label="{{ __('messages.protocol_summary') }}">

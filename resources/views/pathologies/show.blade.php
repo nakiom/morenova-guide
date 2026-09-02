@@ -157,42 +157,47 @@
                         </div>
                         @endif
 
-                        @if($hasSecondary)
                         @if($hasTiles)<hr class="my-3">@endif
-                        <div class="row g-3 small">
-                            @if($pathology->sessions_frequency)
-                            <div class="col-6 col-md-3">
-                                <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_sessions_frequency') }}</div>
-                                <div class="fw-semibold">{{ $pathology->sessions_frequency }}</div>
-                            </div>
-                            @endif
-                            @if($pathology->energy_kv)
-                            <div class="col-6 col-md-3">
-                                <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_energy') }}</div>
-                                <div class="fw-semibold">{{ number_format((float) $pathology->energy_kv, 1, ',', '.') }} kV</div>
-                            </div>
-                            @endif
-                            @if($pathology->frequency_hz)
-                            <div class="col-6 col-md-3">
-                                <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_frequency') }}</div>
-                                <div class="fw-semibold">{{ number_format((float) $pathology->frequency_hz, 1, ',', '.') }} Hz</div>
-                            </div>
-                            @endif
-                            @if($pathology->transducer)
-                            <div class="col-12 col-md-6">
-                                <div class="text-muted text-uppercase fw-semibold mb-2">{{ __('messages.param_transducer') }}</div>
-                                <div class="d-flex flex-wrap align-items-center gap-3">
-                                    <div class="fw-semibold fs-5">{{ $pathology->transducer }}</div>
-                                    @if($pathology->transducerImageUrl())
-                                    <img src="{{ $pathology->transducerImageUrl() }}"
-                                         alt="{{ $pathology->transducer }}"
-                                         class="transducer-image">
+                        <div class="treatment-parameters-body">
+                            @if($hasSecondary)
+                            <div class="treatment-parameters-meta">
+                                <div class="row g-3 small">
+                                    @if($pathology->sessions_frequency)
+                                    <div class="col-6 col-md-4">
+                                        <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_sessions_frequency') }}</div>
+                                        <div class="fw-semibold">{{ $pathology->sessions_frequency }}</div>
+                                    </div>
+                                    @endif
+                                    @if($pathology->energy_kv)
+                                    <div class="col-6 col-md-4">
+                                        <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_energy') }}</div>
+                                        <div class="fw-semibold">{{ number_format((float) $pathology->energy_kv, 1, ',', '.') }} kV</div>
+                                    </div>
+                                    @endif
+                                    @if($pathology->frequency_hz)
+                                    <div class="col-6 col-md-4">
+                                        <div class="text-muted text-uppercase fw-semibold">{{ __('messages.param_frequency') }}</div>
+                                        <div class="fw-semibold">{{ number_format((float) $pathology->frequency_hz, 1, ',', '.') }} Hz</div>
+                                    </div>
+                                    @endif
+                                    @if($pathology->transducer)
+                                    <div class="col-12">
+                                        <div class="text-muted text-uppercase fw-semibold mb-2">{{ __('messages.param_transducer') }}</div>
+                                        <div class="d-flex flex-wrap align-items-center gap-3">
+                                            <div class="fw-semibold fs-5">{{ $pathology->transducer }}</div>
+                                            @if($pathology->transducerImageUrl())
+                                            <img src="{{ $pathology->transducerImageUrl() }}"
+                                                 alt="{{ $pathology->transducer }}"
+                                                 class="transducer-image">
+                                            @endif
+                                        </div>
+                                    </div>
                                     @endif
                                 </div>
                             </div>
                             @endif
+                            <x-device-kv-hint class="treatment-parameters-lcd" />
                         </div>
-                        @endif
                     </div>
                 </div>
             </div>

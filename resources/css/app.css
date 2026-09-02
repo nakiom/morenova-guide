@@ -3,7 +3,7 @@
    Colores alineados con https://www.initiamedical.com (Elementor kit)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap');
 
 :root {
     /* Brand — Initia Medical
@@ -52,6 +52,7 @@
     /* Typography */
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-display: 'Plus Jakarta Sans', sans-serif;
+    --font-lcd: 'VT323', ui-monospace, 'Cascadia Mono', monospace;
 
     /* Bootstrap bridge */
     --bs-primary: #124C78;
@@ -848,6 +849,161 @@ h1, h2, h3, h4, h5, h6,
     transition: transform var(--duration-base) var(--ease-out);
 }
 
+.treatment-parameters-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.1rem 1.5rem;
+}
+
+.treatment-parameters-meta {
+    flex: 1 1 16rem;
+    min-width: 0;
+}
+
+.treatment-parameters-lcd {
+    flex: 0 1 30.5rem;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.device-lcd {
+    --lcd-fg: #5ceef2;
+    --lcd-fg-dim: #3aa8b0;
+    --lcd-bg: #03080c;
+    width: min(100%, 30.5rem);
+}
+
+.device-lcd__bezel {
+    position: relative;
+    padding: 0.72rem 0.72rem 0.82rem;
+    border-radius: 0.55rem;
+    background:
+        linear-gradient(180deg, #f7f3ea 0%, #e4dfd4 38%, #c9c2b6 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.78),
+        inset 0 -2px 3px rgba(70, 62, 48, 0.18),
+        0 10px 22px rgba(18, 76, 120, 0.12);
+}
+
+.device-lcd__brand {
+    display: block;
+    margin: 0 0 0.28rem 0.08rem;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(70, 64, 54, 0.55);
+}
+
+.device-lcd__glass {
+    padding: 0.28rem;
+    border-radius: 0.22rem;
+    background: #1a1c1e;
+    box-shadow:
+        inset 0 0 0 1px rgba(0, 0, 0, 0.55),
+        0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.device-lcd__screen {
+    position: relative;
+    overflow: hidden;
+    padding: 0.55rem 0.7rem 0.5rem;
+    border-radius: 0.12rem;
+    background:
+        radial-gradient(ellipse 90% 80% at 50% 0%, #12303a 0%, var(--lcd-bg) 62%);
+    color: var(--lcd-fg);
+    font-family: var(--font-lcd);
+    font-size: clamp(0.98rem, 1.35vw, 1.18rem);
+    line-height: 1.28;
+    letter-spacing: 0.03em;
+    text-shadow:
+        0 0 5px rgba(92, 238, 242, 0.85),
+        0 0 14px rgba(92, 238, 242, 0.28);
+    box-shadow: inset 0 0 18px rgba(0, 0, 0, 0.72);
+}
+
+.device-lcd__screen::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.035) 0,
+        rgba(255, 255, 255, 0.035) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+}
+
+.device-lcd__screen::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, transparent 42%);
+}
+
+.device-lcd__line {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.device-lcd__line + .device-lcd__line {
+    margin-top: 0.18em;
+}
+
+.device-lcd__kv {
+    color: #9ffafc;
+    font-weight: 400;
+    margin-right: 0.35em;
+}
+
+.device-lcd__dash {
+    color: var(--lcd-fg-dim);
+    margin-right: 0.35em;
+}
+
+.device-lcd__cursor {
+    display: inline-block;
+    width: 0.55em;
+    height: 0.95em;
+    margin-left: 0.12em;
+    background: var(--lcd-fg);
+    box-shadow: 0 0 6px rgba(92, 238, 242, 0.9);
+    animation: device-lcd-blink 1.15s steps(1) infinite;
+    vertical-align: -0.08em;
+}
+
+.device-lcd--compact {
+    width: min(100%, 30.5rem);
+}
+
+.device-lcd--compact .device-lcd__screen {
+    font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+    padding: 0.42rem 0.55rem;
+}
+
+@keyframes device-lcd-blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@media (max-width: 575.98px) {
+    .device-lcd__screen {
+        font-size: 0.95rem;
+    }
+
+    .device-lcd__line {
+        white-space: normal;
+    }
+}
+
 .transducer-image:hover {
     transform: scale(1.02);
 }
@@ -1543,6 +1699,11 @@ h1, h2, h3, h4, h5, h6,
     body:not(.app-ready) main {
         opacity: 1;
     }
+
+    .device-lcd__cursor {
+        animation: none !important;
+        opacity: 1;
+    }
 }
 
 /* --------------------------------------------------------------------------
@@ -1557,6 +1718,10 @@ h1, h2, h3, h4, h5, h6,
         linear-gradient(135deg, #ffffff 0%, #eef5fa 100%);
     border: 1px solid rgba(18, 76, 120, 0.08);
     box-shadow: 0 8px 28px rgba(18, 76, 120, 0.06);
+}
+
+.protocol-summary__lcd {
+    align-self: center;
 }
 
 .protocol-summary__eyebrow {
@@ -1810,5 +1975,16 @@ h1, h2, h3, h4, h5, h6,
 
     .protocol-summary__section {
         break-inside: avoid;
+    }
+
+    .device-lcd__bezel,
+    .device-lcd__screen {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .device-lcd__cursor {
+        animation: none;
+        display: none;
     }
 }
