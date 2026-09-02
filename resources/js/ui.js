@@ -14,18 +14,6 @@ function initNavbarScroll() {
     window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-function initStaggerReveal() {
-    document.querySelectorAll('[data-stagger]').forEach((container) => {
-        const delay = Number(container.dataset.staggerDelay || 70);
-        const children = container.querySelectorAll(':scope > *');
-
-        children.forEach((child, index) => {
-            child.classList.add('reveal-item');
-            child.style.setProperty('--reveal-delay', `${index * delay}ms`);
-        });
-    });
-}
-
 function initActiveNavLinks() {
     const current = window.location.pathname.replace(/\/$/, '') || '/';
 
@@ -52,8 +40,37 @@ function initAlertDismiss() {
     });
 }
 
+function initHomeIntro() {
+    const root = document.querySelector('[data-home-intro]');
+    const video = root?.querySelector('.home-background-video');
+    if (!root || !video) return;
+
+    const started = performance.now();
+    let revealed = false;
+
+    const reveal = () => {
+        if (revealed) return;
+        revealed = true;
+        const wait = Math.max(0, 850 - (performance.now() - started));
+        window.setTimeout(() => root.classList.add('is-ready'), wait);
+    };
+
+    if (video.readyState >= 3) {
+        reveal();
+        return;
+    }
+
+    video.addEventListener('canplay', reveal, { once: true });
+    video.addEventListener('playing', reveal, { once: true });
+    video.addEventListener('error', reveal, { once: true });
+    window.setTimeout(reveal, 2800);
+}
+
 function initPageShell() {
-    document.querySelectorAll('main .container, main .home-video-container').forEach((shell) => {
+    document.querySelectorAll('main .container').forEach((shell) => {
+        if (shell.closest('.home-video-container')) {
+            return;
+        }
         shell.classList.add('page-shell');
     });
 }
@@ -102,10 +119,10 @@ function initInputMasks() {
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('app-ready');
     initNavbarScroll();
-    initStaggerReveal();
     initActiveNavLinks();
     initAlertDismiss();
     initPageShell();
+    initHomeIntro();
     initInputMasks();
     relocateModalsToBody();
 });

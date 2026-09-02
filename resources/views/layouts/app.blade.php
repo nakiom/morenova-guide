@@ -7,21 +7,25 @@
 
     <title>MoreNova-Initia</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://direxgroup.com/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="https://direxgroup.com/favicon.ico">
-
-    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    @if(request()->routeIs('pathologies.show', 'admin.protocol-summary'))
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    @endif
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="d-flex flex-column min-vh-100">
+    <script>document.body.classList.add('app-ready');</script>
     <nav class="navbar navbar-expand-lg navbar-light app-navbar flex-shrink-0" id="app-navbar">
         <div class="container">
             <a class="navbar-brand fw-bold" href="{{ route('home') }}">
-                <img src="/img/morenova-string.png" alt="Morenova String" class="img-fluid" style="width: 207px; height: 41px;">
+                <img src="/img/morenova-string.png" alt="Morenova String" class="img-fluid" style="width: 207px; height: 41px;" decoding="async" fetchpriority="high">
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

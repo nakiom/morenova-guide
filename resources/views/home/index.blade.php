@@ -1,9 +1,14 @@
 <x-app-layout>
-    <div class="home-video-container position-relative">
-        <video autoplay muted loop playsinline class="home-background-video">
+    <div class="home-video-container position-relative" data-home-intro>
+        <video autoplay muted loop playsinline preload="metadata" class="home-background-video">
             <source src="{{ asset('videos/Morenova-pro-turnable-3D-homepage-1.mp4') }}" type="video/mp4">
         </video>
         <div class="home-video-overlay"></div>
+        <div class="home-intro" aria-hidden="true">
+            <div class="home-intro__stage">
+                <span class="home-intro__mark">MORENOVA</span>
+            </div>
+        </div>
         <div class="container py-3 py-md-5 position-relative">
             <div class="row mb-4 mb-md-5">
                 <div class="col-12 text-center">

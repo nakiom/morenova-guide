@@ -3,8 +3,6 @@
    Colores alineados con https://www.initiamedical.com (Elementor kit)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=VT323&display=swap');
-
 :root {
     /* Brand — Initia Medical
        #124C78 navy (logo/CTA) · #52E0D7 teal · #6EC1E4 light blue · #F9FBFF surface */
@@ -98,14 +96,9 @@ body.d-flex.flex-column > .footer {
     flex-shrink: 0;
 }
 
-/* Entrada suave de página */
-body:not(.app-ready) main {
-    opacity: 0;
-}
-
+/* Entrada suave de página: el contenido se pinta de inmediato (app-ready llega en el primer script). */
 body.app-ready main {
     opacity: 1;
-    transition: opacity var(--duration-slow) var(--ease-out);
 }
 
 .page-shell {
@@ -113,15 +106,29 @@ body.app-ready main {
 }
 
 @keyframes pageEnter {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
+    from { transform: translateY(12px); }
+    to { transform: none; }
 }
+
+[data-stagger] > * {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: revealUp 0.55s var(--ease-out) forwards;
+}
+
+[data-stagger] > *:nth-child(1) { animation-delay: 0ms; }
+[data-stagger] > *:nth-child(2) { animation-delay: 70ms; }
+[data-stagger] > *:nth-child(3) { animation-delay: 140ms; }
+[data-stagger] > *:nth-child(4) { animation-delay: 210ms; }
+[data-stagger] > *:nth-child(5) { animation-delay: 280ms; }
+[data-stagger] > *:nth-child(6) { animation-delay: 350ms; }
+[data-stagger] > *:nth-child(7) { animation-delay: 420ms; }
+[data-stagger] > *:nth-child(8) { animation-delay: 490ms; }
+[data-stagger] > *:nth-child(9) { animation-delay: 560ms; }
+[data-stagger] > *:nth-child(10) { animation-delay: 630ms; }
+[data-stagger] > *:nth-child(11) { animation-delay: 700ms; }
+[data-stagger] > *:nth-child(12) { animation-delay: 770ms; }
+[data-stagger] > *:nth-child(n + 13) { animation-delay: 840ms; }
 
 .reveal-item {
     opacity: 0;
@@ -722,6 +729,7 @@ h1, h2, h3, h4, h5, h6,
 
 .h1-md { font-size: 3.25rem; }
 
+
 .home-video-container {
     position: relative;
     min-height: calc(100vh - 180px);
@@ -735,6 +743,11 @@ h1, h2, h3, h4, h5, h6,
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    opacity: 0;
+    transition: opacity 0.9s var(--ease-out);
+}
+
+.home-video-container.is-ready .home-background-video {
     opacity: 0.62;
 }
 
@@ -745,6 +758,87 @@ h1, h2, h3, h4, h5, h6,
         radial-gradient(ellipse 75% 55% at 50% 28%, rgba(255, 255, 255, 0.28), transparent 68%),
         linear-gradient(180deg, rgba(244, 247, 250, 0.42) 0%, rgba(244, 247, 250, 0.55) 100%);
     z-index: 1;
+}
+
+.home-intro {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(ellipse 70% 55% at 50% 42%, rgba(82, 224, 215, 0.22), transparent 62%),
+        linear-gradient(180deg, #f7fbfd 0%, #eef5fa 100%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none;
+    animation: home-intro-out 0.85s var(--ease-out) 2.4s forwards;
+}
+
+.home-video-container.is-ready .home-intro {
+    animation: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.85s var(--ease-out), visibility 0.85s var(--ease-out);
+}
+
+.home-intro__stage {
+    text-align: center;
+    animation: home-intro-in 0.7s var(--ease-out) both;
+}
+
+.home-intro__mark {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 8vw, 5.2rem);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    background: linear-gradient(90deg, #52e0d7 0%, #3ec4cc 42%, #2a8fa8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 10px 28px rgba(18, 76, 120, 0.12));
+}
+
+@keyframes home-intro-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+@keyframes home-intro-out {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-intro,
+    .home-intro__stage,
+    .home-background-video {
+        animation: none !important;
+        transition: none !important;
+        filter: none !important;
+    }
+
+    .home-intro {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .home-background-video,
+    .home-video-container.is-ready .home-background-video {
+        opacity: 0.62;
+    }
 }
 
 .home-video-container .container {
@@ -1690,14 +1784,11 @@ h1, h2, h3, h4, h5, h6,
         scroll-behavior: auto !important;
     }
 
-    .reveal-item {
+    .reveal-item,
+    [data-stagger] > * {
         opacity: 1;
         transform: none;
         animation: none;
-    }
-
-    body:not(.app-ready) main {
-        opacity: 1;
     }
 
     .device-lcd__cursor {
