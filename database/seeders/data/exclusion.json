@@ -282,5 +282,119 @@
             "pt": "Dispositivo médico sensível a radiação eletromagnética.",
             "zh": "对电磁辐射敏感的医疗器械。"
         }
+    ],
+    "pad": [
+        {
+            "es": "Implantes electrónicos activos (marcapasos, desfibriladores, neuroestimuladores) o implantes metálicos en/cerca del área de tratamiento.",
+            "en": "Active electronic implants (pacemakers, defibrillators, neurostimulators) or metallic implants in/near the treatment area.",
+            "pt": "Implantes eletrônicos ativos (marca-passos, desfibriladores, neuroestimuladores) ou implantes metálicos na/próximo à área de tratamento.",
+            "zh": "活动性电子植入物（起搏器、除颤器、神经刺激器）或治疗区附近的金属植入物。"
+        },
+        {
+            "es": "Malignidad conocida o sospechada en el sitio de tratamiento; antecedentes oncológicos recientes según protocolo.",
+            "en": "Known or suspected malignancy at the treatment site; recent oncology history per protocol.",
+            "pt": "Malignidade conhecida ou suspeita no local do tratamento; histórico oncológico recente conforme protocolo.",
+            "zh": "治疗部位已知或疑似恶性肿瘤；近期肿瘤病史按方案评估。"
+        },
+        {
+            "es": "Trastornos de coagulación significativos o anticoagulantes con INR > 3.",
+            "en": "Significant bleeding disorders or anticoagulants with INR > 3.",
+            "pt": "Distúrbios de coagulação significativos ou anticoagulantes com INR > 3.",
+            "zh": "明显出血性疾病或抗凝治疗 INR > 3。"
+        },
+        {
+            "es": "Infarto de miocardio reciente o angina inestable.",
+            "en": "Recent myocardial infarction or unstable angina.",
+            "pt": "Infarto do miocárdio recente ou angina instável.",
+            "zh": "近期心肌梗死或不稳定型心绞痛。"
+        },
+        {
+            "es": "Isquemia crítica de miembro sin perfusión restaurada cuando esté contraindicado.",
+            "en": "Critical limb ischemia without restored perfusion when contraindicated.",
+            "pt": "Isquemia crítica de membro sem perfusão restaurada quando contraindicado.",
+            "zh": "未恢复灌注的重度肢体缺血（禁忌时）。"
+        }
+    ],
+    "wounds": [
+        {
+            "es": "Implantes electrónicos activos (marcapasos, desfibriladores, neuroestimuladores) o implantes metálicos en/cerca del área de tratamiento.",
+            "en": "Active electronic implants (pacemakers, defibrillators, neurostimulators) or metallic implants in/near the treatment area.",
+            "pt": "Implantes eletrônicos ativos (marca-passos, desfibriladores, neuroestimuladores) ou implantes metálicos na/próximo à área de tratamento.",
+            "zh": "活动性电子植入物（起搏器、除颤器、神经刺激器）或治疗区附近的金属植入物。"
+        },
+        {
+            "es": "Malignidad en el sitio; cáncer en recuperación en los últimos 5 años; radioterapia previa en la región.",
+            "en": "Malignancy at the site; cancer recovery within the last 5 years; prior radiotherapy in the region.",
+            "pt": "Malignidade no local; câncer em recuperação nos últimos 5 anos; radioterapia prévia na região.",
+            "zh": "部位恶性肿瘤；近 5 年内肿瘤恢复期；该区域既往放疗。"
+        },
+        {
+            "es": "Trastornos de coagulación significativos o anticoagulantes con INR > 3.",
+            "en": "Significant bleeding disorders or anticoagulants with INR > 3.",
+            "pt": "Distúrbios de coagulação significativos ou anticoagulantes com INR > 3.",
+            "zh": "明显出血性疾病或抗凝治疗 INR > 3。"
+        },
+        {
+            "es": "Sangrado activo, vasos mayores expuestos o isquemia crítica de miembro sin perfusión adecuada.",
+            "en": "Active bleeding, exposed major vessels or critical limb ischemia without adequate perfusion.",
+            "pt": "Sangramento ativo, vasos maiores expostos ou isquemia crítica de membro sem perfusão adequada.",
+            "zh": "活动性出血、大血管暴露或灌注不足的重度肢体缺血。"
+        },
+        {
+            "es": "Infección activa local o sistémica (celulitis, absceso, osteomielitis, sepsis) o tejido necrótico/gangrenoso que requiera cirugía.",
+            "en": "Active local or systemic infection (cellulitis, abscess, osteomyelitis, sepsis) or necrotic/gangrenous tissue requiring surgery.",
+            "pt": "Infecção ativa local ou sistêmica (celulite, abscesso, osteomielite, sepse) ou tecido necrótico/gangrenoso que exija cirurgia.",
+            "zh": "活动性局部或全身感染（蜂窝织炎、脓肿、骨髓炎、脓毒症）或需手术的坏死/坏疽组织。"
+        },
+        {
+            "es": "Control metabólico severamente inadecuado o condiciones psiquiátricas que impidan el tratamiento.",
+            "en": "Severely inadequate metabolic control or psychiatric conditions that preclude treatment.",
+            "pt": "Controle metabólico severamente inadequado ou condições psiquiátricas que impossibilitem o tratamento.",
+            "zh": "代谢控制严重不良或妨碍治疗的精神心理状况。"
+        }
+    ],
+    "msd": [
+        {
+            "es": "Implantes electrónicos activos (marcapasos, desfibriladores, neuroestimuladores) o implantes metálicos en/cerca del área de tratamiento.",
+            "en": "Active electronic implants (pacemakers, defibrillators, neurostimulators) or metallic implants in/near the treatment area.",
+            "pt": "Implantes eletrônicos ativos (marca-passos, desfibriladores, neuroestimuladores) ou implantes metálicos na/próximo à área de tratamento.",
+            "zh": "活动性电子植入物（起搏器、除颤器、神经刺激器）或治疗区附近的金属植入物。"
+        },
+        {
+            "es": "Malignidad conocida o sospechada en el sitio de tratamiento; antecedentes oncológicos recientes según protocolo.",
+            "en": "Known or suspected malignancy at the treatment site; recent oncology history per protocol.",
+            "pt": "Malignidade conhecida ou suspeita no local do tratamento; histórico oncológico recente conforme protocolo.",
+            "zh": "治疗部位已知或疑似恶性肿瘤；近期肿瘤病史按方案评估。"
+        },
+        {
+            "es": "Trastornos de coagulación significativos o anticoagulantes con INR > 3.",
+            "en": "Significant bleeding disorders or anticoagulants with INR > 3.",
+            "pt": "Distúrbios de coagulação significativos ou anticoagulantes com INR > 3.",
+            "zh": "明显出血性疾病或抗凝治疗 INR > 3。"
+        },
+        {
+            "es": "Neuropatía periférica severa con pérdida de sensibilidad o hipersensibilidad al dolor.",
+            "en": "Severe peripheral neuropathy with loss of sensation or pain hypersensitivity.",
+            "pt": "Neuropatia periférica grave com perda de sensibilidade ou hipersensibilidade à dor.",
+            "zh": "严重周围神经病伴感觉丧失或痛觉过敏。"
+        },
+        {
+            "es": "Tratamiento directo sobre órganos con gas (pulmón/intestino), SNC, columna o áreas irradiadas; infección activa en el área.",
+            "en": "Direct treatment over gas-filled organs (lung/bowel), CNS, spine or irradiated areas; active infection in the area.",
+            "pt": "Tratamento direto sobre órgãos com gás (pulmão/intestino), SNC, coluna ou áreas irradiadas; infecção ativa na área.",
+            "zh": "直接治疗含气脏器（肺/肠）、中枢神经、脊柱或放疗区；治疗区活动性感染。"
+        },
+        {
+            "es": "Placas de crecimiento (niños), fracturas agudas, osteoporosis severa o degeneración osteoartrítica avanzada en el foco.",
+            "en": "Growth plates (children), acute fractures, severe osteoporosis or advanced osteoarthritic degeneration in the focus area.",
+            "pt": "Placas de crescimento (crianças), fraturas agudas, osteoporose grave ou degeneração osteoartrítica avançada no foco.",
+            "zh": "生长板（儿童）、急性骨折、重度骨质疏松或焦点区晚期骨关节炎退变。"
+        },
+        {
+            "es": "Embarazo o lactancia; condiciones psiquiátricas que dificulten la adhesión o seguridad.",
+            "en": "Pregnancy or lactation; psychiatric conditions that hinder compliance or safety.",
+            "pt": "Gravidez ou amamentação; condições psiquiátricas que dificultem adesão ou segurança.",
+            "zh": "妊娠或哺乳；妨碍依从性或安全的精神心理状况。"
+        }
     ]
 }

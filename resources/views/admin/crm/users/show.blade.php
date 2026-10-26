@@ -17,6 +17,13 @@
                 </div>
             </div>
             <div class="d-flex flex-wrap gap-2">
+                <form action="{{ route('admin.crm-users.force-onboarding', $user) }}" method="POST" class="d-inline"
+                      onsubmit="return confirm(@json(__('messages.crm_user_force_onboarding_confirm')))">
+                    @csrf
+                    <button type="submit" class="btn btn-outline-warning">
+                        <i class="fas fa-redo me-1"></i>{{ __('messages.crm_user_force_onboarding') }}
+                    </button>
+                </form>
                 <a href="{{ route('admin.crm-users.password.edit', $user) }}" class="btn btn-outline-primary">
                     <i class="fas fa-key me-1"></i>{{ __('messages.change_password') }}
                 </a>
@@ -32,6 +39,21 @@
         </div>
         @endif
 
+        @if($user->needsOnboarding())
+        <div class="alert alert-warning border-0 mb-4">
+            <i class="fas fa-exclamation-triangle me-1"></i>
+            {{ __('messages.crm_user_onboarding_pending') }}
+            <ul class="mb-0 mt-2 small">
+                @if($user->must_change_password)
+                    <li>{{ __('messages.crm_user_must_change_password') }}</li>
+                @endif
+                @if($user->privacy_accepted_at === null)
+                    <li>{{ __('messages.crm_user_must_accept_privacy') }}</li>
+                @endif
+            </ul>
+        </div>
+        @endif
+
         <div class="row g-3 mb-4">
             <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body">
                 <div class="text-muted small">{{ __('messages.phone') }}</div>
@@ -44,6 +66,10 @@
             <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body">
                 <div class="text-muted small">{{ __('messages.job_title') }}</div>
                 <div>{{ $user->job_title ?: '—' }}</div>
+            </div></div></div>
+            <div class="col-md-4"><div class="card border-0 shadow-sm"><div class="card-body">
+                <div class="text-muted small">{{ __('messages.preferred_locale') }}</div>
+                <div>{{ $user->preferred_locale ? (\App\Support\Locales::labels()[$user->preferred_locale] ?? $user->preferred_locale) : __('messages.preferred_locale_auto') }}</div>
             </div></div></div>
         </div>
 

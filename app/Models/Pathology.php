@@ -141,6 +141,7 @@ class Pathology extends Model
         $folder = match ($this->category?->slug) {
             'womens-health' => 'fem',
             'mens-health' => 'men',
+            'general-health' => 'general',
             default => null,
         };
 

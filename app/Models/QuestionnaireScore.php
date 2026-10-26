@@ -28,6 +28,7 @@ class QuestionnaireScore extends Model
         'responses',
         'scored_at',
         'notes',
+        'patient_message',
     ];
 
     protected function casts(): array

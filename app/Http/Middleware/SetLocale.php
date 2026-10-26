@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Middleware;
 
+use App\Support\Locales;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -12,8 +13,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SetLocale
 {
-    private const SUPPORTED = ['es', 'en', 'pt', 'zh'];
-
     /**
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
@@ -22,7 +21,12 @@ class SetLocale
         $locale = $this->resolveLocale($request);
 
         App::setLocale($locale);
-        Session::put('locale', $locale);
+
+        // Solo persistir en sesión si ya había preferencia explícita o el usuario eligió idioma.
+        // Si no hay sesión de locale, se usa el del navegador sin forzar cookie hasta que elijan.
+        if (Session::has('locale') || $request->query('lang') || $request->user()?->preferred_locale) {
+            Session::put('locale', $locale);
+        }
 
         return $next($request);
     }
@@ -30,14 +34,15 @@ class SetLocale
     private function resolveLocale(Request $request): string
     {
         $candidates = [
-            $request->query('lang'),
-            Session::get('locale'),
-            $request->getPreferredLanguage(self::SUPPORTED),
-            config('app.locale', 'es'),
+            Locales::normalize(is_string($request->query('lang')) ? $request->query('lang') : null),
+            Locales::normalize(Session::get('locale')),
+            Locales::normalize($request->user()?->preferred_locale),
+            Locales::normalize($request->getPreferredLanguage(Locales::SUPPORTED)),
+            Locales::normalize(config('app.locale', 'es')),
         ];
 
         foreach ($candidates as $candidate) {
-            if (is_string($candidate) && in_array($candidate, self::SUPPORTED, true)) {
+            if ($candidate !== null) {
                 return $candidate;
             }
         }

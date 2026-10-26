@@ -34,6 +34,9 @@ class User extends Authenticatable
         'photo_url',
         'is_active',
         'email_verified_at',
+        'must_change_password',
+        'privacy_accepted_at',
+        'preferred_locale',
     ];
 
     /**
@@ -55,10 +58,17 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
+            'privacy_accepted_at' => 'datetime',
             'password' => 'hashed',
             'is_admin' => 'boolean',
             'is_active' => 'boolean',
+            'must_change_password' => 'boolean',
         ];
+    }
+
+    public function needsOnboarding(): bool
+    {
+        return $this->must_change_password || $this->privacy_accepted_at === null;
     }
 
     public function isAdmin(): bool
@@ -103,7 +113,7 @@ class User extends Authenticatable
         }
 
         return $this->photo_path
-            ? Storage::disk('public')->url($this->photo_path)
+            ? url(Storage::disk('public')->url($this->photo_path))
             : null;
     }
 }

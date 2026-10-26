@@ -16,14 +16,25 @@ class CredentialController extends Controller
     public function index(Request $request): View
     {
         $manager = $this->manager($request);
+        $q = trim((string) $request->get('q', ''));
+
         $users = User::query()
-            ->where('id', $manager->id)
-            ->orWhere('parent_user_id', $manager->id)
+            ->where(function ($query) use ($manager) {
+                $query->where('id', $manager->id)
+                    ->orWhere('parent_user_id', $manager->id);
+            })
+            ->when($q !== '', function ($query) use ($q) {
+                $query->where(function ($inner) use ($q) {
+                    $inner->where('name', 'like', "%{$q}%")
+                        ->orWhere('email', 'like', "%{$q}%")
+                        ->orWhere('job_title', 'like', "%{$q}%");
+                });
+            })
             ->orderByRaw('parent_user_id IS NOT NULL')
             ->orderBy('name')
             ->get();
 
-        return view('center.credentials.index', compact('users', 'manager'));
+        return view('center.credentials.index', compact('users', 'manager', 'q'));
     }
 
     public function edit(Request $request, User $user): View
@@ -49,10 +60,18 @@ class CredentialController extends Controller
 
         $validated = $request->validate($rules);
 
-        $user->forceFill([
+        $updates = [
             'password' => $validated['password'],
             'remember_token' => null,
-        ])->save();
+        ];
+
+        // Si el responsable cambia la clave de un subusuario, exigir nuevo onboarding (clave + privacidad).
+        if (! $user->is($manager)) {
+            $updates['must_change_password'] = true;
+            $updates['privacy_accepted_at'] = null;
+        }
+
+        $user->forceFill($updates)->save();
 
         return redirect()
             ->route('center.credentials.index')

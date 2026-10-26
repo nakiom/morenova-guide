@@ -18,33 +18,34 @@ Guía clínica MoreNova (Laravel 12, Bootstrap 5, MySQL) con CRM de centros, usu
 - MySQL 8.0+
 - Node.js y npm
 
-## Instalación
+## Instalación rápida (local)
 
 ```bash
 composer install
 npm install
 cp .env.example .env
 php artisan key:generate
-```
-
-Configurar MySQL en `.env`:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=morenova
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_contraseña
-APP_URL=http://morenova.local
-APP_LOCALE=es
-```
-
-```bash
+# Configurar DB en .env
 php artisan migrate --seed
 php artisan storage:link
 npm run build
 ```
+
+Para desarrollo local: `APP_URL=http://morenova.local` y `FORCE_HTTPS=false`.
+
+## Producción (subdominio)
+
+Guía completa: **[deploy/INSTALACION.md](deploy/INSTALACION.md)**
+
+Script de enlaces y permisos:
+
+```bash
+chmod +x deploy/fix-permissions.sh
+./deploy/fix-permissions.sh
+# o: ./deploy/fix-permissions.sh --user http --group http
+```
+
+Apache: `deploy/apache-morenova.conf`
 
 ## Usuarios de seed
 
@@ -58,12 +59,9 @@ npm run build
 
 Los seeders cargan el estado actual de producción local:
 
-- 2 categorías + imágenes en `database/seeders/assets/`
-- 7 patologías (FSD, SUI, Vulvodinia, GSM, ED, CPPS/CP, PD)
-- Criterios, pasos, checklists, seguimientos y áreas desde `database/seeders/data/*.json`
-- 3 centros (CCU, CUIN, Urolit), 6 usuarios y 3 equipos
-
-Para reinstalar contenido clínico/CRM sin tocar migraciones:
+- Categorías + imágenes en `database/seeders/assets/`
+- Patologías, criterios, pasos, checklists, seguimientos y áreas desde `database/seeders/data/*.json`
+- Centros, usuarios y equipos CRM
 
 ```bash
 php artisan db:seed
@@ -71,9 +69,8 @@ php artisan db:seed
 
 ## Estructura relevante
 
+- `deploy/` — instalación, Apache, script de permisos
 - `database/seeders/data/` — fixtures JSON del contenido clínico
-- `database/seeders/assets/` — imágenes de categorías y patologías
-- `resources/documentation/` — protocolos fuente (fem/men)
 - `lang/` — traducciones de UI
 
 ## Desarrollo

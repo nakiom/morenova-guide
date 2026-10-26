@@ -121,10 +121,120 @@ class Questionnaire extends Model
             return null;
         }
 
+        if ($mode === 'percent') {
+            return $this->percentIndex($fields, $responses);
+        }
+
         return match ($mode) {
             'average' => array_sum($values) / count($values),
             'single' => $values[0],
             default => array_sum($values),
         };
+    }
+
+    /**
+     * 0–100 a partir del rango de cada ítem: ((valor − mín) / (máx − mín)), promediado.
+     * QuickDASH (1–5), FFI (0–10) y NDI (0–5) usan esta escala.
+     *
+     * @param  list<array<string, mixed>>  $fields
+     * @param  array<string, mixed>  $responses
+     */
+    private function percentIndex(array $fields, array $responses): ?float
+    {
+        $normalized = 0.0;
+        $count = 0;
+
+        foreach ($fields as $field) {
+            if (($field['score'] ?? true) === false) {
+                continue;
+            }
+
+            $key = (string) ($field['key'] ?? '');
+            if ($key === '' || ! isset($responses[$key]) || ! is_numeric($responses[$key])) {
+                continue;
+            }
+
+            $min = (float) ($field['min'] ?? 0);
+            $max = (float) ($field['max'] ?? 0);
+            $span = $max - $min;
+            if ($span <= 0) {
+                continue;
+            }
+
+            $normalized += ((float) $responses[$key] - $min) / $span;
+            $count++;
+        }
+
+        if ($count === 0) {
+            return null;
+        }
+
+        return round(($normalized / $count) * 100, 2);
+    }
+
+    /**
+     * Whether a higher raw score means clinical improvement.
+     * Pain/symptom scales usually improve when the score goes down.
+     */
+    public function higherIsBetter(): bool
+    {
+        $schema = $this->schema;
+        if (is_array($schema) && array_key_exists('higher_is_better', $schema)) {
+            return (bool) $schema['higher_is_better'];
+        }
+
+        $code = strtolower((string) $this->code);
+
+        if (str_contains($code, 'satisfaction')) {
+            return true;
+        }
+
+        $lowerBetterPrefixes = [
+            'nih_cpsi',
+            'ipss',
+            'pd_vas',
+            'pd_curvature',
+            'pdq',
+            'iciq',
+            'iiq',
+            'udi',
+            'pad_test',
+            'cotton_swab',
+            'vas_pain',
+            'vas_gsm',
+            'vas_',
+            'quickdash',
+            'ffi',
+            'ndi',
+            'womac',
+            'bpi',
+        ];
+
+        foreach ($lowerBetterPrefixes as $prefix) {
+            if ($code === rtrim($prefix, '_') || str_starts_with($code, $prefix)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public function isImprovement(float $deltaPostMinusPre): bool
+    {
+        if (abs($deltaPostMinusPre) < 0.00001) {
+            return false;
+        }
+
+        return $this->higherIsBetter()
+            ? $deltaPostMinusPre > 0
+            : $deltaPostMinusPre < 0;
+    }
+
+    /**
+     * Signed delta where positive always means improvement.
+     */
+    public function signedImprovement(float $deltaPostMinusPre): float
+    {
+        return $this->higherIsBetter() ? $deltaPostMinusPre : -$deltaPostMinusPre;
     }
 }

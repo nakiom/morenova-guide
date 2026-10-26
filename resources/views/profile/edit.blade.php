@@ -28,7 +28,7 @@
                     <div class="text-center text-md-start">
                         <h1 class="h2 fw-bold text-dark-blue mb-1">{{ __('messages.profile_title') }}</h1>
                         <p class="text-muted mb-2">{{ __('messages.profile_subtitle') }}</p>
-                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start align-items-center gap-2">
                             <span class="badge rounded-pill profile-badge">
                                 <i class="fas fa-user me-1"></i>{{ $user->name }}
                             </span>
@@ -36,9 +36,13 @@
                                 <i class="fas fa-envelope me-1"></i>{{ $user->email }}
                             </span>
                             @if($user->center)
-                            <span class="badge rounded-pill profile-badge profile-badge--muted">
-                                <i class="fas fa-building me-1"></i>{{ $user->center->name }}
-                            </span>
+                                @if($user->center->logoUrl())
+                                    <x-center-logo size="sm" :center="$user->center" show-name />
+                                @else
+                                    <span class="badge rounded-pill profile-badge profile-badge--muted">
+                                        <i class="fas fa-building me-1"></i>{{ $user->center->name }}
+                                    </span>
+                                @endif
                             @endif
                         </div>
                     </div>

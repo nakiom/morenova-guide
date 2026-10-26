@@ -75,9 +75,17 @@ class TreatmentSessionController extends Controller
         $patient->renumberSessions();
 
         if (array_key_exists('expected_next_visit_at', $data)) {
-            $patient->update([
-                'expected_next_visit_at' => $data['expected_next_visit_at'] ?: null,
-            ]);
+            $newVisit = $data['expected_next_visit_at'] ?: null;
+            $updates = ['expected_next_visit_at' => $newVisit];
+
+            $oldVisit = $patient->expected_next_visit_at?->toDateString();
+            $newVisitStr = $newVisit ? \Illuminate\Support\Carbon::parse($newVisit)->toDateString() : null;
+
+            if ($oldVisit !== $newVisitStr) {
+                $updates['visit_reminder_sent_for'] = null;
+            }
+
+            $patient->update($updates);
         }
 
         return redirect()

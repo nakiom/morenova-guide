@@ -13,7 +13,13 @@ class EnsureAdmin
     public function handle(Request $request, Closure $next): Response
     {
         if (!$request->user()?->isAdmin()) {
-            abort(403, 'Unauthorized');
+            if ($request->expectsJson()) {
+                abort(403, __('messages.unauthorized'));
+            }
+
+            return redirect()
+                ->route('dashboard')
+                ->with('error', __('messages.unauthorized_hint'));
         }
 
         return $next($request);

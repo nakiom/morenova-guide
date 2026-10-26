@@ -24,6 +24,11 @@ class CategorySeeder extends Seeder
                 'icon' => 'fas fa-mars',
                 'order' => 2,
             ],
+            [
+                'slug' => 'general-health',
+                'icon' => 'fas fa-heartbeat',
+                'order' => 3,
+            ],
         ];
 
         foreach ($categories as $data) {

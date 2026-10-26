@@ -25,6 +25,7 @@ class ProfileUpdateRequest extends FormRequest
             ],
             'photo' => ['nullable', 'image', 'mimes:jpeg,png,jpg,webp', 'max:2048'],
             'photo_url' => ['nullable', 'url:http,https', 'max:2048'],
+            'preferred_locale' => ['nullable', 'string', Rule::in(\App\Support\Locales::SUPPORTED)],
         ];
     }
 }

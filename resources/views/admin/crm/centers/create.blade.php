@@ -15,7 +15,7 @@
                     <i class="fas fa-plus"></i>
                 </span>
             </div>
-            <form method="POST" action="{{ route('admin.centers.store') }}">
+            <form method="POST" action="{{ route('admin.centers.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="card-body p-4 p-md-5">
                     @if($errors->any())

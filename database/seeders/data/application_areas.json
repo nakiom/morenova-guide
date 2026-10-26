@@ -444,5 +444,173 @@
                 "description": "2 次应用 · 共 2000–3000"
             }
         }
+    ],
+    "pad": [
+        {
+            "es": {
+                "title": "Pantorrillas (gastrocnemio y sóleo)",
+                "description": "500 disparos por región"
+            },
+            "en": {
+                "title": "Calves (gastrocnemius and soleus)",
+                "description": "500 shots per region"
+            },
+            "pt": {
+                "title": "Panturrilhas (gastrocnêmio e sóleo)",
+                "description": "500 disparos por região"
+            },
+            "zh": {
+                "title": "小腿（腓肠肌与比目鱼肌）",
+                "description": "每区 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Muslos (región de arteria femoral)",
+                "description": "Colaterales · 500 disparos"
+            },
+            "en": {
+                "title": "Thighs (femoral artery region)",
+                "description": "Collaterals · 500 shots"
+            },
+            "pt": {
+                "title": "Coxas (região da artéria femoral)",
+                "description": "Colaterais · 500 disparos"
+            },
+            "zh": {
+                "title": "大腿（股动脉区域）",
+                "description": "侧支循环 · 500 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Pie (arco plantar)",
+                "description": "Si síntomas distales · Total ~2500"
+            },
+            "en": {
+                "title": "Foot (plantar arch)",
+                "description": "If distal symptoms · Total ~2500"
+            },
+            "pt": {
+                "title": "Pé (arco plantar)",
+                "description": "Se sintomas distais · Total ~2500"
+            },
+            "zh": {
+                "title": "足部（足底弓）",
+                "description": "远端症状时 · 共约 2500"
+            }
+        }
+    ],
+    "wounds": [
+        {
+            "es": {
+                "title": "Bordes de la herida",
+                "description": "500–750 disparos por sección"
+            },
+            "en": {
+                "title": "Wound edges",
+                "description": "500–750 shots per section"
+            },
+            "pt": {
+                "title": "Bordas da ferida",
+                "description": "500–750 disparos por seção"
+            },
+            "zh": {
+                "title": "伤口边缘",
+                "description": "每节 500–750 发"
+            }
+        },
+        {
+            "es": {
+                "title": "Tejido perilesional",
+                "description": "Estimular angiogénesis · cobertura completa"
+            },
+            "en": {
+                "title": "Perilesional tissue",
+                "description": "Stimulate angiogenesis · full coverage"
+            },
+            "pt": {
+                "title": "Tecido perilesional",
+                "description": "Estimular angiogênese · cobertura completa"
+            },
+            "zh": {
+                "title": "创周组织",
+                "description": "刺激血管生成 · 完整覆盖"
+            }
+        },
+        {
+            "es": {
+                "title": "Secciones de heridas grandes",
+                "description": "Tratar por zonas · evitar hueso/tendón expuesto"
+            },
+            "en": {
+                "title": "Large-wound sections",
+                "description": "Treat by zones · avoid exposed bone/tendon"
+            },
+            "pt": {
+                "title": "Seções de feridas grandes",
+                "description": "Tratar por zonas · evitar osso/tendão exposto"
+            },
+            "zh": {
+                "title": "大面积伤口分区",
+                "description": "分区治疗 · 避开暴露骨/肌腱"
+            }
+        }
+    ],
+    "msd": [
+        {
+            "es": {
+                "title": "Tendinopatías (Aquiles, manguito, epicóndilo)",
+                "description": "Primera aplicación en foco del dolor"
+            },
+            "en": {
+                "title": "Tendinopathies (Achilles, rotator cuff, epicondyle)",
+                "description": "First application at pain source"
+            },
+            "pt": {
+                "title": "Tendinopatias (Aquiles, manguito, epicôndilo)",
+                "description": "Primeira aplicação no foco da dor"
+            },
+            "zh": {
+                "title": "肌腱病（跟腱、肩袖、肱骨外上髁）",
+                "description": "首次治疗于疼痛源"
+            }
+        },
+        {
+            "es": {
+                "title": "Puntos gatillo miofasciales",
+                "description": "Trapecio, cuadrado lumbar, glúteos · intervalos ~1 cm"
+            },
+            "en": {
+                "title": "Myofascial trigger points",
+                "description": "Trapezius, quadratus lumborum, gluteals · ~1 cm intervals"
+            },
+            "pt": {
+                "title": "Pontos-gatilho miofasciais",
+                "description": "Trapézio, quadrado lombar, glúteos · intervalos ~1 cm"
+            },
+            "zh": {
+                "title": "肌筋膜激痛点",
+                "description": "斜方肌、腰方肌、臀肌 · 约 1 cm 间隔"
+            }
+        },
+        {
+            "es": {
+                "title": "Dolor articular / fascitis plantar",
+                "description": "2–4 aplicaciones · 500–750 disparos c/u"
+            },
+            "en": {
+                "title": "Joint pain / plantar fasciitis",
+                "description": "2–4 applications · 500–750 shots each"
+            },
+            "pt": {
+                "title": "Dor articular / fascite plantar",
+                "description": "2–4 aplicações · 500–750 disparos cada"
+            },
+            "zh": {
+                "title": "关节痛 / 足底筋膜炎",
+                "description": "2–4 次应用 · 每次 500–750 发"
+            }
+        }
     ]
 }

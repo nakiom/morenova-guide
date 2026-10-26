@@ -7,7 +7,6 @@ namespace Database\Seeders;
 use App\Models\Center;
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 
 class CrmUserSeeder extends Seeder
 {
@@ -17,7 +16,7 @@ class CrmUserSeeder extends Seeder
             [
                 'email' => 'admin@morenova.com',
                 'name' => 'Admin',
-                'password' => 'password',
+                'password' => 'password1',
                 'is_admin' => true,
                 'center' => null,
                 'phone' => null,
@@ -93,7 +92,7 @@ class CrmUserSeeder extends Seeder
                 ? Center::where('name', $centerName)->value('id')
                 : null;
 
-            $data['password'] = Hash::make($plainPassword);
+            $data['password'] = $plainPassword;
             $data['is_active'] = true;
             $data['email_verified_at'] = now();
 

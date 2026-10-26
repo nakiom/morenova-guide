@@ -184,5 +184,109 @@
                 }
             }
         }
+    ],
+    "general-health": [
+        {
+            "slug": "pad",
+            "icon": "fas fa-walking",
+            "order": 1,
+            "parameters": {
+                "transducer": "C30",
+                "sessions_count": "6 - 10",
+                "sessions_frequency": "1 - 2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 5,
+                "shots_per_application": 500,
+                "shots_per_session": 2500,
+                "energy_kv": 1.9,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Enfermedad Arterial Periférica (PAD)",
+                    "description": "Tratamiento de claudicación intermitente y dolor isquémico de miembros inferiores con LiESWT"
+                },
+                "en": {
+                    "name": "Peripheral Arterial Disease (PAD)",
+                    "description": "Treatment of intermittent claudication and ischemic lower-limb pain with LiESWT"
+                },
+                "pt": {
+                    "name": "Doença Arterial Periférica (DAP)",
+                    "description": "Tratamento de claudicação intermitente e dor isquêmica de membros inferiores com LiESWT"
+                },
+                "zh": {
+                    "name": "外周动脉疾病 (PAD)",
+                    "description": "使用低强度冲击波治疗间歇性跛行及下肢缺血性疼痛"
+                }
+            }
+        },
+        {
+            "slug": "wounds",
+            "icon": "fas fa-band-aid",
+            "order": 2,
+            "parameters": {
+                "transducer": "C30",
+                "sessions_count": "6 - 12",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 15,
+                "applications_per_session": 4,
+                "shots_per_application": 625,
+                "shots_per_session": 2500,
+                "energy_kv": 1.9,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Cicatrización de Heridas (W.H.)",
+                    "description": "Tratamiento adyuvante de úlceras diabéticas, venosas y por presión con LiESWT"
+                },
+                "en": {
+                    "name": "Wound Healing (W.H.)",
+                    "description": "Adjunctive treatment of diabetic, venous and pressure ulcers with LiESWT"
+                },
+                "pt": {
+                    "name": "Cicatrização de Feridas (W.H.)",
+                    "description": "Tratamento adjuvante de úlceras diabéticas, venosas e por pressão com LiESWT"
+                },
+                "zh": {
+                    "name": "伤口愈合 (W.H.)",
+                    "description": "低强度冲击波辅助治疗糖尿病足溃疡、静脉性溃疡及压疮"
+                }
+            }
+        },
+        {
+            "slug": "msd",
+            "icon": "fas fa-bone",
+            "order": 3,
+            "parameters": {
+                "transducer": "C30",
+                "sessions_count": "3 - 6",
+                "sessions_frequency": "2 / semana",
+                "session_duration_minutes": 20,
+                "applications_per_session": 3,
+                "shots_per_application": 625,
+                "shots_per_session": 2500,
+                "energy_kv": 1.8,
+                "frequency_hz": 2
+            },
+            "translations": {
+                "es": {
+                    "name": "Trastornos Musculoesqueléticos (MSD)",
+                    "description": "Tratamiento de tendinopatías, puntos gatillo y dolor musculoesquelético crónico con LiESWT"
+                },
+                "en": {
+                    "name": "Musculoskeletal Disorders (MSD)",
+                    "description": "Treatment of tendinopathies, trigger points and chronic musculoskeletal pain with LiESWT"
+                },
+                "pt": {
+                    "name": "Distúrbios Musculoesqueléticos (MSD)",
+                    "description": "Tratamento de tendinopatias, pontos-gatilho e dor musculoesquelética crônica com LiESWT"
+                },
+                "zh": {
+                    "name": "肌肉骨骼疾病 (MSD)",
+                    "description": "使用低强度冲击波治疗肌腱病、激痛点及慢性肌肉骨骼疼痛"
+                }
+            }
+        }
     ]
 }

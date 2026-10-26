@@ -59,6 +59,26 @@
             </div>
 
             <div class="col-12 col-md-6">
+                <label for="preferred_locale" class="form-label">{{ __('messages.preferred_locale') }}</label>
+                <div class="input-icon-wrap">
+                    <i class="fas fa-language"></i>
+                    <select id="preferred_locale" name="preferred_locale"
+                            class="form-select @error('preferred_locale') is-invalid @enderror">
+                        <option value="">{{ __('messages.preferred_locale_auto') }}</option>
+                        @foreach(\App\Support\Locales::labels() as $code => $label)
+                            <option value="{{ $code }}" @selected(old('preferred_locale', $user->preferred_locale) === $code)>
+                                {{ $label }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+                <small class="text-muted">{{ __('messages.preferred_locale_hint') }}</small>
+                @error('preferred_locale')
+                <div class="invalid-feedback d-block">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="col-12 col-md-6">
                 <label for="photo" class="form-label">{{ __('messages.profile_photo') }}</label>
                 <input type="file" name="photo" id="photo"
                        class="form-control @error('photo') is-invalid @enderror"

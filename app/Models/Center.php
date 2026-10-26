@@ -6,11 +6,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
 
 class Center extends Model
 {
     protected $fillable = [
         'name',
+        'logo_path',
         'location',
         'address',
         'phone',
@@ -29,6 +31,44 @@ class Center extends Model
         return [
             'is_active' => 'boolean',
         ];
+    }
+
+    public function logoUrl(): ?string
+    {
+        if (! $this->logo_path || ! Storage::disk('public')->exists($this->logo_path)) {
+            return null;
+        }
+
+        return Storage::disk('public')->url($this->logo_path);
+    }
+
+    public function logoAbsolutePath(): ?string
+    {
+        if (! $this->logo_path || ! Storage::disk('public')->exists($this->logo_path)) {
+            return null;
+        }
+
+        $path = Storage::disk('public')->path($this->logo_path);
+
+        return is_file($path) ? $path : null;
+    }
+
+    /**
+     * @return list<array{label: string, url: string}>
+     */
+    public function socialLinks(): array
+    {
+        $links = [
+            ['label' => 'Instagram', 'url' => $this->instagram_url],
+            ['label' => 'YouTube', 'url' => $this->youtube_url],
+            ['label' => 'Facebook', 'url' => $this->facebook_url],
+            ['label' => 'X', 'url' => $this->x_url],
+        ];
+
+        return array_values(array_filter(
+            $links,
+            static fn (array $link): bool => filled($link['url'])
+        ));
     }
 
     public function users(): HasMany

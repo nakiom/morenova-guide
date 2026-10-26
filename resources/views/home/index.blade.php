@@ -22,7 +22,10 @@
 
             <div class="row g-4 justify-content-center" data-stagger>
                 @foreach($categories as $category)
-                <div class="col-12 col-md-6 col-lg-5">
+                @php
+                    $categoryLabel = __('messages.'.str_replace('-', '_', $category->slug));
+                @endphp
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="card pathology-card h-100 text-center p-4 home-category-card position-relative overflow-hidden {{ $category->background_image ? 'has-bg' : '' }}"
                          @if($category->background_image) style="background-image: url('{{ asset('storage/' . $category->background_image) }}');" @endif>
                         @if($category->background_image)
@@ -31,11 +34,7 @@
                         <div class="card-body d-flex flex-column justify-content-center align-items-center position-relative">
                             <i class="{{ $category->icon }} pathology-icon"></i>
                             <h3 class="card-title text-dark-blue mb-3">
-                                @if($category->slug === 'womens-health')
-                                    {{ __('messages.womens_health') }}
-                                @else
-                                    {{ __('messages.mens_health') }}
-                                @endif
+                                {{ $categoryLabel }}
                             </h3>
                             <a href="{{ route('pathologies.index', $category->slug) }}" class="btn btn-primary btn-lg">
                                 {{ __('messages.pathologies') }} <i class="fas fa-arrow-right ms-2"></i>

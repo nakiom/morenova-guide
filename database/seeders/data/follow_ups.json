@@ -408,5 +408,173 @@
                 "description": "可考虑每 6 个月安排一次维持治疗,并根据临床进展、治疗反应及医生判断进行个体化调整。"
             }
         }
+    ],
+    "pad": [
+        {
+            "es": {
+                "title": "Resultados esperados (4–6 semanas)",
+                "description": "Aumento de la distancia de marcha sin dolor, mejora del ABI y microcirculación, y reducción del dolor y fatiga muscular de miembros inferiores."
+            },
+            "en": {
+                "title": "Expected results (4–6 weeks)",
+                "description": "Increased pain-free walking distance, improved ABI and microcirculation, and reduced lower-limb pain and muscle fatigue."
+            },
+            "pt": {
+                "title": "Resultados esperados (4–6 semanas)",
+                "description": "Aumento da distância de caminhada sem dor, melhora do ITB e da microcirculação, e redução da dor e fadiga muscular dos membros inferiores."
+            },
+            "zh": {
+                "title": "预期结果（4–6 周）",
+                "description": "无痛步行距离增加，ABI 与微循环改善，下肢疼痛与肌肉疲劳减轻。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles a las 4 y 12 semanas",
+                "description": "Evaluar ABI, reducción del dolor (VAS) y rendimiento al caminar. Ajustar el plan según respuesta clínica."
+            },
+            "en": {
+                "title": "Follow-up at 4 and 12 weeks",
+                "description": "Assess ABI, pain reduction (VAS) and walking performance. Adjust the plan according to clinical response."
+            },
+            "pt": {
+                "title": "Controles às 4 e 12 semanas",
+                "description": "Avaliar ITB, redução da dor (EVA) e desempenho ao caminhar. Ajustar o plano conforme a resposta clínica."
+            },
+            "zh": {
+                "title": "第 4 与 12 周随访",
+                "description": "评估 ABI、疼痛减轻（VAS）及步行表现。根据临床反应调整方案。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 3–6 meses",
+                "description": "Considerar sesiones de mantenimiento cada 3–6 meses en enfermedad crónica, individualizadas según evolución y criterio médico."
+            },
+            "en": {
+                "title": "Maintenance every 3–6 months",
+                "description": "Consider maintenance sessions every 3–6 months for chronic disease, individualized by progress and medical judgment."
+            },
+            "pt": {
+                "title": "Manutenção a cada 3–6 meses",
+                "description": "Considerar sessões de manutenção a cada 3–6 meses na doença crônica, individualizadas conforme evolução e critério médico."
+            },
+            "zh": {
+                "title": "每 3–6 个月维持",
+                "description": "慢性病可考虑每 3–6 个月维持治疗，按进展与医生判断个体化。"
+            }
+        }
+    ],
+    "wounds": [
+        {
+            "es": {
+                "title": "Resultados esperados (3–6 semanas)",
+                "description": "Mejora visible de la cicatrización, reducción del tamaño de la herida, mejor calidad tisular y menor riesgo de amputación en heridas diabéticas crónicas."
+            },
+            "en": {
+                "title": "Expected results (3–6 weeks)",
+                "description": "Visible healing improvement, wound-size reduction, better tissue quality and lower amputation risk in chronic diabetic wounds."
+            },
+            "pt": {
+                "title": "Resultados esperados (3–6 semanas)",
+                "description": "Melhora visível da cicatrização, redução do tamanho da ferida, melhor qualidade tecidual e menor risco de amputação em feridas diabéticas crônicas."
+            },
+            "zh": {
+                "title": "预期结果（3–6 周）",
+                "description": "愈合可见改善、伤口缩小、组织质量提升，慢性糖尿病伤口截肢风险降低。"
+            }
+        },
+        {
+            "es": {
+                "title": "Evaluaciones cada 2 semanas",
+                "description": "Documentar progreso con mediciones y fotografías. Ajustar parámetros según velocidad de cicatrización."
+            },
+            "en": {
+                "title": "Assessments every 2 weeks",
+                "description": "Document progress with measurements and photographs. Adjust parameters according to healing rate."
+            },
+            "pt": {
+                "title": "Avaliações a cada 2 semanas",
+                "description": "Documentar o progresso com medições e fotografias. Ajustar parâmetros conforme a velocidade de cicatrização."
+            },
+            "zh": {
+                "title": "每 2 周评估",
+                "description": "用测量与照片记录进展。按愈合速度调整参数。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 3–6 meses",
+                "description": "Considerar mantenimiento cada 3–6 meses en casos crónicos o de cicatrización lenta, según criterio clínico."
+            },
+            "en": {
+                "title": "Maintenance every 3–6 months",
+                "description": "Consider maintenance every 3–6 months for chronic or slow-healing cases, per clinical judgment."
+            },
+            "pt": {
+                "title": "Manutenção a cada 3–6 meses",
+                "description": "Considerar manutenção a cada 3–6 meses em casos crônicos ou de cicatrização lenta, conforme critério clínico."
+            },
+            "zh": {
+                "title": "每 3–6 个月维持",
+                "description": "慢性或愈合缓慢病例可按临床判断每 3–6 个月维持治疗。"
+            }
+        }
+    ],
+    "msd": [
+        {
+            "es": {
+                "title": "Resultados esperados (1–4 sesiones)",
+                "description": "Reducción de la intensidad del dolor, mejor movilidad funcional y menor rigidez, con favorecimiento de la reparación tisular."
+            },
+            "en": {
+                "title": "Expected results (1–4 sessions)",
+                "description": "Reduced pain intensity, improved functional mobility and less stiffness, supporting tissue repair."
+            },
+            "pt": {
+                "title": "Resultados esperados (1–4 sessões)",
+                "description": "Redução da intensidade da dor, melhor mobilidade funcional e menos rigidez, favorecendo o reparo tecidual."
+            },
+            "zh": {
+                "title": "预期结果（1–4 次治疗）",
+                "description": "疼痛减轻、功能活动改善、僵硬减少，并促进组织修复。"
+            }
+        },
+        {
+            "es": {
+                "title": "Controles a las 4 y 12 semanas",
+                "description": "Evaluar dolor con VAS/NRS y mejoras funcionales. Registrar eventos adversos y decidir continuidad."
+            },
+            "en": {
+                "title": "Follow-up at 4 and 12 weeks",
+                "description": "Assess pain with VAS/NRS and functional improvements. Record adverse events and decide on continuation."
+            },
+            "pt": {
+                "title": "Controles às 4 e 12 semanas",
+                "description": "Avaliar dor com EVA/NRS e melhorias funcionais. Registrar eventos adversos e decidir continuidade."
+            },
+            "zh": {
+                "title": "第 4 与 12 周随访",
+                "description": "用 VAS/NRS 评估疼痛及功能改善。记录不良事件并决定是否继续。"
+            }
+        },
+        {
+            "es": {
+                "title": "Mantenimiento cada 3–6 meses",
+                "description": "En condiciones crónicas, considerar mantenimiento cada 3–6 meses según respuesta clínica y criterio médico."
+            },
+            "en": {
+                "title": "Maintenance every 3–6 months",
+                "description": "For chronic conditions, consider maintenance every 3–6 months based on clinical response and medical judgment."
+            },
+            "pt": {
+                "title": "Manutenção a cada 3–6 meses",
+                "description": "Em condições crônicas, considerar manutenção a cada 3–6 meses conforme resposta clínica e critério médico."
+            },
+            "zh": {
+                "title": "每 3–6 个月维持",
+                "description": "慢性病可按临床反应与医生判断每 3–6 个月维持治疗。"
+            }
+        }
     ]
 }

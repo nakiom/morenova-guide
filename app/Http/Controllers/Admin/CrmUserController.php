@@ -66,6 +66,8 @@ class CrmUserController extends Controller
 
         $data['email_verified_at'] = now();
         $data['is_admin'] = false;
+        $data['must_change_password'] = true;
+        $data['privacy_accepted_at'] = null;
 
         $user = User::create($data);
 
@@ -124,6 +126,9 @@ class CrmUserController extends Controller
 
         if (empty($data['password'])) {
             unset($data['password']);
+        } else {
+            $data['must_change_password'] = true;
+            $data['privacy_accepted_at'] = null;
         }
 
         $crm_user->update($data);
@@ -152,12 +157,28 @@ class CrmUserController extends Controller
 
         $crm_user->forceFill([
             'password' => $validated['password'],
+            'must_change_password' => true,
+            'privacy_accepted_at' => null,
             'remember_token' => null,
         ])->save();
 
         return redirect()
             ->route('admin.crm-users.show', $crm_user)
             ->with('success', __('messages.password_updated'));
+    }
+
+    public function forceOnboarding(User $crm_user): RedirectResponse
+    {
+        abort_if($crm_user->isAdmin(), 404);
+
+        $crm_user->forceFill([
+            'must_change_password' => true,
+            'privacy_accepted_at' => null,
+        ])->save();
+
+        return redirect()
+            ->route('admin.crm-users.show', $crm_user)
+            ->with('success', __('messages.crm_user_onboarding_forced'));
     }
 
     public function destroy(User $crm_user): RedirectResponse
@@ -202,11 +223,13 @@ class CrmUserController extends Controller
             'job_title' => 'nullable|string|max:255',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
             'photo_url' => 'nullable|url:http,https|max:2048',
+            'preferred_locale' => ['nullable', 'string', Rule::in(\App\Support\Locales::SUPPORTED)],
             'is_active' => 'sometimes|boolean',
         ]);
 
         $data['is_active'] = $request->boolean('is_active', true);
         $data['parent_user_id'] = $data['parent_user_id'] ?: null;
+        $data['preferred_locale'] = ! empty($data['preferred_locale']) ? $data['preferred_locale'] : null;
 
         return $data;
     }

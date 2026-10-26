@@ -24,9 +24,28 @@
     <script>document.body.classList.add('app-ready');</script>
     <nav class="navbar navbar-expand-lg navbar-light app-navbar flex-shrink-0" id="app-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="{{ route('home') }}">
-                <img src="/img/morenova-string.png" alt="Morenova String" class="img-fluid" style="width: 207px; height: 41px;" decoding="async" fetchpriority="high">
-            </a>
+            <div class="navbar-brand-cluster">
+                <a class="navbar-brand fw-bold" href="{{ route('home') }}">
+                    <img src="/img/morenova-string.png" alt="MoreNova" width="188" height="34" decoding="async" fetchpriority="high">
+                </a>
+                @auth
+                    @php
+                        $topbarCenter = Auth::user()->center;
+                        $topbarCenterLogo = $topbarCenter?->logoUrl();
+                    @endphp
+                    @if($topbarCenter && $topbarCenterLogo)
+                        <span class="navbar-brand-divider" aria-hidden="true"></span>
+                        <div class="center-logo-wrap center-logo--sm navbar-center-logo">
+                            <img
+                                src="{{ $topbarCenterLogo }}"
+                                alt="{{ $topbarCenter->name }}"
+                                class="center-logo"
+                                title="{{ $topbarCenter->name }}"
+                            >
+                        </div>
+                    @endif
+                @endauth
+            </div>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -68,31 +87,66 @@
                     </li>
                     <x-admin-suggestion-notifications />
                     @auth
-                    @php $navUser = Auth::user(); @endphp
+                    @php
+                        $navUser = Auth::user();
+                        $navUser->loadMissing('center');
+                    @endphp
                     <li class="nav-item">
-                        <x-dropdown align="right" width="48">
+                        <x-dropdown align="right" width="user" contentClasses="user-menu" panelClass="user-menu-panel">
                             <x-slot name="trigger">
-                                <button class="btn btn-link nav-link d-flex align-items-center gap-2 py-1">
+                                <button type="button" class="btn btn-link nav-link user-menu-trigger d-flex align-items-center gap-2 py-1" aria-haspopup="menu" aria-label="{{ $navUser->name }}">
                                     @if($navUser->photoUrl())
-                                        <img src="{{ $navUser->photoUrl() }}" alt="{{ $navUser->name }}" class="navbar-user-avatar">
+                                        <img src="{{ $navUser->photoUrl() }}" alt="" class="navbar-user-avatar">
                                     @else
                                         <span class="navbar-user-avatar navbar-user-avatar--placeholder" aria-hidden="true">{{ mb_strtoupper(mb_substr($navUser->name, 0, 1)) }}</span>
                                     @endif
                                     <span class="navbar-user-name">{{ $navUser->name }}</span>
+                                    <i class="fas fa-chevron-down user-menu-chevron" aria-hidden="true"></i>
                                 </button>
                             </x-slot>
                             <x-slot name="content">
-                                <x-dropdown-link :href="route('profile.edit')">
-                                    {{ __('Profile') }}
-                                </x-dropdown-link>
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <x-dropdown-link :href="route('logout')"
-                                            onclick="event.preventDefault();
-                                                        this.closest('form').submit();">
-                                        {{ __('Log Out') }}
-                                    </x-dropdown-link>
-                                </form>
+                                <div class="user-menu-card" @click.stop>
+                                    <div class="user-menu-hero">
+                                        <div class="user-menu-hero-glow" aria-hidden="true"></div>
+                                        <div class="user-menu-identity">
+                                            @if($navUser->photoUrl())
+                                                <img src="{{ $navUser->photoUrl() }}" alt="{{ $navUser->name }}" class="user-menu-avatar">
+                                            @else
+                                                <span class="user-menu-avatar user-menu-avatar--placeholder" aria-hidden="true">{{ mb_strtoupper(mb_substr($navUser->name, 0, 1)) }}</span>
+                                            @endif
+                                            <div class="user-menu-meta">
+                                                <div class="user-menu-name">{{ $navUser->name }}</div>
+                                                @if($navUser->job_title)
+                                                    <div class="user-menu-role">{{ $navUser->job_title }}</div>
+                                                @elseif($navUser->center?->name)
+                                                    <div class="user-menu-role">{{ $navUser->center->name }}</div>
+                                                @endif
+                                                <div class="user-menu-email">{{ $navUser->email }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="user-menu-actions">
+                                        <a href="{{ route('profile.edit') }}" class="user-menu-action">
+                                            <span class="user-menu-action-icon" aria-hidden="true"><i class="fas fa-user-pen"></i></span>
+                                            <span class="user-menu-action-copy">
+                                                <span class="user-menu-action-label">{{ __('messages.profile_title') }}</span>
+                                                <span class="user-menu-action-hint">{{ __('messages.user_menu_profile_hint') }}</span>
+                                            </span>
+                                            <i class="fas fa-arrow-right user-menu-action-arrow" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="user-menu-footer">
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button type="submit" class="user-menu-logout">
+                                                <span class="user-menu-logout-icon" aria-hidden="true"><i class="fas fa-right-from-bracket"></i></span>
+                                                <span>{{ __('messages.logout') }}</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </x-slot>
                         </x-dropdown>
                     </li>

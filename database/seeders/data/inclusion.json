@@ -156,5 +156,65 @@
             "pt": "Sem antecedente de cirurgia peniana.",
             "zh": "无阴茎手术史。"
         }
+    ],
+    "pad": [
+        {
+            "es": "Adultos de 18 a 80 años con PAD (estadio I–II Fontaine).",
+            "en": "Adults aged 18–80 years with PAD (Fontaine stage I–II).",
+            "pt": "Adultos de 18 a 80 anos com DAP (estágio I–II Fontaine).",
+            "zh": "18 至 80 岁、Fontaine I–II 期外周动脉疾病患者。"
+        },
+        {
+            "es": "Claudicación intermitente (dolor al caminar) con reducción del índice tobillo-brazo (ABI).",
+            "en": "Intermittent claudication (pain after walking) with reduced ankle-brachial index (ABI).",
+            "pt": "Claudicação intermitente (dor ao caminhar) com redução do índice tornozelo-braquial (ITB).",
+            "zh": "间歇性跛行（行走后疼痛）伴踝肱指数 (ABI) 降低。"
+        },
+        {
+            "es": "Pacientes candidatos a terapia no invasiva para mejorar circulación y aliviar dolor isquémico.",
+            "en": "Patients suitable for non-invasive therapy to improve circulation and relieve ischemic pain.",
+            "pt": "Pacientes candidatos a terapia não invasiva para melhorar a circulação e aliviar a dor isquêmica.",
+            "zh": "适合通过非侵入性治疗改善循环并缓解缺血性疼痛的患者。"
+        }
+    ],
+    "wounds": [
+        {
+            "es": "Adultos de 30 a 80 años con úlceras crónicas no cicatrizantes (> 4 semanas), incluidas DFU, úlceras venosas o por presión.",
+            "en": "Adults aged 30–80 years with chronic non-healing ulcers (> 4 weeks), including DFUs, venous or pressure ulcers.",
+            "pt": "Adultos de 30 a 80 anos com úlceras crônicas não cicatrizantes (> 4 semanas), incluindo DFU, úlceras venosas ou por pressão.",
+            "zh": "30 至 80 岁、慢性不愈合溃疡（>4 周）患者，包括糖尿病足溃疡、静脉性溃疡或压疮。"
+        },
+        {
+            "es": "Heridas postquirúrgicas con retraso de cicatrización.",
+            "en": "Post-surgical wounds with delayed healing.",
+            "pt": "Feridas pós-cirúrgicas com atraso na cicatrização.",
+            "zh": "愈合延迟的术后伤口。"
+        },
+        {
+            "es": "Pacientes diabéticos con control glucémico adecuado (HbA1c < 8%) y ABI > 0,6.",
+            "en": "Diabetic patients with adequate glycemic control (HbA1c < 8%) and ABI > 0.6.",
+            "pt": "Pacientes diabéticos com controle glicêmico adequado (HbA1c < 8%) e ITB > 0,6.",
+            "zh": "血糖控制良好（HbA1c < 8%）且 ABI > 0.6 的糖尿病患者。"
+        }
+    ],
+    "msd": [
+        {
+            "es": "Adultos de 18 a 80 años con trastornos musculoesqueléticos (tendinitis, dolor miofascial, lumbalgia crónica, fascitis plantar, etc.).",
+            "en": "Adults aged 18–80 years with musculoskeletal disorders (tendinitis, myofascial pain, chronic low back pain, plantar fasciitis, etc.).",
+            "pt": "Adultos de 18 a 80 anos com distúrbios musculoesqueléticos (tendinite, dor miofascial, lombalgia crônica, fascite plantar, etc.).",
+            "zh": "18 至 80 岁、患有肌肉骨骼疾病（肌腱炎、肌筋膜痛、慢性腰痛、足底筋膜炎等）的患者。"
+        },
+        {
+            "es": "Síntomas persistentes al menos 3 meses a pesar del tratamiento conservador.",
+            "en": "Persistent symptoms for at least 3 months despite conservative treatment.",
+            "pt": "Sintomas persistentes por pelo menos 3 meses apesar do tratamento conservador.",
+            "zh": "尽管保守治疗，症状仍持续至少 3 个月。"
+        },
+        {
+            "es": "Tendinopatías, dolor miofascial o dolor musculoesquelético post-lesión.",
+            "en": "Tendinopathies, myofascial pain or post-injury musculoskeletal pain.",
+            "pt": "Tendinopatias, dor miofascial ou dor musculoesquelética pós-lesão.",
+            "zh": "肌腱病、肌筋膜痛或伤后肌肉骨骼疼痛。"
+        }
     ]
 }

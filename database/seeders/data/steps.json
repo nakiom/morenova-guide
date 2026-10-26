@@ -804,5 +804,335 @@
                 "description": "嘱患者治疗后 24 小时内避免性生活,保持充足的水分摄入,如出现明显不适、持续疼痛或血肿应及时报告。"
             }
         }
+    ],
+    "pad": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Revisar historia clínica y severidad de PAD. Examen físico con ABI y pulsos. Doppler/angiografía si corresponde. Evaluar dolor con VAS. Confirmar criterios y consentimiento informado."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Review medical history and PAD severity. Physical exam with ABI and pulses. Doppler/angiography if needed. Assess pain with VAS. Confirm criteria and informed consent."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "Revisar história clínica e gravidade da DAP. Exame físico com ITB e pulsos. Doppler/angiografia se indicado. Avaliar dor com EVA. Confirmar critérios e consentimento informado."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "复习病史与 PAD 严重程度。体查 ABI 与脉搏。必要时多普勒/血管造影。用 VAS 评估疼痛。确认入选标准与知情同意。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación del paciente",
+                "description": "Posicionar al paciente para acceso a pantorrillas, muslos y/o pie. Explicar el procedimiento. Aplicar gel conductor en las zonas planificadas."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Position the patient for access to calves, thighs and/or foot. Explain the procedure. Apply conductive gel on planned zones."
+            },
+            "pt": {
+                "title": "Preparação do paciente",
+                "description": "Posicionar o paciente para acesso a panturrilhas, coxas e/ou pé. Explicar o procedimento. Aplicar gel condutor nas zonas planejadas."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "摆放体位以便接近小腿、大腿和/或足部。说明操作。在计划区域涂导声凝胶。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (C30)",
+                "description": "Verificar MoreNova con transductor C30. Confirmar parámetros: Energía (HV) 1,9 kV y Frecuencia (FRQ) 2,0 Hz. Comprobar cable y aplicador."
+            },
+            "en": {
+                "title": "MoreNova device setup (C30)",
+                "description": "Verify MoreNova with C30 transducer. Confirm parameters: Energy (HV) 1.9 kV and Frequency (FRQ) 2.0 Hz. Check cable and applicator."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (C30)",
+                "description": "Verificar MoreNova com transdutor C30. Confirmar parâmetros: Energia (HV) 1,9 kV e Frequência (FRQ) 2,0 Hz. Verificar cabo e aplicador."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置（C30）",
+                "description": "核实 MoreNova 与 C30 换能器。确认参数：能量 (HV) 1.9 kV、频率 (FRQ) 2.0 Hz。检查线缆与应用器。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación en regiones objetivo",
+                "description": "Tratar pantorrillas (gastrocnemio/sóleo), región femoral y arco plantar si hay síntomas distales. 5 aplicaciones · 500 disparos por región (≈2500/sesión). Mantener contacto firme con gel."
+            },
+            "en": {
+                "title": "Application on target regions",
+                "description": "Treat calves (gastrocnemius/soleus), femoral region and plantar arch if distal symptoms. 5 applications · 500 shots per region (≈2500/session). Maintain firm gel contact."
+            },
+            "pt": {
+                "title": "Aplicação nas regiões-alvo",
+                "description": "Tratar panturrilhas (gastrocnêmio/sóleo), região femoral e arco plantar se sintomas distais. 5 aplicações · 500 disparos por região (≈2500/sessão). Manter contato firme com gel."
+            },
+            "zh": {
+                "title": "目标区域治疗",
+                "description": "治疗小腿（腓肠肌/比目鱼肌）、股动脉区及远端症状时的足底弓。5 次应用 · 每区 500 发（约 2500/次）。保持凝胶紧贴接触。"
+            }
+        },
+        {
+            "es": {
+                "title": "Sesiones y frecuencia",
+                "description": "Programar 6–10 sesiones, 1–2 por semana, 15–20 minutos. Supervisar tolerancia y ajustar según respuesta."
+            },
+            "en": {
+                "title": "Sessions and frequency",
+                "description": "Schedule 6–10 sessions, 1–2 per week, 15–20 minutes. Monitor tolerance and adjust per response."
+            },
+            "pt": {
+                "title": "Sessões e frequência",
+                "description": "Programar 6–10 sessões, 1–2 por semana, 15–20 minutos. Supervisionar tolerância e ajustar conforme resposta."
+            },
+            "zh": {
+                "title": "疗程与频率",
+                "description": "安排 6–10 次，每周 1–2 次，每次 15–20 分钟。监测耐受并按反应调整。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Indicar caminata diaria para reforzar angiogénesis, hidratación y dieta equilibrada. Monitorear ABI y ajustar el plan."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Advise daily walking to reinforce angiogenesis, hydration and balanced diet. Monitor ABI and adjust the plan."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Orientar caminhada diária para reforçar angiogênese, hidratação e dieta equilibrada. Monitorar ITB e ajustar o plano."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "建议每日步行以促进血管生成，保持水分与均衡饮食。监测 ABI 并调整方案。"
+            }
+        }
+    ],
+    "wounds": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Historia clínica y evaluación de la herida (tamaño, profundidad, condición). Fotografías y mediciones. Pruebas de neuropatía. Imagen si se sospecha osteomielitis. Doppler vascular. Confirmar criterios y consentimiento."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Medical history and wound assessment (size, depth, condition). Photos and measurements. Neuropathy testing. Imaging if osteomyelitis suspected. Vascular Doppler. Confirm criteria and consent."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "História clínica e avaliação da ferida (tamanho, profundidade, condição). Fotos e medições. Testes de neuropatia. Imagem se suspeita de osteomielite. Doppler vascular. Confirmar critérios e consentimento."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "病史与伤口评估（大小、深度、状况）。拍照与测量。神经病变测试。疑骨髓炎时影像学。血管多普勒。确认标准与知情同意。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación de la herida",
+                "description": "Limpiar la herida y piel circundante. Aplicar gel acoplante estéril a base de agua sobre y alrededor de la herida."
+            },
+            "en": {
+                "title": "Wound preparation",
+                "description": "Cleanse the wound and surrounding skin. Apply sterile water-based coupling gel on and around the wound."
+            },
+            "pt": {
+                "title": "Preparação da ferida",
+                "description": "Limpar a ferida e a pele circundante. Aplicar gel acoplador estéril à base de água sobre e ao redor da ferida."
+            },
+            "zh": {
+                "title": "伤口准备",
+                "description": "清洁伤口及周围皮肤。在伤口及其周围涂无菌水性耦合凝胶。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (C30)",
+                "description": "Verificar MoreNova con C30. Parámetros: Energía (HV) 1,9 kV y Frecuencia (FRQ) 2,0 Hz. Equipo limpio y operativo."
+            },
+            "en": {
+                "title": "MoreNova device setup (C30)",
+                "description": "Verify MoreNova with C30. Parameters: Energy (HV) 1.9 kV and Frequency (FRQ) 2.0 Hz. Device clean and operational."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (C30)",
+                "description": "Verificar MoreNova com C30. Parâmetros: Energia (HV) 1,9 kV e Frequência (FRQ) 2,0 Hz. Equipamento limpo e operacional."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置（C30）",
+                "description": "核实 MoreNova 与 C30。参数：能量 (HV) 1.9 kV、频率 (FRQ) 2.0 Hz。设备清洁可用。"
+            }
+        },
+        {
+            "es": {
+                "title": "Aplicación en bordes y perilesional",
+                "description": "Posicionar el transductor sobre y alrededor de la herida para cobertura completa. 500–750 disparos por sección según tamaño. Evitar hueso o tendón expuesto. En heridas grandes, tratar por secciones."
+            },
+            "en": {
+                "title": "Application on edges and perilesional tissue",
+                "description": "Position the transducer above and around the wound for full coverage. 500–750 shots per section by size. Avoid exposed bone or tendon. For large wounds, treat in sections."
+            },
+            "pt": {
+                "title": "Aplicação nas bordas e perilesional",
+                "description": "Posicionar o transdutor sobre e ao redor da ferida para cobertura completa. 500–750 disparos por seção conforme tamanho. Evitar osso ou tendão exposto. Em feridas grandes, tratar por seções."
+            },
+            "zh": {
+                "title": "边缘与创周治疗",
+                "description": "将换能器置于伤口上方及周围以完整覆盖。按大小每节 500–750 发。避开暴露骨或肌腱。大伤口分区治疗。"
+            }
+        },
+        {
+            "es": {
+                "title": "Sesiones y frecuencia",
+                "description": "Programar 6–12 sesiones según severidad, 2 por semana, 7–20 minutos. Suspender si dolor excesivo o reacción adversa."
+            },
+            "en": {
+                "title": "Sessions and frequency",
+                "description": "Schedule 6–12 sessions by severity, twice weekly, 7–20 minutes. Stop if excessive pain or adverse reaction."
+            },
+            "pt": {
+                "title": "Sessões e frequência",
+                "description": "Programar 6–12 sessões conforme gravidade, 2 por semana, 7–20 minutos. Interromper se dor excessiva ou reação adversa."
+            },
+            "zh": {
+                "title": "疗程与频率",
+                "description": "按严重程度安排 6–12 次，每周 2 次，每次 7–20 分钟。若剧痛或不良反应则停止。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Reaplicar apósitos estériles. Evitar sobrecarga del área. Mantener control glucémico e higiene. Usar descarga (calzado especial) en úlceras plantares."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Reapply sterile dressings. Avoid strain on the area. Maintain glycemic control and hygiene. Use offloading (special footwear) for plantar ulcers."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Reaplicar curativos estéreis. Evitar sobrecarga da área. Manter controle glicêmico e higiene. Usar alívio de pressão (calçado especial) em úlceras plantares."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "重新包扎无菌敷料。避免该区域过度负荷。保持血糖控制与卫生。足底溃疡使用减压（专用鞋）。"
+            }
+        }
+    ],
+    "msd": [
+        {
+            "es": {
+                "title": "Evaluación previa",
+                "description": "Historia clínica completa y contraindicaciones. Examen físico con palpación de zonas dolorosas. Imagen (Rx/RM/US) si hace falta. Evaluar dolor con VAS o NRS. Consentimiento informado."
+            },
+            "en": {
+                "title": "Pre-treatment evaluation",
+                "description": "Full medical history and contraindications. Physical exam with palpation of painful areas. Imaging (X-ray/MRI/US) if needed. Assess pain with VAS or NRS. Informed consent."
+            },
+            "pt": {
+                "title": "Avaliação prévia",
+                "description": "História clínica completa e contraindicações. Exame físico com palpação das zonas dolorosas. Imagem (Rx/RM/US) se necessário. Avaliar dor com EVA ou NRS. Consentimento informado."
+            },
+            "zh": {
+                "title": "治疗前评估",
+                "description": "完整病史与禁忌。体查触诊痛区。必要时影像（X 线/MRI/超声）。用 VAS 或 NRS 评估疼痛。知情同意。"
+            }
+        },
+        {
+            "es": {
+                "title": "Preparación del paciente",
+                "description": "Posicionar para acceso a la zona (tendón, músculo o articulación) minimizando molestias. Explicar beneficios y riesgos. Aplicar gel de ultrasonido."
+            },
+            "en": {
+                "title": "Patient preparation",
+                "description": "Position for access to the area (tendon, muscle or joint) minimizing discomfort. Explain benefits and risks. Apply ultrasound gel."
+            },
+            "pt": {
+                "title": "Preparação do paciente",
+                "description": "Posicionar para acesso à área (tendão, músculo ou articulação) minimizando desconforto. Explicar benefícios e riscos. Aplicar gel de ultrassom."
+            },
+            "zh": {
+                "title": "患者准备",
+                "description": "摆放体位便于接近治疗区（肌腱、肌肉或关节）并减少不适。说明获益与风险。涂超声凝胶。"
+            }
+        },
+        {
+            "es": {
+                "title": "Configuración del equipo MoreNova (C30/C15)",
+                "description": "Verificar MoreNova con C30 o C15 según indicación. Parámetros: Energía (HV) 1,6–1,9 kV y Frecuencia (FRQ) 2 Hz. Comprobar reconocimiento de parámetros preprogramados."
+            },
+            "en": {
+                "title": "MoreNova device setup (C30/C15)",
+                "description": "Verify MoreNova with C30 or C15 as indicated. Parameters: Energy (HV) 1.6–1.9 kV and Frequency (FRQ) 2 Hz. Confirm recognition of preprogrammed parameters."
+            },
+            "pt": {
+                "title": "Configuração do equipamento MoreNova (C30/C15)",
+                "description": "Verificar MoreNova com C30 ou C15 conforme indicação. Parâmetros: Energia (HV) 1,6–1,9 kV e Frequência (FRQ) 2 Hz. Confirmar reconhecimento dos parâmetros pré-programados."
+            },
+            "zh": {
+                "title": "MoreNova 设备配置（C30/C15）",
+                "description": "按指征核实 MoreNova 与 C30 或 C15。参数：能量 (HV) 1.6–1.9 kV、频率 (FRQ) 2 Hz。确认预设参数识别。"
+            }
+        },
+        {
+            "es": {
+                "title": "Técnica de aplicación",
+                "description": "Primera aplicación en el foco del dolor; luego a intervalos de ~1 cm a ambos lados. Transductor firme contra la piel. 2–4 aplicaciones · 500–750 disparos c/u. Ajustar según feedback del paciente."
+            },
+            "en": {
+                "title": "Application technique",
+                "description": "First application at the pain source; then at ~1 cm intervals to both sides. Hold transducer firmly against skin. 2–4 applications · 500–750 shots each. Adjust per patient feedback."
+            },
+            "pt": {
+                "title": "Técnica de aplicação",
+                "description": "Primeira aplicação no foco da dor; depois em intervalos de ~1 cm para ambos os lados. Transdutor firme contra a pele. 2–4 aplicações · 500–750 disparos cada. Ajustar conforme feedback do paciente."
+            },
+            "zh": {
+                "title": "治疗手法",
+                "description": "首次治疗于疼痛源；随后向两侧约 1 cm 间隔。换能器紧贴皮肤。2–4 次应用 · 每次 500–750 发。根据患者反馈调整。"
+            }
+        },
+        {
+            "es": {
+                "title": "Sesiones y frecuencia",
+                "description": "Programar 3–6 sesiones según severidad, 2 por semana, 15–20 minutos. Monitorear confort y seguridad durante toda la sesión."
+            },
+            "en": {
+                "title": "Sessions and frequency",
+                "description": "Schedule 3–6 sessions by severity, twice weekly, 15–20 minutes. Monitor comfort and safety throughout the session."
+            },
+            "pt": {
+                "title": "Sessões e frequência",
+                "description": "Programar 3–6 sessões conforme gravidade, 2 por semana, 15–20 minutos. Monitorar conforto e segurança durante toda a sessão."
+            },
+            "zh": {
+                "title": "疗程与频率",
+                "description": "按严重程度安排 3–6 次，每周 2 次，每次 15–20 分钟。全程监测舒适与安全。"
+            }
+        },
+        {
+            "es": {
+                "title": "Cuidados posteriores",
+                "description": "Evitar actividad extenuante 24 h. Hidratación y estiramientos suaves. Continuar fisioterapia si aplica."
+            },
+            "en": {
+                "title": "Post-treatment care",
+                "description": "Avoid strenuous activity for 24 h. Hydration and mild stretching. Continue physiotherapy if applicable."
+            },
+            "pt": {
+                "title": "Cuidados pós-tratamento",
+                "description": "Evitar atividade extenuante por 24 h. Hidratação e alongamentos leves. Continuar fisioterapia se aplicável."
+            },
+            "zh": {
+                "title": "治疗后护理",
+                "description": "24 小时内避免剧烈活动。补水与轻度拉伸。如适用继续理疗。"
+            }
+        }
     ]
 }

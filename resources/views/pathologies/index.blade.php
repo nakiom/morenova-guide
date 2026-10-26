@@ -6,11 +6,7 @@
                     <i class="fas fa-arrow-left me-2"></i>{{ __('messages.back') }}
                 </a>
                 <h1 class="h2 h1-md display-5 fw-bold text-dark-blue">
-                    @if($category->slug === 'womens-health')
-                        {{ __('messages.womens_health') }}
-                    @else
-                        {{ __('messages.mens_health') }}
-                    @endif
+                    {{ __('messages.'.str_replace('-', '_', $category->slug)) }}
                 </h1>
                 <p class="lead text-muted">{{ __('messages.pathologies') }}</p>
             </div>

@@ -41,7 +41,7 @@ class UpcomingVisitController extends Controller
             });
 
         $canFilterCenter = $user->isAdmin();
-        $canFilterDoctor = $user->isAdmin() || ($user->center_id && ! $user->isSubUser());
+        $canFilterDoctor = $user->isAdmin() || (bool) $user->center_id;
 
         if ($canFilterCenter && $request->filled('center_id')) {
             $centerId = (int) $request->input('center_id');
@@ -115,7 +115,7 @@ class UpcomingVisitController extends Controller
             if ($centerId) {
                 $query->where('center_id', $centerId);
             }
-        } elseif ($user->center_id && ! $user->isSubUser()) {
+        } elseif ($user->center_id) {
             $query->where('center_id', $user->center_id);
         } else {
             return collect([$user]);

@@ -51,25 +51,38 @@ class PatientController extends Controller
             'name' => 'required|string|max:255',
             'external_id' => 'nullable|string|max:100',
             'age' => 'nullable|integer|min:0|max:150',
+            'sex' => 'nullable|in:'.implode(',', Patient::SEXES),
             'email' => 'nullable|email|max:255',
             'phones' => 'nullable|array',
             'phones.*' => 'nullable|string|max:50',
             'pathology_id' => 'required|exists:pathologies,id',
             'notes' => 'nullable|string',
             'expected_next_visit_at' => 'nullable|date',
+            'visit_reminder_enabled' => 'nullable|boolean',
+            'visit_reminder_days_before' => 'nullable|integer|in:'.implode(',', Patient::REMINDER_DAYS_OPTIONS),
         ]);
 
-        $patient = Patient::create([
+        $reminderRules = $request->boolean('visit_reminder_enabled');
+        if ($reminderRules && ! $request->filled('visit_reminder_days_before')) {
+            return back()->withInput()->withErrors([
+                'visit_reminder_days_before' => __('messages.visit_reminder_days_required'),
+            ]);
+        }
+
+        $patient = Patient::create(array_merge([
             'name' => $data['name'],
             'external_id' => $data['external_id'] ?? null,
             'age' => $data['age'] ?? null,
+            'sex' => $data['sex'] ?? null,
             'email' => $data['email'] ?? null,
             'phones' => Patient::normalizePhones($data['phones'] ?? null),
             'pathology_id' => $data['pathology_id'],
             'notes' => $data['notes'] ?? null,
             'expected_next_visit_at' => $data['expected_next_visit_at'] ?? null,
             'user_id' => $request->user()->id,
-        ]);
+        ], Patient::prepareVisitReminderAttributes(array_merge($data, [
+            'visit_reminder_enabled' => $request->boolean('visit_reminder_enabled'),
+        ]))));
 
         return redirect()
             ->route('clinical.patients.show', $patient)
@@ -84,6 +97,8 @@ class PatientController extends Controller
             'pathology.translations',
             'user.center',
             'questionnaireScores.questionnaire',
+            'questionnaireInvites.items.questionnaire',
+            'tags.user',
         ]);
 
         // Corrige huecos/números desordenados (p. ej. tras borrar o carga incorrecta).
@@ -91,8 +106,37 @@ class PatientController extends Controller
         $patient->load('treatmentSessions');
 
         $locale = app()->getLocale();
+        $tagsByType = $patient->tags->groupBy('type');
+        $canEditTags = $request->user()?->can('update', $patient) ?? false;
 
-        return view('clinical.patients.show', compact('patient', 'locale'));
+        $scoreCharts = $patient->questionnaireScores
+            ->sortBy('scored_at')
+            ->groupBy('questionnaire_id')
+            ->map(function ($scores, $questionnaireId) {
+                $questionnaire = $scores->first()?->questionnaire;
+
+                return [
+                    'id' => (int) $questionnaireId,
+                    'name' => $questionnaire?->name ?? ('#'.$questionnaireId),
+                    'points' => $scores->values()->map(fn ($score) => [
+                        'date' => $score->scored_at?->timezone(config('app.timezone'))->format('Y-m-d') ?? '',
+                        'score' => $score->score !== null ? (float) $score->score : null,
+                        'phase' => $score->phase,
+                        'phase_label' => __('messages.phase_'.$score->phase),
+                    ])->filter(fn (array $point) => $point['date'] !== '' && $point['score'] !== null)->values()->all(),
+                ];
+            })
+            ->filter(fn (array $chart) => $chart['points'] !== [])
+            ->values()
+            ->all();
+
+        return view('clinical.patients.show', compact(
+            'patient',
+            'locale',
+            'tagsByType',
+            'canEditTags',
+            'scoreCharts',
+        ));
     }
 
     public function edit(Patient $patient): View
@@ -112,24 +156,36 @@ class PatientController extends Controller
             'name' => 'required|string|max:255',
             'external_id' => 'nullable|string|max:100',
             'age' => 'nullable|integer|min:0|max:150',
+            'sex' => 'nullable|in:'.implode(',', Patient::SEXES),
             'email' => 'nullable|email|max:255',
             'phones' => 'nullable|array',
             'phones.*' => 'nullable|string|max:50',
             'pathology_id' => 'required|exists:pathologies,id',
             'notes' => 'nullable|string',
             'expected_next_visit_at' => 'nullable|date',
+            'visit_reminder_enabled' => 'nullable|boolean',
+            'visit_reminder_days_before' => 'nullable|integer|in:'.implode(',', Patient::REMINDER_DAYS_OPTIONS),
         ]);
 
-        $patient->update([
+        if ($request->boolean('visit_reminder_enabled') && ! $request->filled('visit_reminder_days_before')) {
+            return back()->withInput()->withErrors([
+                'visit_reminder_days_before' => __('messages.visit_reminder_days_required'),
+            ]);
+        }
+
+        $patient->update(array_merge([
             'name' => $data['name'],
             'external_id' => $data['external_id'] ?? null,
             'age' => $data['age'] ?? null,
+            'sex' => $data['sex'] ?? null,
             'email' => $data['email'] ?? null,
             'phones' => Patient::normalizePhones($data['phones'] ?? null),
             'pathology_id' => $data['pathology_id'],
             'notes' => $data['notes'] ?? null,
             'expected_next_visit_at' => $data['expected_next_visit_at'] ?? null,
-        ]);
+        ], Patient::prepareVisitReminderAttributes(array_merge($data, [
+            'visit_reminder_enabled' => $request->boolean('visit_reminder_enabled'),
+        ]), $patient)));
 
         return redirect()
             ->route('clinical.patients.show', $patient)

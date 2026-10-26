@@ -26,6 +26,25 @@
                 @error('name')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
             </div>
             <div class="col-md-6">
+                <label class="form-label" for="logo">{{ __('messages.center_logo') }}</label>
+                @if($center?->logoUrl())
+                <div class="mb-2">
+                    <img src="{{ $center->logoUrl() }}" alt="{{ $center->name }}"
+                         class="rounded border bg-white p-2"
+                         style="max-height: 72px; max-width: 180px; object-fit: contain;">
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" name="remove_logo" id="remove_logo" value="1"
+                           @checked(old('remove_logo'))>
+                    <label class="form-check-label" for="remove_logo">{{ __('messages.center_logo_remove') }}</label>
+                </div>
+                @endif
+                <input type="file" name="logo" id="logo" accept="image/*"
+                       class="form-control @error('logo') is-invalid @enderror">
+                <small class="form-text text-muted">{{ __('messages.center_logo_hint') }}</small>
+                @error('logo')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
+            </div>
+            <div class="col-md-6">
                 <label class="form-label" for="location">{{ __('messages.location') }}</label>
                 <div class="input-icon-wrap">
                     <i class="fas fa-map-marker-alt"></i>

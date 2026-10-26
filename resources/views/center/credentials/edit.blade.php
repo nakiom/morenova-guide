@@ -6,8 +6,27 @@
 
         <div class="card border-0 shadow-sm mx-auto" style="max-width: 40rem;">
             <div class="card-body p-4">
-                <h1 class="h3 fw-bold text-dark-blue mb-1">{{ __('messages.change_password') }}</h1>
-                <p class="text-muted mb-4">{{ $user->name }} · {{ $user->email }}</p>
+                @if(auth()->user()?->center?->logoUrl())
+                <div class="mb-3">
+                    <x-center-logo size="md" :center="auth()->user()->center" show-name />
+                </div>
+                @endif
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    @if($user->photoUrl())
+                        <img src="{{ $user->photoUrl() }}" alt="{{ $user->name }}"
+                             class="rounded-circle credentials-user-avatar" width="56" height="56"
+                             style="width:56px;height:56px;">
+                    @else
+                        <span class="credentials-user-avatar credentials-user-avatar--placeholder"
+                              style="width:56px;height:56px;font-size:1.2rem;" aria-hidden="true">
+                            {{ mb_strtoupper(mb_substr($user->name, 0, 1)) }}
+                        </span>
+                    @endif
+                    <div>
+                        <h1 class="h3 fw-bold text-dark-blue mb-1">{{ __('messages.change_password') }}</h1>
+                        <p class="text-muted mb-0">{{ $user->name }} · {{ $user->email }}</p>
+                    </div>
+                </div>
 
                 <form method="POST" action="{{ route('center.credentials.update', $user) }}">
                     @csrf

@@ -107,6 +107,21 @@
                            placeholder="{{ __('messages.job_title_placeholder') }}">
                 </div>
             </div>
+            <div class="col-md-4">
+                <label class="form-label" for="preferred_locale">{{ __('messages.preferred_locale') }}</label>
+                <div class="input-icon-wrap">
+                    <i class="fas fa-language"></i>
+                    <select name="preferred_locale" id="preferred_locale" class="form-select">
+                        <option value="">{{ __('messages.preferred_locale_auto') }}</option>
+                        @foreach(\App\Support\Locales::labels() as $code => $label)
+                            <option value="{{ $code }}" @selected(old('preferred_locale', $user->preferred_locale ?? null) === $code)>
+                                {{ $label }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+                <small class="form-text text-muted">{{ __('messages.preferred_locale_hint') }}</small>
+            </div>
         </div>
     </section>
 

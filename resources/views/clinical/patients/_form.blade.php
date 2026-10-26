@@ -25,6 +25,18 @@
         @error('age')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
     <div class="col-12 col-md-6 mb-3">
+        <label class="form-label" for="sex">{{ __('messages.sex') }}</label>
+        <select name="sex" id="sex" class="form-select @error('sex') is-invalid @enderror">
+            <option value="">{{ __('messages.sex_unspecified') }}</option>
+            @foreach(\App\Models\Patient::SEXES as $sex)
+                <option value="{{ $sex }}" @selected(old('sex', $patient?->sex) === $sex)>
+                    {{ __('messages.sex_'.$sex) }}
+                </option>
+            @endforeach
+        </select>
+        @error('sex')<div class="invalid-feedback">{{ $message }}</div>@enderror
+    </div>
+    <div class="col-12 col-md-6 mb-3">
         <label class="form-label" for="pathology_id">{{ __('messages.protocol') }} <span class="text-danger">*</span></label>
         <select name="pathology_id" id="pathology_id" class="form-select @error('pathology_id') is-invalid @enderror" required>
             <option value="">{{ __('messages.select_protocol') }}</option>
@@ -72,6 +84,34 @@
         <small class="text-muted">{{ __('messages.expected_next_visit_hint') }}</small>
         @error('expected_next_visit_at')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
+
+    <div class="col-12 mb-3">
+        <div class="form-check form-switch mb-2">
+            <input type="hidden" name="visit_reminder_enabled" value="0">
+            <input type="checkbox" name="visit_reminder_enabled" value="1" id="visit_reminder_enabled"
+                   class="form-check-input @error('visit_reminder_enabled') is-invalid @enderror"
+                   @checked(old('visit_reminder_enabled', $patient?->visit_reminder_enabled))>
+            <label class="form-check-label fw-semibold" for="visit_reminder_enabled">
+                {{ __('messages.visit_reminder_enabled') }}
+            </label>
+        </div>
+        <p class="text-muted small mb-2">{{ __('messages.visit_reminder_enabled_hint') }}</p>
+        <div id="visit-reminder-options" class="row g-2 {{ old('visit_reminder_enabled', $patient?->visit_reminder_enabled) ? '' : 'd-none' }}">
+            <div class="col-12 col-md-6">
+                <label class="form-label" for="visit_reminder_days_before">{{ __('messages.visit_reminder_days_before') }}</label>
+                <select name="visit_reminder_days_before" id="visit_reminder_days_before"
+                        class="form-select @error('visit_reminder_days_before') is-invalid @enderror">
+                    <option value="">{{ __('messages.select_placeholder') }}</option>
+                    @foreach(\App\Models\Patient::REMINDER_DAYS_OPTIONS as $days)
+                        <option value="{{ $days }}" @selected((int) old('visit_reminder_days_before', $patient?->visit_reminder_days_before) === $days)>
+                            {{ trans_choice('messages.visit_reminder_days_option', $days, ['count' => $days]) }}
+                        </option>
+                    @endforeach
+                </select>
+                @error('visit_reminder_days_before')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
+            </div>
+        </div>
+    </div>
     <div class="col-12 mb-3">
         <label class="form-label" for="notes">{{ __('messages.notes') }}</label>
         <textarea name="notes" id="notes" rows="3" class="form-control @error('notes') is-invalid @enderror">{{ old('notes', $patient?->notes) }}</textarea>
@@ -82,18 +122,27 @@
 <script>
 (function () {
     const btn = document.getElementById('add-phone-btn');
-    if (!btn || btn.dataset.bound) return;
-    btn.dataset.bound = '1';
-    btn.addEventListener('click', function () {
-        const list = document.getElementById('phones-list');
-        if (!list) return;
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.name = 'phones[]';
-        input.className = 'form-control';
-        input.placeholder = @json(__('messages.phone_placeholder'));
-        list.appendChild(input);
-        input.focus();
-    });
+    if (btn && !btn.dataset.bound) {
+        btn.dataset.bound = '1';
+        btn.addEventListener('click', function () {
+            const list = document.getElementById('phones-list');
+            if (!list) return;
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.name = 'phones[]';
+            input.className = 'form-control';
+            input.placeholder = @json(__('messages.phone_placeholder'));
+            list.appendChild(input);
+            input.focus();
+        });
+    }
+
+    const reminderToggle = document.getElementById('visit_reminder_enabled');
+    const reminderOptions = document.getElementById('visit-reminder-options');
+    if (reminderToggle && reminderOptions) {
+        reminderToggle.addEventListener('change', function () {
+            reminderOptions.classList.toggle('d-none', !this.checked);
+        });
+    }
 })();
 </script>

@@ -16,14 +16,11 @@ class PatientPolicy
 
     public function view(User $user, Patient $patient): bool
     {
-        if ($user->isAdmin() || $patient->user_id === $user->id) {
-            return true;
+        if ($patient->trashed()) {
+            return $user->isAdmin();
         }
 
-        // Responsable de centro: puede ver pacientes del mismo centro.
-        return $user->center_id
-            && ! $user->isSubUser()
-            && $patient->belongsToSameCenter($user);
+        return $this->managesPatient($user, $patient);
     }
 
     public function create(User $user): bool
@@ -33,11 +30,32 @@ class PatientPolicy
 
     public function update(User $user, Patient $patient): bool
     {
-        return $user->isAdmin() || $patient->user_id === $user->id;
+        if ($patient->trashed()) {
+            return false;
+        }
+
+        return $this->managesPatient($user, $patient);
     }
 
     public function delete(User $user, Patient $patient): bool
     {
-        return $user->isAdmin() || $patient->user_id === $user->id;
+        if ($patient->trashed()) {
+            return false;
+        }
+
+        return $this->managesPatient($user, $patient);
+    }
+
+    /**
+     * Pacientes compartidos por centro: cualquier usuario del mismo centro
+     * puede verlos y editarlos. Sin centro, solo el dueño.
+     */
+    private function managesPatient(User $user, Patient $patient): bool
+    {
+        if ($user->isAdmin() || $patient->user_id === $user->id) {
+            return true;
+        }
+
+        return $patient->belongsToSameCenter($user);
     }
 }

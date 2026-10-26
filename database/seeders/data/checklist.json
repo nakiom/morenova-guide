@@ -186,5 +186,83 @@
             "pt": "Plano de disparos conforme severidade: 2000 (padrão) ou 3000 (moderada/severa).",
             "zh": "按严重程度核对发放:2000(标准)或3000(中/重度)。"
         }
+    ],
+    "pad": [
+        {
+            "es": "Paciente identificado, criterios PAD OK y consentimiento firmado.",
+            "en": "Patient identified, PAD criteria OK and consent signed.",
+            "pt": "Paciente identificado, critérios DAP OK e consentimento assinado.",
+            "zh": "患者已确认、PAD 标准符合且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; C30 limpio y parámetros OK (1,9 kV / 2,0 Hz).",
+            "en": "Device ready; C30 clean and parameters OK (1.9 kV / 2.0 Hz).",
+            "pt": "Equipamento pronto; C30 limpo e parâmetros OK (1,9 kV / 2,0 Hz).",
+            "zh": "设备就绪；C30 已清洁且参数正确（1.9 kV / 2.0 Hz）。"
+        },
+        {
+            "es": "ABI/pulsos revisados; gel aplicado en pantorrillas/muslos/pie según plan.",
+            "en": "ABI/pulses reviewed; gel applied on calves/thighs/foot per plan.",
+            "pt": "ITB/pulsos revisados; gel aplicado em panturrilhas/coxas/pé conforme plano.",
+            "zh": "已复核 ABI/脉搏；按计划在小腿/大腿/足部涂凝胶。"
+        },
+        {
+            "es": "Plan de disparos: 500 × 5 regiones ≈ 2500 totales.",
+            "en": "Shot plan: 500 × 5 regions ≈ 2500 total.",
+            "pt": "Plano de disparos: 500 × 5 regiões ≈ 2500 totais.",
+            "zh": "发放计划：500×5 区 ≈ 共 2500 发。"
+        }
+    ],
+    "wounds": [
+        {
+            "es": "Paciente y herida evaluados; criterios OK y consentimiento firmado.",
+            "en": "Patient and wound assessed; criteria OK and consent signed.",
+            "pt": "Paciente e ferida avaliados; critérios OK e consentimento assinado.",
+            "zh": "患者与伤口已评估；符合标准且已签署知情同意。"
+        },
+        {
+            "es": "Equipo y C30 limpios/desinfectados; parámetros 1,9 kV / 2,0 Hz.",
+            "en": "Device and C30 clean/disinfected; parameters 1.9 kV / 2.0 Hz.",
+            "pt": "Equipamento e C30 limpos/desinfetados; parâmetros 1,9 kV / 2,0 Hz.",
+            "zh": "设备与 C30 已清洁消毒；参数 1.9 kV / 2.0 Hz。"
+        },
+        {
+            "es": "Herida limpia; gel estéril acuoso aplicado; cobertura de bordes y perilesional.",
+            "en": "Wound cleansed; sterile water-based gel applied; edges and perilesional coverage.",
+            "pt": "Ferida limpa; gel estéril à base de água aplicado; cobertura de bordas e perilesional.",
+            "zh": "伤口已清洁；已涂无菌水性凝胶；覆盖边缘与创周。"
+        },
+        {
+            "es": "Documentar tamaño/fotos; plan 500–750 disparos por sección según tamaño.",
+            "en": "Document size/photos; plan 500–750 shots per section by wound size.",
+            "pt": "Documentar tamanho/fotos; plano 500–750 disparos por seção conforme tamanho.",
+            "zh": "记录大小/照片；按伤口大小每节 500–750 发。"
+        }
+    ],
+    "msd": [
+        {
+            "es": "Paciente identificado, criterios MSD OK y consentimiento firmado.",
+            "en": "Patient identified, MSD criteria OK and consent signed.",
+            "pt": "Paciente identificado, critérios MSD OK e consentimento assinado.",
+            "zh": "患者已确认、MSD 标准符合且已签署知情同意。"
+        },
+        {
+            "es": "Equipo operativo; C30/C15 limpio y parámetros OK (1,6–1,9 kV / 2 Hz).",
+            "en": "Device ready; C30/C15 clean and parameters OK (1.6–1.9 kV / 2 Hz).",
+            "pt": "Equipamento pronto; C30/C15 limpo e parâmetros OK (1,6–1,9 kV / 2 Hz).",
+            "zh": "设备就绪；C30/C15 已清洁且参数正确（1.6–1.9 kV / 2 Hz）。"
+        },
+        {
+            "es": "Sitios palpados; gel aplicado; primera aplicación en el foco del dolor.",
+            "en": "Sites palpated; gel applied; first application at pain source.",
+            "pt": "Locais palpados; gel aplicado; primeira aplicação no foco da dor.",
+            "zh": "已触诊部位；已涂凝胶；首次治疗于疼痛源。"
+        },
+        {
+            "es": "Plan: 2–4 aplicaciones · 500–750 disparos c/u según localización.",
+            "en": "Plan: 2–4 applications · 500–750 shots each by localization.",
+            "pt": "Plano: 2–4 aplicações · 500–750 disparos cada conforme localização.",
+            "zh": "计划：2–4 次应用 · 按部位每次 500–750 发。"
+        }
     ]
 }

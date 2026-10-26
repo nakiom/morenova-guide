@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Support\Locales;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
@@ -44,6 +46,10 @@ class ProfileController extends Controller
 
         unset($data['photo']);
 
+        if (array_key_exists('preferred_locale', $data) && empty($data['preferred_locale'])) {
+            $data['preferred_locale'] = null;
+        }
+
         $user->fill($data);
 
         if ($user->isDirty('email')) {
@@ -51,6 +57,11 @@ class ProfileController extends Controller
         }
 
         $user->save();
+
+        if (Locales::isSupported($user->preferred_locale)) {
+            Session::put('locale', $user->preferred_locale);
+            app()->setLocale($user->preferred_locale);
+        }
 
         return Redirect::route('profile.edit')->with('status', 'profile-updated');
     }

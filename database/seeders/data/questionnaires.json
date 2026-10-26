@@ -1,366 +1,4133 @@
 [
-  {
-    "pathology": "ed",
-    "code": "iief_ef",
-    "name": "IIEF-EF (6)",
-    "description": "International Index of Erectile Function — dominio EF",
-    "max_score": 30,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "q1", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia de erección durante actividad sexual", "en": "Frequency of erection during sexual activity"}},
-        {"key": "q2", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Erecciones firmes suficientes para la penetración", "en": "Erections hard enough for penetration"}},
-        {"key": "q3", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Capacidad de mantener la erección tras la penetración", "en": "Ability to maintain erection after penetration"}},
-        {"key": "q4", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Dificultad para mantener la erección hasta el final", "en": "Difficulty maintaining erection to completion"}},
-        {"key": "q5", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Satisfacción con el intento de coito", "en": "Satisfaction with intercourse attempt"}},
-        {"key": "q15", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Confianza en lograr y mantener una erección", "en": "Confidence in getting and keeping an erection"}}
-      ]
-    }
-  },
-  {
-    "pathology": "ed",
-    "code": "ehs",
-    "name": "EHS – Erection Hardness Score",
-    "description": "Dureza de la erección (1–4)",
-    "max_score": 4,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {
-          "key": "hardness",
-          "type": "select",
-          "required": true,
-          "label": {"es": "Puntaje de dureza", "en": "Hardness score"},
-          "options": [
-            {"value": 1, "label": {"es": "1 – Pene agrandado sin dureza", "en": "1 – Larger but not hard"}},
-            {"value": 2, "label": {"es": "2 – Duro pero no suficiente para penetración", "en": "2 – Hard but not enough for penetration"}},
-            {"value": 3, "label": {"es": "3 – Duro suficiente para penetración pero no completamente", "en": "3 – Hard enough for penetration but not fully"}},
-            {"value": 4, "label": {"es": "4 – Completamente duro y rígido", "en": "4 – Completely hard and rigid"}}
-          ]
+    {
+        "pathology": "ed",
+        "code": "iief_ef",
+        "name": "IIEF-EF (6)",
+        "description": "International Index of Erectile Function — dominio EF",
+        "max_score": 30,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "q1",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Frecuencia de erección durante actividad sexual",
+                        "en": "Frequency of erection during sexual activity"
+                    }
+                },
+                {
+                    "key": "q2",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Erecciones firmes suficientes para la penetración",
+                        "en": "Erections hard enough for penetration"
+                    }
+                },
+                {
+                    "key": "q3",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Capacidad de mantener la erección tras la penetración",
+                        "en": "Ability to maintain erection after penetration"
+                    }
+                },
+                {
+                    "key": "q4",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Dificultad para mantener la erección hasta el final",
+                        "en": "Difficulty maintaining erection to completion"
+                    }
+                },
+                {
+                    "key": "q5",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Satisfacción con el intento de coito",
+                        "en": "Satisfaction with intercourse attempt"
+                    }
+                },
+                {
+                    "key": "q15",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Confianza en lograr y mantener una erección",
+                        "en": "Confidence in getting and keeping an erection"
+                    }
+                }
+            ]
         }
-      ]
-    }
-  },
-  {
-    "pathology": "cpp",
-    "code": "nih_cpsi",
-    "name": "NIH-CPSI",
-    "description": "NIH Chronic Prostatitis Symptom Index (total)",
-    "max_score": 43,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "pain", "type": "number", "min": 0, "max": 21, "required": true, "label": {"es": "Dominio dolor (0–21)", "en": "Pain domain (0–21)"}},
-        {"key": "urinary", "type": "number", "min": 0, "max": 10, "required": true, "label": {"es": "Dominio urinario (0–10)", "en": "Urinary domain (0–10)"}},
-        {"key": "qol", "type": "number", "min": 0, "max": 12, "required": true, "label": {"es": "Calidad de vida (0–12)", "en": "Quality of life (0–12)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "cpp",
-    "code": "ipss",
-    "name": "IPSS",
-    "description": "International Prostate Symptom Score",
-    "max_score": 35,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "incomplete", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Sensación de vaciado incompleto", "en": "Incomplete emptying"}},
-        {"key": "frequency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia", "en": "Frequency"}},
-        {"key": "intermittency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Intermitencia", "en": "Intermittency"}},
-        {"key": "urgency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Urgencia", "en": "Urgency"}},
-        {"key": "weak_stream", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Chorro débil", "en": "Weak stream"}},
-        {"key": "straining", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Esfuerzo para orinar", "en": "Straining"}},
-        {"key": "nocturia", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Nocturia", "en": "Nocturia"}}
-      ]
-    }
-  },
-  {
-    "pathology": "pd",
-    "code": "pd_vas_pain",
-    "name": "VAS dolor (Peyronie)",
-    "description": "Escala visual analógica de dolor 0–10",
-    "max_score": 10,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "vas_pain", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor (0 sin dolor – 10 máximo)", "en": "Pain (0 none – 10 worst)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "pd",
-    "code": "pd_curvature",
-    "name": "Curvatura peneana (°)",
-    "description": "Grados de curvatura medidos",
-    "max_score": 90,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "degrees", "type": "number", "min": 0, "max": 90, "required": true, "label": {"es": "Curvatura en grados", "en": "Curvature in degrees"}}
-      ]
-    }
-  },
-  {
-    "pathology": "pd",
-    "code": "pdq_bother",
-    "name": "PDQ – molestia",
-    "description": "Peyronie's Disease Questionnaire (molestia / impacto)",
-    "max_score": 24,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "bother", "type": "number", "min": 0, "max": 24, "required": true, "label": {"es": "Puntaje de molestia PDQ (0–24)", "en": "PDQ bother score (0–24)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "fsd",
-    "code": "fsfi_domains",
-    "name": "FSFI (arousal & orgasm)",
-    "description": "Female Sexual Function Index — dominios arousal y orgasm",
-    "max_score": 12,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "arousal", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Dominio arousal (0–6)", "en": "Arousal domain (0–6)"}},
-        {"key": "orgasm", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Dominio orgasm (0–6)", "en": "Orgasm domain (0–6)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "fsd",
-    "code": "vas_satisfaction",
-    "name": "VAS satisfacción sexual",
-    "description": "Satisfacción sexual 0–10",
-    "max_score": 10,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "vas", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Satisfacción (0–10)", "en": "Satisfaction (0–10)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "fsd",
-    "code": "pgic",
-    "name": "PGIC",
-    "description": "Patient Global Impression of Change",
-    "max_score": 7,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {
-          "key": "pgic",
-          "type": "select",
-          "required": true,
-          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
-          "options": [
-            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
-            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
-            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
-            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
-            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
-            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
-            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
-          ]
+    },
+    {
+        "pathology": "ed",
+        "code": "ehs",
+        "name": "EHS – Erection Hardness Score",
+        "description": "Dureza de la erección (1–4)",
+        "max_score": 4,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "hardness",
+                    "type": "select",
+                    "required": true,
+                    "label": {
+                        "es": "Puntaje de dureza",
+                        "en": "Hardness score"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Pene agrandado sin dureza",
+                                "en": "1 – Larger but not hard"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Duro pero no suficiente para penetración",
+                                "en": "2 – Hard but not enough for penetration"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Duro suficiente para penetración pero no completamente",
+                                "en": "3 – Hard enough for penetration but not fully"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Completamente duro y rígido",
+                                "en": "4 – Completely hard and rigid"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  },
-  {
-    "pathology": "fsd",
-    "code": "sexual_diary",
-    "name": "Diario sexual",
-    "description": "Registro de actividad sexual del período",
-    "max_score": null,
-    "schema": {
-      "score_mode": "manual",
-      "fields": [
-        {"key": "encounters", "type": "number", "min": 0, "max": 60, "required": true, "label": {"es": "Encuentros sexuales en el período", "en": "Sexual encounters in the period"}},
-        {"key": "satisfying", "type": "number", "min": 0, "max": 60, "required": true, "label": {"es": "Encuentros satisfactorios", "en": "Satisfying encounters"}},
-        {"key": "notes", "type": "textarea", "required": false, "score": false, "label": {"es": "Notas del diario", "en": "Diary notes"}}
-      ]
-    }
-  },
-  {
-    "pathology": "sui",
-    "code": "iciq_ui_sf",
-    "name": "ICIQ-UI SF",
-    "description": "International Consultation on Incontinence Questionnaire – Short Form",
-    "max_score": 21,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "frequency", "type": "scale", "min": 0, "max": 5, "required": true, "label": {"es": "Frecuencia de pérdidas", "en": "Leakage frequency"}},
-        {"key": "amount", "type": "scale", "min": 0, "max": 6, "required": true, "label": {"es": "Cantidad de orina perdida", "en": "Amount of leakage"}},
-        {"key": "impact", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Impacto en la vida diaria", "en": "Impact on everyday life"}}
-      ]
-    }
-  },
-  {
-    "pathology": "sui",
-    "code": "iiq7",
-    "name": "IIQ-7",
-    "description": "Incontinence Impact Questionnaire (short)",
-    "max_score": 21,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "total", "type": "number", "min": 0, "max": 21, "required": true, "label": {"es": "Puntaje total IIQ-7 (0–21)", "en": "IIQ-7 total score (0–21)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "sui",
-    "code": "udi6",
-    "name": "UDI-6",
-    "description": "Urogenital Distress Inventory (short)",
-    "max_score": 18,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "total", "type": "number", "min": 0, "max": 18, "required": true, "label": {"es": "Puntaje total UDI-6 (0–18)", "en": "UDI-6 total score (0–18)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "sui",
-    "code": "pad_test",
-    "name": "Pad test",
-    "description": "Prueba de absorbente (gramos)",
-    "max_score": null,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "grams", "type": "number", "min": 0, "max": 500, "step": 0.1, "required": true, "label": {"es": "Peso ganado del pad (g)", "en": "Pad weight gain (g)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "vulvodinia",
-    "code": "vas_pain",
-    "name": "VAS dolor vulvar",
-    "description": "Dolor 0–10",
-    "max_score": 10,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "vas", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor (0–10)", "en": "Pain (0–10)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "vulvodinia",
-    "code": "fsfi_vulvodinia",
-    "name": "FSFI (total)",
-    "description": "Female Sexual Function Index — puntaje total",
-    "max_score": 36,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "total", "type": "number", "min": 2, "max": 36, "step": 0.1, "required": true, "label": {"es": "Puntaje total FSFI", "en": "FSFI total score"}}
-      ]
-    }
-  },
-  {
-    "pathology": "vulvodinia",
-    "code": "pgic_vulvodinia",
-    "name": "PGIC",
-    "description": "Patient Global Impression of Change",
-    "max_score": 7,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {
-          "key": "pgic",
-          "type": "select",
-          "required": true,
-          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
-          "options": [
-            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
-            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
-            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
-            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
-            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
-            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
-            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
-          ]
+    },
+    {
+        "pathology": "cpp",
+        "code": "nih_cpsi",
+        "name": "NIH-CPSI",
+        "description": "NIH Chronic Prostatitis Symptom Index (total)",
+        "max_score": 43,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "pain",
+                    "type": "number",
+                    "min": 0,
+                    "max": 21,
+                    "required": true,
+                    "label": {
+                        "es": "Dominio dolor (0–21)",
+                        "en": "Pain domain (0–21)"
+                    }
+                },
+                {
+                    "key": "urinary",
+                    "type": "number",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Dominio urinario (0–10)",
+                        "en": "Urinary domain (0–10)"
+                    }
+                },
+                {
+                    "key": "qol",
+                    "type": "number",
+                    "min": 0,
+                    "max": 12,
+                    "required": true,
+                    "label": {
+                        "es": "Calidad de vida (0–12)",
+                        "en": "Quality of life (0–12)"
+                    }
+                }
+            ]
         }
-      ]
-    }
-  },
-  {
-    "pathology": "vulvodinia",
-    "code": "cotton_swab",
-    "name": "Cotton swab test",
-    "description": "Puntos positivos al hisopo",
-    "max_score": 12,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {"key": "positive_sites", "type": "number", "min": 0, "max": 12, "required": true, "label": {"es": "Sitios positivos (0–12)", "en": "Positive sites (0–12)"}},
-        {"key": "notes", "type": "textarea", "required": false, "score": false, "label": {"es": "Observaciones", "en": "Notes"}}
-      ]
-    }
-  },
-  {
-    "pathology": "gsm",
-    "code": "fsfi_gsm",
-    "name": "FSFI (todos los dominios)",
-    "description": "Female Sexual Function Index — dominios",
-    "max_score": 36,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "desire", "type": "number", "min": 1.2, "max": 6, "step": 0.1, "required": true, "label": {"es": "Desire (1.2–6)", "en": "Desire (1.2–6)"}},
-        {"key": "arousal", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Arousal (0–6)", "en": "Arousal (0–6)"}},
-        {"key": "lubrication", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Lubrication (0–6)", "en": "Lubrication (0–6)"}},
-        {"key": "orgasm", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Orgasm (0–6)", "en": "Orgasm (0–6)"}},
-        {"key": "satisfaction", "type": "number", "min": 0.8, "max": 6, "step": 0.1, "required": true, "label": {"es": "Satisfaction (0.8–6)", "en": "Satisfaction (0.8–6)"}},
-        {"key": "pain", "type": "number", "min": 0, "max": 6, "step": 0.1, "required": true, "label": {"es": "Pain (0–6)", "en": "Pain (0–6)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "gsm",
-    "code": "vas_gsm",
-    "name": "VAS sequedad / dolor",
-    "description": "Síntomas GSM 0–10",
-    "max_score": 20,
-    "schema": {
-      "score_mode": "sum",
-      "fields": [
-        {"key": "dryness", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Sequedad vaginal (0–10)", "en": "Vaginal dryness (0–10)"}},
-        {"key": "pain", "type": "scale", "min": 0, "max": 10, "required": true, "label": {"es": "Dolor / dispareunia (0–10)", "en": "Pain / dyspareunia (0–10)"}}
-      ]
-    }
-  },
-  {
-    "pathology": "gsm",
-    "code": "pgic_gsm",
-    "name": "PGIC",
-    "description": "Patient Global Impression of Change",
-    "max_score": 7,
-    "schema": {
-      "score_mode": "single",
-      "fields": [
-        {
-          "key": "pgic",
-          "type": "select",
-          "required": true,
-          "label": {"es": "Impresión global de cambio", "en": "Global impression of change"},
-          "options": [
-            {"value": 1, "label": {"es": "1 – Mucho mejor", "en": "1 – Very much improved"}},
-            {"value": 2, "label": {"es": "2 – Bastante mejor", "en": "2 – Much improved"}},
-            {"value": 3, "label": {"es": "3 – Un poco mejor", "en": "3 – Minimally improved"}},
-            {"value": 4, "label": {"es": "4 – Sin cambios", "en": "4 – No change"}},
-            {"value": 5, "label": {"es": "5 – Un poco peor", "en": "5 – Minimally worse"}},
-            {"value": 6, "label": {"es": "6 – Bastante peor", "en": "6 – Much worse"}},
-            {"value": 7, "label": {"es": "7 – Mucho peor", "en": "7 – Very much worse"}}
-          ]
+    },
+    {
+        "pathology": "cpp",
+        "code": "ipss",
+        "name": "IPSS",
+        "description": "International Prostate Symptom Score",
+        "max_score": 35,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "incomplete",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Sensación de vaciado incompleto",
+                        "en": "Incomplete emptying"
+                    }
+                },
+                {
+                    "key": "frequency",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Frecuencia",
+                        "en": "Frequency"
+                    }
+                },
+                {
+                    "key": "intermittency",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Intermitencia",
+                        "en": "Intermittency"
+                    }
+                },
+                {
+                    "key": "urgency",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Urgencia",
+                        "en": "Urgency"
+                    }
+                },
+                {
+                    "key": "weak_stream",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Chorro débil",
+                        "en": "Weak stream"
+                    }
+                },
+                {
+                    "key": "straining",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Esfuerzo para orinar",
+                        "en": "Straining"
+                    }
+                },
+                {
+                    "key": "nocturia",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Nocturia",
+                        "en": "Nocturia"
+                    }
+                }
+            ]
         }
-      ]
+    },
+    {
+        "pathology": "pd",
+        "code": "pd_vas_pain",
+        "name": "VAS dolor (Peyronie)",
+        "description": "Escala visual analógica de dolor 0–10",
+        "max_score": 10,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "vas_pain",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Dolor (0 sin dolor – 10 máximo)",
+                        "en": "Pain (0 none – 10 worst)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "pd",
+        "code": "pd_curvature",
+        "name": "Curvatura peneana (°)",
+        "description": "Grados de curvatura medidos",
+        "max_score": 90,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "degrees",
+                    "type": "number",
+                    "min": 0,
+                    "max": 90,
+                    "required": true,
+                    "label": {
+                        "es": "Curvatura en grados",
+                        "en": "Curvature in degrees"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "pd",
+        "code": "pdq_bother",
+        "name": "PDQ – molestia",
+        "description": "Peyronie's Disease Questionnaire (molestia / impacto)",
+        "max_score": 24,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "bother",
+                    "type": "number",
+                    "min": 0,
+                    "max": 24,
+                    "required": true,
+                    "label": {
+                        "es": "Puntaje de molestia PDQ (0–24)",
+                        "en": "PDQ bother score (0–24)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "fsd",
+        "code": "fsfi_domains",
+        "name": "FSFI (arousal & orgasm)",
+        "description": "Female Sexual Function Index — dominios arousal y orgasm",
+        "max_score": 12,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "arousal",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Dominio arousal (0–6)",
+                        "en": "Arousal domain (0–6)"
+                    }
+                },
+                {
+                    "key": "orgasm",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Dominio orgasm (0–6)",
+                        "en": "Orgasm domain (0–6)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "fsd",
+        "code": "vas_satisfaction",
+        "name": "VAS satisfacción sexual",
+        "description": "Satisfacción sexual 0–10",
+        "max_score": 10,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "vas",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Satisfacción (0–10)",
+                        "en": "Satisfaction (0–10)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "fsd",
+        "code": "pgic",
+        "name": "PGIC",
+        "description": "Patient Global Impression of Change",
+        "max_score": 7,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "pgic",
+                    "type": "select",
+                    "required": true,
+                    "label": {
+                        "es": "Impresión global de cambio",
+                        "en": "Global impression of change"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Mucho mejor",
+                                "en": "1 – Very much improved"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Bastante mejor",
+                                "en": "2 – Much improved"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Un poco mejor",
+                                "en": "3 – Minimally improved"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Sin cambios",
+                                "en": "4 – No change"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Un poco peor",
+                                "en": "5 – Minimally worse"
+                            }
+                        },
+                        {
+                            "value": 6,
+                            "label": {
+                                "es": "6 – Bastante peor",
+                                "en": "6 – Much worse"
+                            }
+                        },
+                        {
+                            "value": 7,
+                            "label": {
+                                "es": "7 – Mucho peor",
+                                "en": "7 – Very much worse"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "fsd",
+        "code": "sexual_diary",
+        "name": "Diario sexual",
+        "description": "Registro de actividad sexual del período",
+        "max_score": null,
+        "schema": {
+            "score_mode": "manual",
+            "fields": [
+                {
+                    "key": "encounters",
+                    "type": "number",
+                    "min": 0,
+                    "max": 60,
+                    "required": true,
+                    "label": {
+                        "es": "Encuentros sexuales en el período",
+                        "en": "Sexual encounters in the period"
+                    }
+                },
+                {
+                    "key": "satisfying",
+                    "type": "number",
+                    "min": 0,
+                    "max": 60,
+                    "required": true,
+                    "label": {
+                        "es": "Encuentros satisfactorios",
+                        "en": "Satisfying encounters"
+                    }
+                },
+                {
+                    "key": "notes",
+                    "type": "textarea",
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Notas del diario",
+                        "en": "Diary notes"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "sui",
+        "code": "iciq_ui_sf",
+        "name": "ICIQ-UI SF",
+        "description": "International Consultation on Incontinence Questionnaire – Short Form",
+        "max_score": 21,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "frequency",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "label": {
+                        "es": "Frecuencia de pérdidas",
+                        "en": "Leakage frequency"
+                    }
+                },
+                {
+                    "key": "amount",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 6,
+                    "required": true,
+                    "label": {
+                        "es": "Cantidad de orina perdida",
+                        "en": "Amount of leakage"
+                    }
+                },
+                {
+                    "key": "impact",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Impacto en la vida diaria",
+                        "en": "Impact on everyday life"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "sui",
+        "code": "iiq7",
+        "name": "IIQ-7",
+        "description": "Incontinence Impact Questionnaire (short)",
+        "max_score": 21,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "total",
+                    "type": "number",
+                    "min": 0,
+                    "max": 21,
+                    "required": true,
+                    "label": {
+                        "es": "Puntaje total IIQ-7 (0–21)",
+                        "en": "IIQ-7 total score (0–21)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "sui",
+        "code": "udi6",
+        "name": "UDI-6",
+        "description": "Urogenital Distress Inventory (short)",
+        "max_score": 18,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "total",
+                    "type": "number",
+                    "min": 0,
+                    "max": 18,
+                    "required": true,
+                    "label": {
+                        "es": "Puntaje total UDI-6 (0–18)",
+                        "en": "UDI-6 total score (0–18)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "sui",
+        "code": "pad_test",
+        "name": "Pad test",
+        "description": "Prueba de absorbente (gramos)",
+        "max_score": null,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "grams",
+                    "type": "number",
+                    "min": 0,
+                    "max": 500,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Peso ganado del pad (g)",
+                        "en": "Pad weight gain (g)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "vulvodinia",
+        "code": "vas_pain",
+        "name": "VAS dolor vulvar",
+        "description": "Dolor 0–10",
+        "max_score": 10,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "vas",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Dolor (0–10)",
+                        "en": "Pain (0–10)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "vulvodinia",
+        "code": "fsfi_vulvodinia",
+        "name": "FSFI (total)",
+        "description": "Female Sexual Function Index — puntaje total",
+        "max_score": 36,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "total",
+                    "type": "number",
+                    "min": 2,
+                    "max": 36,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Puntaje total FSFI",
+                        "en": "FSFI total score"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "vulvodinia",
+        "code": "pgic_vulvodinia",
+        "name": "PGIC",
+        "description": "Patient Global Impression of Change",
+        "max_score": 7,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "pgic",
+                    "type": "select",
+                    "required": true,
+                    "label": {
+                        "es": "Impresión global de cambio",
+                        "en": "Global impression of change"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Mucho mejor",
+                                "en": "1 – Very much improved"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Bastante mejor",
+                                "en": "2 – Much improved"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Un poco mejor",
+                                "en": "3 – Minimally improved"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Sin cambios",
+                                "en": "4 – No change"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Un poco peor",
+                                "en": "5 – Minimally worse"
+                            }
+                        },
+                        {
+                            "value": 6,
+                            "label": {
+                                "es": "6 – Bastante peor",
+                                "en": "6 – Much worse"
+                            }
+                        },
+                        {
+                            "value": 7,
+                            "label": {
+                                "es": "7 – Mucho peor",
+                                "en": "7 – Very much worse"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "vulvodinia",
+        "code": "cotton_swab",
+        "name": "Cotton swab test",
+        "description": "Puntos positivos al hisopo",
+        "max_score": 12,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "positive_sites",
+                    "type": "number",
+                    "min": 0,
+                    "max": 12,
+                    "required": true,
+                    "label": {
+                        "es": "Sitios positivos (0–12)",
+                        "en": "Positive sites (0–12)"
+                    }
+                },
+                {
+                    "key": "notes",
+                    "type": "textarea",
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Observaciones",
+                        "en": "Notes"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "gsm",
+        "code": "fsfi_gsm",
+        "name": "FSFI (todos los dominios)",
+        "description": "Female Sexual Function Index — dominios",
+        "max_score": 36,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "desire",
+                    "type": "number",
+                    "min": 1.2,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Desire (1.2–6)",
+                        "en": "Desire (1.2–6)"
+                    }
+                },
+                {
+                    "key": "arousal",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Arousal (0–6)",
+                        "en": "Arousal (0–6)"
+                    }
+                },
+                {
+                    "key": "lubrication",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Lubrication (0–6)",
+                        "en": "Lubrication (0–6)"
+                    }
+                },
+                {
+                    "key": "orgasm",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Orgasm (0–6)",
+                        "en": "Orgasm (0–6)"
+                    }
+                },
+                {
+                    "key": "satisfaction",
+                    "type": "number",
+                    "min": 0.8,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Satisfaction (0.8–6)",
+                        "en": "Satisfaction (0.8–6)"
+                    }
+                },
+                {
+                    "key": "pain",
+                    "type": "number",
+                    "min": 0,
+                    "max": 6,
+                    "step": 0.1,
+                    "required": true,
+                    "label": {
+                        "es": "Pain (0–6)",
+                        "en": "Pain (0–6)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "gsm",
+        "code": "vas_gsm",
+        "name": "VAS sequedad / dolor",
+        "description": "Síntomas GSM 0–10",
+        "max_score": 20,
+        "schema": {
+            "score_mode": "sum",
+            "fields": [
+                {
+                    "key": "dryness",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Sequedad vaginal (0–10)",
+                        "en": "Vaginal dryness (0–10)"
+                    }
+                },
+                {
+                    "key": "pain",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "required": true,
+                    "label": {
+                        "es": "Dolor / dispareunia (0–10)",
+                        "en": "Pain / dyspareunia (0–10)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "gsm",
+        "code": "pgic_gsm",
+        "name": "PGIC",
+        "description": "Patient Global Impression of Change",
+        "max_score": 7,
+        "schema": {
+            "score_mode": "single",
+            "fields": [
+                {
+                    "key": "pgic",
+                    "type": "select",
+                    "required": true,
+                    "label": {
+                        "es": "Impresión global de cambio",
+                        "en": "Global impression of change"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Mucho mejor",
+                                "en": "1 – Very much improved"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Bastante mejor",
+                                "en": "2 – Much improved"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Un poco mejor",
+                                "en": "3 – Minimally improved"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Sin cambios",
+                                "en": "4 – No change"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Un poco peor",
+                                "en": "5 – Minimally worse"
+                            }
+                        },
+                        {
+                            "value": 6,
+                            "label": {
+                                "es": "6 – Bastante peor",
+                                "en": "6 – Much worse"
+                            }
+                        },
+                        {
+                            "value": 7,
+                            "label": {
+                                "es": "7 – Mucho peor",
+                                "en": "7 – Very much worse"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "msd",
+        "code": "quickdash",
+        "name": "QuickDASH",
+        "description": "Discapacidad de brazo, hombro y mano (0–100). El puntaje usa las 11 preguntas. Los módulos de trabajo y deporte son opcionales y no se suman.",
+        "max_score": 100,
+        "schema": {
+            "score_mode": "percent",
+            "higher_is_better": false,
+            "fields": [
+                {
+                    "key": "q1",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Abrir un frasco apretado o nuevo",
+                        "en": "Open a tight or new jar"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q2",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Hacer tareas domésticas pesadas (lavar paredes, pisos)",
+                        "en": "Do heavy household chores (e.g. wash walls, floors)"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q3",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Cargar una bolsa de compras o un maletín",
+                        "en": "Carry a shopping bag or briefcase"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q4",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Lavarse la espalda",
+                        "en": "Wash your back"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q5",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Usar un cuchillo para cortar comida",
+                        "en": "Use a knife to cut food"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q6",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Actividades recreativas con fuerza o impacto en brazo, hombro o mano (golf, martillar, tenis)",
+                        "en": "Recreational activities with force or impact through the arm, shoulder or hand (golf, hammering, tennis)"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q7",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "En la última semana, ¿cuánto interfirió el problema de brazo, hombro o mano en sus actividades sociales?",
+                        "en": "During the past week, how much did your arm, shoulder or hand problem interfere with your normal social activities?"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Nada",
+                                "en": "1 – Not at all"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Levemente",
+                                "en": "2 – Slightly"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Moderadamente",
+                                "en": "3 – Moderately"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Bastante",
+                                "en": "4 – Quite a bit"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Extremadamente",
+                                "en": "5 – Extremely"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q8",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "En la última semana, ¿estuvo limitado en el trabajo u otras actividades diarias por el problema de brazo, hombro o mano?",
+                        "en": "During the past week, were you limited in your work or other regular daily activities because of your arm, shoulder or hand problem?"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Nada limitado",
+                                "en": "1 – Not limited at all"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Levemente limitado",
+                                "en": "2 – Slightly limited"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Moderadamente limitado",
+                                "en": "3 – Moderately limited"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Muy limitado",
+                                "en": "4 – Very limited"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q9",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor en brazo, hombro o mano en la última semana",
+                        "en": "Arm, shoulder or hand pain in the last week"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Ninguno",
+                                "en": "1 – None"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Leve",
+                                "en": "2 – Mild"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Moderado",
+                                "en": "3 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Severo",
+                                "en": "4 – Severe"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Extremo",
+                                "en": "5 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q10",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Hormigueo (pinchazos) en brazo, hombro o mano",
+                        "en": "Tingling (pins and needles) in your arm, shoulder or hand"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Ninguno",
+                                "en": "1 – None"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Leve",
+                                "en": "2 – Mild"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Moderado",
+                                "en": "3 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Severo",
+                                "en": "4 – Severe"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Extremo",
+                                "en": "5 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "q11",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad para dormir por el dolor en brazo, hombro o mano",
+                        "en": "Difficulty sleeping because of the pain in your arm, shoulder or hand"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Tanta dificultad que no puedo dormir",
+                                "en": "5 – So much difficulty that I can’t sleep"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "work_technique",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo trabajo (opcional): dificultad con la técnica habitual",
+                        "en": "Work module (optional): difficulty using your usual technique"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "work_pain",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo trabajo (opcional): hacer el trabajo habitual por el dolor",
+                        "en": "Work module (optional): doing your usual work because of pain"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "work_quality",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo trabajo (opcional): hacer el trabajo tan bien como quisiera",
+                        "en": "Work module (optional): doing your work as well as you would like"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "work_time",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo trabajo (opcional): dedicar el tiempo habitual al trabajo",
+                        "en": "Work module (optional): spending your usual amount of time doing your work"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "sport_technique",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo deporte/música (opcional): dificultad con la técnica habitual",
+                        "en": "Sports/arts module (optional): difficulty using your usual technique"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "sport_pain",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo deporte/música (opcional): tocar o practicar por el dolor",
+                        "en": "Sports/arts module (optional): playing because of pain"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "sport_quality",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo deporte/música (opcional): hacerlo tan bien como quisiera",
+                        "en": "Sports/arts module (optional): playing as well as you would like"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "sport_time",
+                    "type": "select",
+                    "min": 1,
+                    "max": 5,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Módulo deporte/música (opcional): dedicar el tiempo habitual",
+                        "en": "Sports/arts module (optional): spending your usual amount of time practising or playing"
+                    },
+                    "options": [
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Sin dificultad",
+                                "en": "1 – No difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Dificultad leve",
+                                "en": "2 – Mild difficulty"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Dificultad moderada",
+                                "en": "3 – Moderate difficulty"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Dificultad severa",
+                                "en": "4 – Severe difficulty"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Incapaz",
+                                "en": "5 – Unable"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "msd",
+        "code": "ndi",
+        "name": "NDI – cuello",
+        "description": "Neck Disability Index / Oswestry de cuello (0–100). Mayor puntaje = más discapacidad.",
+        "max_score": 100,
+        "schema": {
+            "score_mode": "percent",
+            "higher_is_better": false,
+            "fields": [
+                {
+                    "key": "pain",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Intensidad del dolor",
+                        "en": "Pain intensity"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – No tengo dolor en este momento",
+                                "en": "0 – I have no pain at the moment"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – El dolor es muy leve en este momento",
+                                "en": "1 – The pain is very mild at the moment"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – El dolor es moderado en este momento",
+                                "en": "2 – The pain is moderate at the moment"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – El dolor es bastante intenso en este momento",
+                                "en": "3 – The pain is fairly severe at the moment"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – El dolor es muy intenso en este momento",
+                                "en": "4 – The pain is very severe at the moment"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – El dolor es el peor imaginable en este momento",
+                                "en": "5 – The pain is the worst imaginable at the moment"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "care",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Cuidado personal (lavarse, vestirse)",
+                        "en": "Personal care (washing, dressing)"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo cuidarme con normalidad sin dolor extra",
+                                "en": "0 – I can look after myself normally without causing extra pain"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo cuidarme con normalidad, pero me causa dolor extra",
+                                "en": "1 – I can look after myself normally but it causes extra pain"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Me duele cuidarme y lo hago lento y con cuidado",
+                                "en": "2 – It is painful to look after myself and I am slow and careful"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Necesito algo de ayuda, pero hago la mayor parte de mi cuidado",
+                                "en": "3 – I need some help but manage most of my personal care"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Necesito ayuda todos los días en la mayor parte del cuidado",
+                                "en": "4 – I need help every day in most aspects of self-care"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No me visto, me lavo con dificultad y permanezco en cama",
+                                "en": "5 – I do not get dressed, I wash with difficulty and stay in bed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "lifting",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Levantar peso",
+                        "en": "Lifting"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo levantar pesos grandes sin dolor extra",
+                                "en": "0 – I can lift heavy weights without extra pain"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo levantar pesos grandes, pero me duele más",
+                                "en": "1 – I can lift heavy weights but it gives extra pain"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – El dolor me impide levantar pesos grandes del suelo, pero puedo si están a mano",
+                                "en": "2 – Pain prevents me from lifting heavy weights off the floor, but I can manage if they are conveniently positioned"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – El dolor me impide levantar pesos grandes, pero puedo con pesos leves o medianos si están a mano",
+                                "en": "3 – Pain prevents me from lifting heavy weights, but I can manage light to medium weights if they are conveniently positioned"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Solo puedo levantar pesos muy livianos",
+                                "en": "4 – I can lift very light weights"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo levantar ni cargar nada",
+                                "en": "5 – I cannot lift or carry anything at all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "reading",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Leer",
+                        "en": "Reading"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo leer todo lo que quiero sin dolor de cuello",
+                                "en": "0 – I can read as much as I want with no pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo leer todo lo que quiero con dolor leve de cuello",
+                                "en": "1 – I can read as much as I want with slight pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Puedo leer todo lo que quiero con dolor moderado de cuello",
+                                "en": "2 – I can read as much as I want with moderate pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – No puedo leer todo lo que quiero por dolor moderado de cuello",
+                                "en": "3 – I can’t read as much as I want because of moderate pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Casi no puedo leer por dolor intenso de cuello",
+                                "en": "4 – I can hardly read at all because of severe pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo leer nada por el dolor",
+                                "en": "5 – I cannot read at all due to pain"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "headaches",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Cefaleas",
+                        "en": "Headaches"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – No tengo cefaleas",
+                                "en": "0 – I have no headaches at all"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Cefaleas leves e infrecuentes",
+                                "en": "1 – I have slight headaches that come infrequently"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Cefaleas moderadas e infrecuentes",
+                                "en": "2 – I have moderate headaches that come infrequently"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Cefaleas moderadas y frecuentes",
+                                "en": "3 – I have moderate headaches that come frequently"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Cefaleas intensas y frecuentes",
+                                "en": "4 – I have severe headaches that come frequently"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – Tengo cefaleas casi todo el tiempo",
+                                "en": "5 – I have headaches almost all the time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "concentration",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Concentración",
+                        "en": "Concentration"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo concentrarme por completo sin dificultad",
+                                "en": "0 – I can concentrate fully when I want to with no difficulty"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo concentrarme por completo con leve dificultad",
+                                "en": "1 – I can concentrate fully when I want to with slight difficulty"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Tengo una dificultad considerable para concentrarme",
+                                "en": "2 – I have a fair degree of difficulty in concentrating when I want to"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Tengo mucha dificultad para concentrarme",
+                                "en": "3 – I have a lot of difficulty in concentrating when I want to"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Tengo muchísima dificultad para concentrarme",
+                                "en": "4 – I have a great deal of difficulty in concentrating when I want to"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo concentrarme en absoluto",
+                                "en": "5 – I cannot concentrate at all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "work",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Trabajo",
+                        "en": "Work"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo hacer tanto trabajo como quiero",
+                                "en": "0 – I can do as much work as I want to"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Solo puedo hacer mi trabajo habitual, y nada más",
+                                "en": "1 – I can only do my usual work, but no more"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Puedo hacer la mayor parte de mi trabajo habitual, pero no más",
+                                "en": "2 – I can do most of my usual work, but no more"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – No puedo hacer mi trabajo habitual",
+                                "en": "3 – I cannot do my usual work"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Casi no puedo trabajar",
+                                "en": "4 – I can hardly do any work at all"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo trabajar en absoluto",
+                                "en": "5 – I cannot do any work at all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "driving",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Conducir",
+                        "en": "Driving"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo conducir sin dolor de cuello",
+                                "en": "0 – I can drive my car without any neck pain"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo conducir el tiempo que quiera con dolor leve de cuello",
+                                "en": "1 – I can drive my car as long as I want with slight pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Puedo conducir el tiempo que quiera con dolor moderado de cuello",
+                                "en": "2 – I can drive my car as long as I want with moderate pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – No puedo conducir el tiempo que quiera por dolor moderado de cuello",
+                                "en": "3 – I can’t drive my car as long as I want because of moderate pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Casi no puedo conducir por dolor intenso de cuello",
+                                "en": "4 – I can hardly drive at all because of severe pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo conducir en absoluto",
+                                "en": "5 – I can’t drive my car at all"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "sleeping",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dormir",
+                        "en": "Sleeping"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – No tengo problemas para dormir",
+                                "en": "0 – I have no trouble sleeping"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – El sueño está levemente alterado (menos de 1 h sin dormir)",
+                                "en": "1 – My sleep is slightly disturbed (less than 1 hr sleepless)"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – El sueño está algo alterado (1–2 h sin dormir)",
+                                "en": "2 – My sleep is mildly disturbed (1–2 hrs sleepless)"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – El sueño está moderadamente alterado (2–3 h sin dormir)",
+                                "en": "3 – My sleep is moderately disturbed (2–3 hrs sleepless)"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – El sueño está muy alterado (3–5 h sin dormir)",
+                                "en": "4 – My sleep is greatly disturbed (3–5 hrs sleepless)"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – El sueño está completamente alterado (5–7 h sin dormir)",
+                                "en": "5 – My sleep is completely disturbed (5–7 hrs sleepless)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "recreation",
+                    "type": "select",
+                    "min": 0,
+                    "max": 5,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Recreación",
+                        "en": "Recreation"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Puedo hacer todas mis actividades recreativas sin dolor de cuello",
+                                "en": "0 – I am able to engage in all my recreation activities with no neck pain"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Puedo hacer todas mis actividades recreativas, con algo de dolor de cuello",
+                                "en": "1 – I am able to engage in all my recreation activities, with some pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Puedo hacer la mayoría, pero no todas, por dolor de cuello",
+                                "en": "2 – I am able to engage in most, but not all, of my usual recreation activities because of neck pain"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Solo puedo hacer algunas de mis actividades recreativas por el dolor",
+                                "en": "3 – I am able to engage in a few of my usual recreation activities because of pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Casi no puedo hacer actividades recreativas por el dolor",
+                                "en": "4 – I can hardly do any recreation activities because of pain in my neck"
+                            }
+                        },
+                        {
+                            "value": 5,
+                            "label": {
+                                "es": "5 – No puedo hacer ninguna actividad recreativa",
+                                "en": "5 – I can’t do any recreation activities at all"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "msd",
+        "code": "ffi",
+        "name": "FFI – pie",
+        "description": "Foot Function Index, última semana (0–100). Equivale a la suma / 170 × 100.",
+        "max_score": 100,
+        "schema": {
+            "score_mode": "percent",
+            "higher_is_better": false,
+            "fields": [
+                {
+                    "key": "pain_first_step",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al dar el primer paso por la mañana",
+                        "en": "Pain in the morning upon taking your first step"
+                    }
+                },
+                {
+                    "key": "pain_walking",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al caminar",
+                        "en": "Pain when walking"
+                    }
+                },
+                {
+                    "key": "pain_standing",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al estar de pie",
+                        "en": "Pain when standing"
+                    }
+                },
+                {
+                    "key": "pain_end_day",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al final del día",
+                        "en": "Pain at the end of the day"
+                    }
+                },
+                {
+                    "key": "pain_worst",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor en su peor momento",
+                        "en": "Pain at its worst"
+                    }
+                },
+                {
+                    "key": "walk_house",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al caminar dentro de la casa",
+                        "en": "Difficulty walking in the house"
+                    }
+                },
+                {
+                    "key": "walk_outside",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al caminar afuera",
+                        "en": "Difficulty walking outside"
+                    }
+                },
+                {
+                    "key": "walk_blocks",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al caminar cuatro cuadras",
+                        "en": "Difficulty walking four blocks"
+                    }
+                },
+                {
+                    "key": "climb_stairs",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al subir escaleras",
+                        "en": "Difficulty climbing stairs"
+                    }
+                },
+                {
+                    "key": "descend_stairs",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al bajar escaleras",
+                        "en": "Difficulty descending stairs"
+                    }
+                },
+                {
+                    "key": "tiptoe",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al pararse en puntas de pie",
+                        "en": "Difficulty standing on tiptoe"
+                    }
+                },
+                {
+                    "key": "from_chair",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al levantarse de una silla",
+                        "en": "Difficulty getting up from a chair"
+                    }
+                },
+                {
+                    "key": "curbs",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al subir cordones",
+                        "en": "Difficulty climbing curbs"
+                    }
+                },
+                {
+                    "key": "running",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al correr o caminar rápido",
+                        "en": "Difficulty running or fast walking"
+                    }
+                },
+                {
+                    "key": "device_indoors",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Usa ayuda para caminar (bastón, andador, muletas) adentro",
+                        "en": "Use an assistive device indoors"
+                    }
+                },
+                {
+                    "key": "device_outdoors",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Usa ayuda para caminar (bastón, andador, muletas) afuera",
+                        "en": "Use an assistive device outdoors"
+                    }
+                },
+                {
+                    "key": "limit_activity",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Limita las actividades físicas",
+                        "en": "Limit physical activities"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "msd",
+        "code": "womac",
+        "name": "WOMAC",
+        "description": "Dolor, rigidez y función de cadera o rodilla. Total 0–96 (Likert). Mayor puntaje = peor.",
+        "max_score": 96,
+        "schema": {
+            "score_mode": "sum",
+            "higher_is_better": false,
+            "fields": [
+                {
+                    "key": "pain_walking",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al caminar",
+                        "en": "Pain when walking"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "pain_stairs",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al subir escaleras",
+                        "en": "Pain when climbing stairs"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "pain_night",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al dormir de noche",
+                        "en": "Pain when sleeping at night"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "pain_resting",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor en reposo",
+                        "en": "Pain when resting"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "pain_standing",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor al estar de pie",
+                        "en": "Pain when standing"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "stiff_morning",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Rigidez por la mañana",
+                        "en": "Stiffness in the morning"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "stiff_evening",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Rigidez por la tarde/noche",
+                        "en": "Stiffness in the evening"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_descend",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al bajar escaleras",
+                        "en": "Difficulty descending stairs"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_ascend",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al subir escaleras",
+                        "en": "Difficulty ascending stairs"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_rising",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al levantarse de estar sentado",
+                        "en": "Difficulty rising from sitting"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_standing",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al estar de pie",
+                        "en": "Difficulty standing"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_bending",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al agacharse al suelo",
+                        "en": "Difficulty bending to the floor"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_flat",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al caminar en suelo parejo",
+                        "en": "Difficulty walking on even floor"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_car",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al entrar o salir del auto",
+                        "en": "Difficulty getting in/out of a car"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_shopping",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al ir de compras",
+                        "en": "Difficulty going shopping"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_socks_on",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al ponerse las medias",
+                        "en": "Difficulty putting on socks"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_bed",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al levantarse de la cama",
+                        "en": "Difficulty rising from bed"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_socks_off",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al sacarse las medias",
+                        "en": "Difficulty taking off socks"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_lying",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al estar acostado",
+                        "en": "Difficulty lying in bed"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_bath",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al entrar o salir de la bañera",
+                        "en": "Difficulty getting in/out of the bath"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_sitting",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al estar sentado",
+                        "en": "Difficulty sitting"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_toilet",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad al sentarse o levantarse del inodoro",
+                        "en": "Difficulty getting on/off the toilet"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_light",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad en tareas domésticas livianas",
+                        "en": "Difficulty doing light domestic duties"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "diff_heavy",
+                    "type": "select",
+                    "min": 0,
+                    "max": 4,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dificultad en tareas domésticas pesadas",
+                        "en": "Difficulty doing heavy domestic duties"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "0 – Ninguno",
+                                "en": "0 – None"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "1 – Leve",
+                                "en": "1 – Slight"
+                            }
+                        },
+                        {
+                            "value": 2,
+                            "label": {
+                                "es": "2 – Moderado",
+                                "en": "2 – Moderate"
+                            }
+                        },
+                        {
+                            "value": 3,
+                            "label": {
+                                "es": "3 – Severo",
+                                "en": "3 – Severe"
+                            }
+                        },
+                        {
+                            "value": 4,
+                            "label": {
+                                "es": "4 – Extremo",
+                                "en": "4 – Extreme"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "pathology": "msd",
+        "code": "bpi",
+        "name": "BPI – dolor",
+        "description": "Brief Pain Inventory. El puntaje guardado es la severidad media (peor, menor, promedio y actual, 0–10). La interferencia y el alivio quedan registrados y no entran en el puntaje.",
+        "max_score": 10,
+        "schema": {
+            "score_mode": "average",
+            "higher_is_better": false,
+            "fields": [
+                {
+                    "key": "pain_today",
+                    "type": "select",
+                    "min": 0,
+                    "max": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "¿Tuvo hoy un dolor distinto del cotidiano (cefalea leve, esguince, dolor de muelas)?",
+                        "en": "Have you had pain other than everyday pain (minor headaches, sprains, toothaches) today?"
+                    },
+                    "options": [
+                        {
+                            "value": 0,
+                            "label": {
+                                "es": "No",
+                                "en": "No"
+                            }
+                        },
+                        {
+                            "value": 1,
+                            "label": {
+                                "es": "Sí",
+                                "en": "Yes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "pain_location",
+                    "type": "textarea",
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Zona que duele (y la que duele más)",
+                        "en": "Where you feel pain, and the area that hurts most"
+                    }
+                },
+                {
+                    "key": "pain_words",
+                    "type": "textarea",
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Palabras que describen el dolor",
+                        "en": "Words that describe the pain"
+                    }
+                },
+                {
+                    "key": "worst",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Peor dolor en las últimas 24 h (0 nada – 10 el peor imaginable)",
+                        "en": "Pain at its worst in the past 24 h (0 none – 10 worst imaginable)"
+                    }
+                },
+                {
+                    "key": "least",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Menor dolor en las últimas 24 h",
+                        "en": "Pain at its least in the past 24 h"
+                    }
+                },
+                {
+                    "key": "average",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor promedio",
+                        "en": "Pain on average"
+                    }
+                },
+                {
+                    "key": "now",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": true,
+                    "label": {
+                        "es": "Dolor ahora",
+                        "en": "Pain right now"
+                    }
+                },
+                {
+                    "key": "treatments",
+                    "type": "textarea",
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Tratamientos o medicación para el dolor",
+                        "en": "Treatments or medications for the pain"
+                    }
+                },
+                {
+                    "key": "relief",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 100,
+                    "step": 10,
+                    "required": false,
+                    "score": false,
+                    "label": {
+                        "es": "Alivio con el tratamiento en las últimas 24 h (0 % nada – 100 % completo)",
+                        "en": "Relief from treatment in the past 24 h (0% none – 100% complete)"
+                    }
+                },
+                {
+                    "key": "activity",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con la actividad general",
+                        "en": "Interference with general activity"
+                    }
+                },
+                {
+                    "key": "mood",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con el ánimo",
+                        "en": "Interference with mood"
+                    }
+                },
+                {
+                    "key": "walking",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con la capacidad de caminar",
+                        "en": "Interference with walking ability"
+                    }
+                },
+                {
+                    "key": "work",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con el trabajo habitual (incluido el doméstico)",
+                        "en": "Interference with normal work (including housework)"
+                    }
+                },
+                {
+                    "key": "relations",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con las relaciones con otras personas",
+                        "en": "Interference with relations with other people"
+                    }
+                },
+                {
+                    "key": "sleep_bpi",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con el sueño",
+                        "en": "Interference with sleep"
+                    }
+                },
+                {
+                    "key": "enjoyment",
+                    "type": "scale",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "required": true,
+                    "score": false,
+                    "label": {
+                        "es": "Interferencia con el disfrute de la vida",
+                        "en": "Interference with enjoyment of life"
+                    }
+                }
+            ]
+        }
     }
-  }
 ]

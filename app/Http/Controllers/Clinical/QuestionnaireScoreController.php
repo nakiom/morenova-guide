@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Patient;
 use App\Models\Questionnaire;
 use App\Models\QuestionnaireScore;
+use App\Support\QuestionnaireResponseValidator;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -131,63 +132,6 @@ class QuestionnaireScoreController extends Controller
      */
     private function validatedPayload(Request $request, Questionnaire $questionnaire): array
     {
-        $rules = [
-            'phase' => ['required', Rule::in(QuestionnaireScore::PHASES)],
-            'scored_at' => 'required|date',
-            'notes' => 'nullable|string',
-            'responses' => 'nullable|array',
-        ];
-
-        foreach ($questionnaire->fields() as $field) {
-            $key = 'responses.'.$field['key'];
-            $fieldRules = [];
-
-            if (($field['required'] ?? false) === true) {
-                $fieldRules[] = 'required';
-            } else {
-                $fieldRules[] = 'nullable';
-            }
-
-            $type = $field['type'] ?? 'text';
-            if (in_array($type, ['number', 'scale', 'select'], true)) {
-                $fieldRules[] = 'numeric';
-                if (isset($field['min'])) {
-                    $fieldRules[] = 'min:'.$field['min'];
-                }
-                if (isset($field['max'])) {
-                    $fieldRules[] = 'max:'.$field['max'];
-                }
-            } else {
-                $fieldRules[] = 'string';
-            }
-
-            $rules[$key] = $fieldRules;
-        }
-
-        if ($questionnaire->scoreMode() === 'manual' && ! $questionnaire->fields()) {
-            $rules['score'] = 'required|numeric';
-        }
-
-        $data = $request->validate($rules);
-        $responses = $data['responses'] ?? [];
-
-        $score = $questionnaire->computeScore($responses);
-        if ($score === null && isset($data['score'])) {
-            $score = (float) $data['score'];
-        }
-
-        if ($score === null) {
-            // Si no hay score computable, guardar 0 y dejar detalle en responses.
-            $score = 0;
-        }
-
-        return [
-            'questionnaire_id' => $questionnaire->id,
-            'phase' => $data['phase'],
-            'score' => $score,
-            'responses' => $responses,
-            'scored_at' => $data['scored_at'],
-            'notes' => $data['notes'] ?? null,
-        ];
+        return QuestionnaireResponseValidator::validateClinicalPayload($request, $questionnaire);
     }
 }

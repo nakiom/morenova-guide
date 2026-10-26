@@ -44,17 +44,18 @@
             </div>
         </form>
 
-        <div class="table-responsive">
-            <table class="table table-striped align-middle">
+        <div class="table-responsive patients-table-wrap">
+            <table class="table patients-table align-middle mb-0">
                 <thead>
                     <tr>
                         <th>{{ __('messages.patient_name') }}</th>
                         <th>{{ __('messages.patient_id') }}</th>
                         <th>{{ __('messages.age') }}</th>
+                        <th>{{ __('messages.sex') }}</th>
                         <th>{{ __('messages.protocol') }}</th>
                         <th>{{ __('messages.sessions_count') }}</th>
                         <th>{{ __('messages.total_shocks') }}</th>
-                        @if($user->isAdmin())
+                        @if($user->isAdmin() || $user->center_id)
                         <th>{{ __('messages.doctor') }}</th>
                         @endif
                         <th></th>
@@ -62,23 +63,34 @@
                 </thead>
                 <tbody>
                     @forelse($patients as $patient)
-                    <tr>
+                    <tr class="patient-row patient-row--{{ $patient->sex ?: 'unspecified' }}">
                         <td>{{ $patient->name }}</td>
                         <td>{{ $patient->external_id ?: '—' }}</td>
                         <td>{{ $patient->age ?? '—' }}</td>
+                        <td>{{ $patient->sexLabel() ?? '—' }}</td>
                         <td>{{ $patient->pathology?->translation()?->name ?? $patient->pathology?->slug }}</td>
                         <td>{{ $patient->sessions_count }}</td>
                         <td>{{ $patient->total_shocks }}</td>
-                        @if($user->isAdmin())
-                        <td>{{ $patient->user?->name }}</td>
+                        @if($user->isAdmin() || $user->center_id)
+                        <td>
+                            <x-doctor-chip :user="$patient->user" />
+                        </td>
                         @endif
-                        <td class="text-end">
+                        <td class="text-end text-nowrap">
                             <a href="{{ route('clinical.patients.show', $patient) }}" class="btn btn-sm btn-primary">{{ __('messages.view') }}</a>
+                            @can('delete', $patient)
+                            <form action="{{ route('clinical.patients.destroy', $patient) }}" method="POST" class="d-inline"
+                                  onsubmit="return confirm(@json(__('messages.patient_delete_confirm')))">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-outline-danger">{{ __('messages.delete') }}</button>
+                            </form>
+                            @endcan
                         </td>
                     </tr>
                     @empty
-                    <tr>
-                        <td colspan="{{ $user->isAdmin() ? 8 : 7 }}" class="text-center text-muted">{{ __('messages.no_patients') }}</td>
+                    <tr class="patient-row patient-row--empty">
+                        <td colspan="{{ ($user->isAdmin() || $user->center_id) ? 9 : 8 }}" class="text-center text-muted">{{ __('messages.no_patients') }}</td>
                     </tr>
                     @endforelse
                 </tbody>

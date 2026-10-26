@@ -15,7 +15,7 @@
                     <i class="fas fa-building"></i>
                 </span>
             </div>
-            <form method="POST" action="{{ route('admin.centers.update', $center) }}">
+            <form method="POST" action="{{ route('admin.centers.update', $center) }}" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="card-body p-4 p-md-5">
